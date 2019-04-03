@@ -1,0 +1,205 @@
+<resources>
+    <string name="app_name">Code+</string>
+    <string name="program_select">Please select a programming language to learn?</string>
+    <string name="select_java">Java!</string>
+    <string name="select_python">Python!</string>
+    <string name="facebook_app_id">978526122346925</string>
+    <string name="fb_login_protocol_scheme">fb978526122346925</string>
+    <string name="start_app">Start!</string>
+    <string name="what_is_java_text">1.1 What is Java?</string>
+    <string name="what_is_java_body">Java officially appeared in 1995 and, since then,
+        has been widely adopted by programmers the world over. Java is one of the most widely
+        used programming languages and is used in everything from building Web Applications to
+        developing Android Apps and many things in-between!\n\nJava has several important
+    features that helped it explode in popularity including a huge library of packages to help
+        programmers make many kinds of programs, how safe it is to use, how portable it
+    is (Can run the same program on different Operating Systems) and how much simpler it is to use
+        over another popular language - C++.\n\n</string>
+    <string name="intro_to_java_programs">1.2 Introduction to Java Programs</string>
+    <string name="intro_to_java_programs_body1">The following is the structure of a basic Java
+        program:</string>
+    <string name="intro_to_java_programs_body2">This may look a bit daunting but hang in there! We
+    just need to deconstruct what\'s being shown so that it\'s easier to understand.\n\n</string>
+    <string name="java_deconstruct">1.2.1 Deconstructing the basic Java program</string>
+    <string name="java_deconstruct_body">In the purple box, we have \"public class HelloWorld\" - Using
+        the reserved word \"public\" means that something in the program, from Methods (Which you\'ll
+        encounter later) to Classes, can be used by the public. You can have both public and private
+        methods and classes but can only have one public class. This public class has the same name
+        as the source file that it resides in.\n\nA \"class\" can be thought of as a blueprint for
+        something, for example a Person. From this blueprint, you can create something called
+        \"Objects\" that you can use to do very interesting things as part of an important aspect of
+        programming called \"Object\-Oriented Programming\".\n\nFinally, \"HelloWorld\" is the name
+        of this class.\n\nIn effect, the entire statement is saying that you\'re \"declaring a new
+        public class with the name \"HelloWorld\"\". After declaring the class, you must use opening
+        and closing braces (\"{\" and \"}\") where code defining the class is written.\n\n\n</string>
+    <string name="java_main_methods">1.2.2 Main methods</string>
+    <string name="java_main_methods_body">In the blue box, we have \"public static void main(String[]
+        main)\" - This is something called a \"main method\" and how to declare it.\n\nA main method is
+        compulsory in Java programs and all Java programs must have one.\n\nYou may be asking \"But
+        what is a Method anyway?\" - A basic example would be as follows. Suppose you have a goal to
+        accomplish. To get to that goal, you\'d break that goal down into a series of steps you would
+        take to reach that goal. Imagine writing those steps down on a piece of paper.\n\nAll those
+        steps you\'d take collectively are what a Method is. A Method gives an output as well which
+        would be the goal that you\'re trying to reach. You will learn more about Methods later.\n\nAs
+        with classes, Methods should also use opening and closing braces where code defining the method
+        should be written.\n\n\n</string>
+    <string name="java_statements">1.2.3 Statements in Java</string>
+    <string name="java_statements_body">In the black box, we have \"System.out.println(\"Hello,
+        world!\");\" - This is something called a \"statement\" and how to declare them. Statements
+        are basically the same as those steps that we talked about in the previous section.
+        Each statement is an instruction to do something and are read in order in any Method, Class or
+        program. You always place a \";\" (A semi-colon) at the end of the statement so the Java program
+        knows where the statement finishes.\n\n\"System.out.println\" is a Method. In this example,
+        you call a Method to print something. You can see that \"Hello, World!\" has been placed between
+        the brackets. Anything placed in-between the brackets after calling a Method is called an
+        \"argument\". The argument is sent to the Method and the Method uses it to do something. In
+        this case, the argument \"Hello, World\" is sent to the System.out.println method and asks it
+        to print it out on-screen.\n\nFinally, anything in quotation marks, like \"Hello, World!\" is
+    called a String. We\'ll learn more about Strings later.\n\n\n</string>
+    <string name="go_to_next">Continue</string>
+    <string name="go_to_quiz">Quiz!</string>
+    <string name="possible_answers">Possible answers: </string>
+    <string name="java_quiz_1">How many public classes can a Java Source File have?</string>
+    <string name="java_quiz_1_answer1">One</string>
+    <string name="java_quiz_1_answer2">Two</string>
+    <string name="java_quiz_1_answer3">Three</string>
+    <string name="java_quiz_2">Please complete the following:</string>
+    <string name="java_quiz_2_answer1">String</string>
+    <string name="java_quiz_2_answer2">Main</string>
+    <string name="java_quiz_2_answer3">Class</string>
+    <string name="text_public">public</string>
+    <string name="text_helloworld">HelloWorld</string>
+    <string name="java_quiz_3">What kind of Method must every Java program have?</string>
+    <string name="java_quiz_3_answer1">Class</string>
+    <string name="java_quiz_3_answer2">Println</string>
+    <string name="java_quiz_3_answer3">Main</string>
+    <string name="java_pseudocode">1.3 The importance of Pseudocode and Algorithms</string>
+    <string name="java_pseudocode_body">Before beginning any programming, it is good practice to break
+    a problem down into a series of steps using simple language. For example, let\'s assume that you
+        wanted to add every number from 1 to 100 and then show the total after adding all the numbers.
+        You would start with 1, add 2, then add 3 and continue until you add 100 after which
+        you\'d show the total.\n\nFirst, the number that needs to be added could be stored under
+        \"Current Number\" which would increment by 1 after any addition done. You\'d also need a
+        running total so that could be stored under \"Total\".
+    The steps that you take could be as follows:\n\n1. Set Total to 0.\n2. Set Current Number to 1.\n3.
+        Add Total and Current Number.\n4. Store result in Total.\n5. Increase Current Number by 1.\n6.
+    Add Total and Current Number.\n..\nAnd keep repeating until Current Number is 100 before showing the
+        total.\n\nWhat we did above was break down a goal into a series of steps that tell you clearly
+    and exactly how to achieve that goal. This process can be called \"Pseudocode\" or, as it\'s more
+    commonly known, an \"Algorithm\". An Algorithm needs to be easy to understand and you should be
+    able to program it into a computer.\n\n\n</string>
+    <string name="java_quiz_4">What should you design prior to starting any programming?</string>
+    <string name="java_quiz_4_answer1">Class</string>
+    <string name="java_quiz_4_answer2">Algorithm</string>
+    <string name="java_quiz_4_answer3">Method</string>
+    <string name="java_structure">1.4 The importance of practicing your programming skills</string>
+    <string name="java_structure_body">Java programs typically consist of classes, methods, a main method,
+    objects, interfaces, arrays, variables and many other components including a rich library. So how would
+    you know when and where to use these components? And how can you become a good programmer?\n\nWhat
+    it comes down to is practice! Practice, practice and practice more building Java programs since that
+    really is the quickest way to learn how things come together and work, whether you\'re building small
+    programs or larger, more complicated ones. At this stage, your Java knowledge will be limited but, as
+        you learn more, the importance the practicing to program cannot be understated.\n\nWhat programs can
+        be used for a programmer just starting out? One particular one that\'s highly recommended is \"BlueJ\"
+        but there are others that those new to programming can use including \"Alice\" and another called
+        \"Scratch\".\n\n\n</string>
+    <string name="go_to_end_quiz">End of Chapter Quiz!</string>
+    <string name="java_quiz_5">What should you always place after any declaration of a Class or Method?</string>
+    <string name="java_quiz_5_answer1">Brackets</string>
+    <string name="java_quiz_5_answer2">Braces</string>
+    <string name="java_quiz_5_answer3">Parentheses</string>
+    <string name="java_quiz_6">Please complete the following:</string>
+    <string name="java_quiz_6_answer1">Println</string>
+    <string name="java_quiz_6_answer2">Class</string>
+    <string name="java_quiz_6_answer3">Object</string>
+    <string name="text_statement">System.out.</string>
+    <string name="text_argument">(\"Hello, World!\");</string>
+    <string name="sr_text">How difficult was this topic for you?</string>
+    <string name="java_sr_title">About this App</string>
+    <string name="java_sr_text">This app has a special feature that incorporates a learning
+    technique called \"Spaced Repetition\". The technique involves the regular repeating of material
+    that you want to learn or have learned so that your brain better retains the knowledge learned.\n\n
+        If you activate this feature then, at the end of each subtopic, you will be asked how confident
+        you are with what you have learned. Depending on what is chosen, the same subtopic will be shown to
+    you to go over however many times you want until you are confident with the material shown. This
+    repetition of subtopics will only be done at the end of every topic.</string>
+    <string name="java_sr_option">Would you like to activate this feature?</string>
+    <string name="java_activate_button">Activate</string>
+    <string name="java_dont_activate_button">Don\'t activate</string>
+    <string name="what_is_data_text">Storing values as Variables</string>
+    <string name="what_is_data_body">Imagine that you have an empty box in front of you. You open the lid
+    and place the number \"5\" in there and then close the lid. This box is then used in useful ways for
+    other things, as shown in the following example.</string>
+    <string name="what_is_data_body1">The box is considered a variable. When we assign a value to that variable,
+    the variable stores that value. In the example above, "5" gets stored in the box. If we wanted to store
+    a new value in the box, that can also be done by overwriting the value stored in the box.</string>
+    <string name="initialise_variable_title">How to declare variables</string>
+    <string name="how_to_initialise_body">In the previous section, you saw how to place and store a
+    value in a box. Now, you will be shown how to do it in a Java program! Below, there is an image.</string>
+    <string name="how_to_initialise_body1">Say that we want to count the number of Apples we have and store
+    the value. Looking at the image above, you\'ll see that there is something called an \"int\", then
+    something called \"numberOfApples\" and all of that seems to equal \"4\". This is an example of how to
+    store a value in a variable and to \"initialise\" it.\n\nYou must always initialise a variable before
+        storing anything in it and/or using it. This is done as displayed above - First, you declare the
+        type of value (Can be an integer, float, string or a few others which you will learn about in the
+        next section). After that, you choose a name for your variable and, in the example above, we\'ve
+        chosen \"numberOfApples\". Finally, you state what value you want the variable to take. In this
+        case, it\'s \"4\".\n\nAlways make sure to end these statements with a semi-colon.\n\n</string>
+    <string name="types_variable_title">Types of Variables</string>
+    <string name="types_variable_body">Below are the types of variables that you can declare. The most popular are:\n\n\"int\" -
+    an Integer which is any whole number, for example \"1\", \"1345\" or \"4293\". You can only store
+    integers between about -2 billion to +2 billion.\n\n\"double\" - Double values are numbers which are
+    fractional such as \"3.55\", \"4293.493762\" or \"3048723.736254224\".\n\n\"short\" - A short integer
+    where the value is between around -32,000 to +32,000. \n\n\"long\" - A long integer where it can store
+        values bigger than the standard int type.\n\n\There's also a \"byte\", \"float\" and \"char\" types.\n</string>
+    <string name="types_variable_body1">Let\'s say that you wanted to store \"4\" in \"numberOfApples\",
+    then you would initialise the variable with \"4\". If you wanted to store \"Hello\" in a variable called
+    \"greeting\", then you would initialise the variable with \"string\". You must always use the same types
+    of variables when initialising and storing otherwise you will get an error and types of variables are case-sensitive.
+        For example, if a variable is
+    a string type, you must always store a string value in that variable.\n\nWhen naming variables, you should
+    use \"camel-case\". Camel-case naming is where the first word is lowercase and any following words capitalise
+    the first letter. For example, \"heightOfPlant\" or \"totalSize\" would be appropriate names to use.\n\nYou should
+    always start the variable name with either an underscore or a lowercase letter. The rest of the name can consist
+    of underscores, letters or numbers. You only need to initialise a variable once. After that, you can add new values
+    to the variable by simply typing, using the example in the previous example:\n\nnumberOfApples = 6;\n\nif you want
+    to change the value stored. The new value overwrites the old one.\n\n\n</string>
+    <string name="final_variable_title">The \"final\" variable constant</string>
+    <string name="final_variable_body">You can use the keyword \"final\" to stop any attempt to change the value of
+    a variable. The way to do that is as follows:\n\nfinal int NUMBER_OF_APPLES = 4;\n\nUsing \"final\" keeps the value
+    at 4 for this variable. You must use the keyword before declaring and initialising any variables, just like in the
+        example above.\n\nFinally, the variable name should be in caps to make it easier when reading code.\n\n</string>
+    <string name="java_quiz_7">Please complete the following:</string>
+    <string name="java_quiz_7_answer1">Double</string>
+    <string name="java_quiz_7_answer2">String</string>
+    <string name="java_quiz_7_answer3">double</string>
+    <string name="java_quiz_8">Please complete the following:</string>
+    <string name="java_quiz_8_answer1">Println</string>
+    <string name="java_quiz_8_answer2">Class</string>
+    <string name="java_quiz_8_answer3">Object</string>
+    <string name="java_quiz_9">Please complete the following:</string>
+    <string name="java_quiz_9_answer1">Println</string>
+    <string name="java_quiz_9_answer2">Class</string>
+    <string name="java_quiz_9_answer3">Object</string>
+    <string name="java_quiz_10">Please complete the following:</string>
+    <string name="java_quiz_10_answer1">Println</string>
+    <string name="java_quiz_10_answer2">Class</string>
+    <string name="java_quiz_10_answer3">Object</string>
+    <string name="java_quiz_11">Please complete the following:</string>
+    <string name="java_quiz_11_answer1">Println</string>
+    <string name="java_quiz_11_answer2">Class</string>
+    <string name="java_quiz_11_answer3">Object</string>
+    <string name="java_quiz_12">Please complete the following:</string>
+    <string name="java_quiz_12_answer1">Println</string>
+    <string name="java_quiz_12_answer2">Class</string>
+    <string name="java_quiz_12_answer3">Object</string>
+    <string name="text_initialise">sumOfFractions = 3.14159265;</string>
+    <string name="java_arithmetic">Arithmetic with variables</string>
+    <string name="java_arithmetic_body">You can use arithmetic with different variables. Suppose we have
+    the following variables:\n\nnumberOfApples = 4;\nnumberOfBananas = 5;\n\nTo find the number of apples and
+    bananas we have, we can type the following in Java:\n\nnumberOfApples * numberOfBananas;\n\nSo what\'s
+    happening here? We\'re asking Java to take whatever is stored in numberOfApples and multiply it with the
+    value in numberOfBananas. But there's a problem here, namely where do we store the result? We declare and
+    initialise a new variable!\n\nint totalNumberOfFruit = numberOfApples * numberOfBananas;\n\nFor arithmetic
+    in Java, we use the same symbols </string>
+</resources>

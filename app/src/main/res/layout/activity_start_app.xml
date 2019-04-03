@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartApp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/program_select"
+        android:layout_above="@id/java_button"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/java_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_java"
+        android:layout_centerInParent="true"
+        android:onClick="startJavaActivity"/>
+
+    <Button
+        android:id="@+id/python_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/select_python"
+        android:layout_below="@id/java_button"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
