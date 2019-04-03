@@ -19,7 +19,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".JavaTwoPointTwo"></activity>
+        <activity android:name=".JavaTwoPointThreePointOne"></activity>
+        <activity android:name=".JavaTwoSR3" />
+        <activity android:name=".JavaTwoPointThree" />
+        <activity android:name=".JavaTwoSR2" />
+        <activity android:name=".JavaTwoPointTwoPointOne" />
+        <activity android:name=".JavaTwoPointTwo" />
         <activity android:name=".JavaTwoSR1" />
         <activity android:name=".JavaProgramQuiz12" />
         <activity android:name=".JavaProgramQuiz11" />

@@ -11,7 +11,7 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".JavaTwoPointTwo"
+            tools:context=".JavaTwoPointTwoPointOne"
             android:background="@color/white">
 
             <TextView
@@ -22,7 +22,7 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="24dp"
-                android:text="@string/java_arithmetic"
+                android:text="@string/java_arithmetic2"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:text="@string/java_arithmetic_body"
+                android:text="@string/java_arithmetic2_body"
                 android:textSize="20sp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
@@ -44,7 +44,7 @@
                 android:layout_centerHorizontal="true"
                 android:text="@string/go_to_quiz"
                 android:layout_margin="32dp"
-                android:onClick="javaTwoPointTwoPointOne"/>
+                android:onClick="javaProgramQuiz8"/>
 
         </RelativeLayout>
     </ScrollView>

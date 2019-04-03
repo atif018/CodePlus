@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class JavaTwoSR1 extends AppCompatActivity {
+public class JavaTwoSR2 extends AppCompatActivity {
 
     SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
     SharedPreferences.Editor editor = sharedPref.edit();
@@ -15,25 +15,25 @@ public class JavaTwoSR1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_java_two_sr1);
+        setContentView(R.layout.activity_java_two_sr2);
     }
 
-    public void javaTwoPointTwoA(View view) {
-        editor.putInt("SR5", 11);
+    public void javaTwoPointThreeA(View view) {
+        editor.putInt("SR6", 11);
         editor.commit();
 
         setTopic2Status();
     }
 
-    public void javaTwoPointTwoB(View view) {
-        editor.putInt("SR5", 7);
+    public void javaTwoPointThreeB(View view) {
+        editor.putInt("SR6", 7);
         editor.commit();
 
         setTopic2Status();
     }
 
-    public void javaTwoPointTwoC(View view) {
-        editor.putInt("SR5", 3);
+    public void javaTwoPointThreeC(View view) {
+        editor.putInt("SR6", 3);
         editor.commit();
 
         setTopic2Status();
@@ -46,7 +46,7 @@ public class JavaTwoSR1 extends AppCompatActivity {
             Intent intent = new Intent(this, JavaTwoSR3.class);
             startActivity(intent);
         }
-        Intent intent = new Intent(this, JavaTwoPointTwo.class);
+        Intent intent = new Intent(this, JavaTwoPointThree.class);
         startActivity(intent);
     }
 }
