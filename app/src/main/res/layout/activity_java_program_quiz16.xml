@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JavaProgramQuiz11"
+    tools:context=".JavaProgramQuiz16"
     android:background="@color/white">
 
     <TextView
@@ -16,33 +16,31 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="24dp"
-        android:text="@string/java_quiz_11"
+        android:text="@string/java_quiz_16"
         android:textSize="20sp"
         android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/boolean1_quiz"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/java_quiz"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/boolean1_quiz" />
 
     <EditText
         android:id="@+id/quiz_input"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/boolean1_quiz"
+        android:textSize="20sp"
         android:width="60dp"
         android:maxLength="7"
-        android:layout_below="@id/java_quiz"
-        android:layout_marginLeft="16dp"
         android:inputType="text"
         android:singleLine="true"
-        android:textSize="20sp"
         android:imeOptions="actionDone"/>
-
-    <TextView
-        android:id="@+id/java_string_example"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:text="@string/string_question"
-        android:textSize="20sp"
-        android:layout_marginLeft="16dp"
-        android:layout_below="@id/java_quiz"
-        android:layout_toRightOf="@id/quiz_input"/>
 
     <TextView
         android:id="@+id/possible_answers"
@@ -60,29 +58,29 @@
         android:id="@+id/java_answer_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/java_quiz_11_answer1"
+        android:text="@string/java_quiz_16_answer1"
         android:textSize="20sp"
         android:layout_below="@id/possible_answers"
         android:layout_marginRight="32dp"
-        android:layout_toLeftOf="@id/java_answer_2"/>
+        android:layout_toLeftOf="@id/java_answer_3"/>
 
     <TextView
         android:id="@+id/java_answer_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/java_quiz_11_answer2"
+        android:text="@string/java_quiz_16_answer2"
         android:textSize="20sp"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@id/java_answer_3"
         android:layout_below="@id/possible_answers"/>
 
     <TextView
         android:id="@+id/java_answer_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/java_quiz_11_answer3"
+        android:text=" "
         android:textSize="20sp"
-        android:layout_marginLeft="32dp"
-        android:layout_toRightOf="@id/java_answer_2"
+        android:layout_centerHorizontal="true"
         android:layout_below="@id/possible_answers"/>
 
 </RelativeLayout>

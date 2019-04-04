@@ -9,27 +9,24 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class JavaProgramQuiz12 extends AppCompatActivity {
+public class JavaProgramQuiz17 extends AppCompatActivity {
 
-    private String answer = "camelcase";
-    Intent intent;
+    private String answer = "false";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_java_program_quiz12);
+        setContentView(R.layout.activity_java_program_quiz17);
 
         EditText quizQuestion = (EditText) findViewById(R.id.quiz_input);
         quizQuestion.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
                 String attemptedAnswer = v.getText().toString();
                 String input = attemptedAnswer.toLowerCase();
-                String fbName = sharedPref.getString("name", null);
                 if (input.equals(answer)) {
-                    Toast.makeText(getApplicationContext(), "Correct! You've completed Chapter 2, " + fbName + "!", Toast.LENGTH_LONG).show();
-                    javaTwoSR3();
+                    Toast.makeText(getApplicationContext(), "Excellent work!", Toast.LENGTH_LONG).show();
+                    javaThreeSR4();
                 } else {
                     Toast.makeText(getApplicationContext(), "That is incorrect! Please try again!", Toast.LENGTH_LONG).show();
 
@@ -39,18 +36,13 @@ public class JavaProgramQuiz12 extends AppCompatActivity {
         });
     }
 
-    public void javaTwoSR3() {
+    public void javaThreeSR4() {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        int srStatus = sharedPref.getInt("JavaSRActivate", -1);
-        editor.putString("topic2save", null);
+        editor.putString("topic3save", null);
         editor.commit();
 
-        if (srStatus == 1) {
-            intent = new Intent(this, JavaTwoSR3.class);
-        } else {
-            intent = new Intent(this, StartJava3.class);
-        }
+        Intent intent = new Intent(this, StartJava4.class);
         startActivity(intent);
     }
 }

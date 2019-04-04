@@ -5,32 +5,41 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".JavaProgramQuiz12"
+        tools:context=".JavaProgramQuiz13"
         android:background="@color/white">
 
         <TextView
-            android:id="@+id/java_quiz_12"
+            android:id="@+id/java_quiz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="24dp"
-            android:text="@string/java_quiz_12"
+            android:text="@string/java_quiz_13"
             android:textSize="20sp"
             android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/if_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/java_quiz"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/if_quiz" />
 
         <EditText
             android:id="@+id/quiz_input"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/java_quiz_12"
-            android:textSize="20sp"
             android:width="60dp"
-            android:maxLength="11"
+            android:maxLength="6"
+            android:layout_below="@id/if_quiz"
+            android:layout_centerHorizontal="true"
             android:inputType="text"
             android:singleLine="true"
+            android:textSize="20sp"
             android:imeOptions="actionDone"/>
 
         <TextView
@@ -49,7 +58,7 @@
             android:id="@+id/java_answer_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/java_quiz_12_answer1"
+            android:text="@string/java_quiz_13_answer1"
             android:textSize="20sp"
             android:layout_below="@id/possible_answers"
             android:layout_marginRight="32dp"
@@ -59,7 +68,7 @@
             android:id="@+id/java_answer_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/java_quiz_12_answer2"
+            android:text="@string/java_quiz_13_answer2"
             android:textSize="20sp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/possible_answers"/>
@@ -68,7 +77,7 @@
             android:id="@+id/java_answer_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/java_quiz_12_answer3"
+            android:text="@string/java_quiz_13_answer3"
             android:textSize="20sp"
             android:layout_marginLeft="32dp"
             android:layout_toRightOf="@id/java_answer_2"

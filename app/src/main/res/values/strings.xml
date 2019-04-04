@@ -177,22 +177,23 @@
     <string name="java_quiz_8_answer1">Add twice</string>
     <string name="java_quiz_8_answer2">Increment</string>
     <string name="java_quiz_8_answer3">Decrement</string>
-    <string name="java_quiz_9">Please complete the following:</string>
-    <string name="java_quiz_9_answer1">Println</string>
-    <string name="java_quiz_9_answer2">Class</string>
-    <string name="java_quiz_9_answer3">Object</string>
-    <string name="java_quiz_10">Please complete the following:</string>
-    <string name="java_quiz_10_answer1">Println</string>
-    <string name="java_quiz_10_answer2">Class</string>
-    <string name="java_quiz_10_answer3">Object</string>
+    <string name="java_quiz_9">When using the method charAt, what does .charAt(4) return in the string \"Jasmine\"?</string>
+    <string name="java_quiz_9_answer1">n</string>
+    <string name="java_quiz_9_answer2">m</string>
+    <string name="java_quiz_9_answer3">i</string>
+    <string name="java_quiz_10">What number type is the number \"43.564\"?</string>
+    <string name="java_quiz_10_answer1">int</string>
+    <string name="java_quiz_10_answer2">double</string>
+    <string name="java_quiz_10_answer3">short</string>
     <string name="java_quiz_11">Please complete the following:</string>
-    <string name="java_quiz_11_answer1">Println</string>
-    <string name="java_quiz_11_answer2">Class</string>
-    <string name="java_quiz_11_answer3">Object</string>
-    <string name="java_quiz_12">Please complete the following:</string>
-    <string name="java_quiz_12_answer1">Println</string>
-    <string name="java_quiz_12_answer2">Class</string>
-    <string name="java_quiz_12_answer3">Object</string>
+    <string name="java_quiz_11_answer1">long</string>
+    <string name="java_quiz_11_answer2">Integer</string>
+    <string name="java_quiz_11_answer3">string</string>
+    <string name="java_quiz_12">What is the term used to describe variable names that start with a
+    lower-case letter or underscore and capitalise every subsequent word, eg. \"numberOfCars\"?</string>
+    <string name="java_quiz_12_answer1">Camelcase</string>
+    <string name="java_quiz_12_answer2">Reserved</string>
+    <string name="java_quiz_12_answer3">Objects</string>
     <string name="text_initialise">sumOfFractions = 3.14159265;</string>
     <string name="java_arithmetic">2.2 Arithmetic with variables</string>
     <string name="java_arithmetic_body">You can use arithmetic with different variables. Suppose we have
@@ -214,7 +215,7 @@
         \n\nnumberOfApples = numberOfApples +2;\n\nAll statements are read right to left. That means that the right-side
         of an equation is calculated first before storing the value in the variable on the left-side.
         numberOfApples is already set to 4 as was shown in the previous section. Java takes that value, adds
-    2 to it and then stores it in the same variable.\n\n</string>
+    2 to it and then stores it in the same variable.\n\n\n</string>
     <string name="java_strings">2.3 Using Strings</string>
     <string name="java_strings_body">You may be asking \"What are Strings\"? Strings are basically anything
     encapsulated by a pair of quotation marks like \"red\" or \"banana\". Anything within those quotation marks
@@ -225,12 +226,84 @@
     colour.length();\n\nThe dot after \"colour\" (An object) means that you're calling a method (Which you\'ll
         learn more about later too) and the \"length\" method allows you to find the length.\n\n\n</string>
     <string name="java_strings2">2.3.1 Using Strings 2</string>
-    <string name="java_strings2_body">You may be asking \"What are Strings\"? Strings are basically anything
-    encapsulated by a pair of quotation marks like "red" or "banana". Anything within those quotation marks
-    can be used as a value and/or stored in a string variable. An example is as follows where a string variable
-    is initialised and the word "red" is stored within it.\n\nstring colour = "red";\n\nA string is something
-    called an \"object\" (Which you will learn more about later) and that means that it can be manipulated.
-    \n\nYou can find the length of the colour string by doing the following:\n\nint colourWordLength =
-    colour.length();\n\nThe dot after \"colour\" (An object) means that you're calling a method (Which you\'ll
-        learn more about later too) and the \"length\" method allows you to find the length.</string>
+    <string name="java_strings2_body">Strings can be something called \"concatenated\". This involves taking
+    some strings and turning them into one longer one. An example is as follows:\n\nstring firstWord = \"My\";
+    \n\nstring secondWord = \"name\";\n\nstring thirdWord = \"is\";\n\nstring fourthWord = \"Mike\";\n\nYou now
+    have four strings. If you wanted to concatenate them, you\'d do the following:\n\nstring message =
+    firstWord + secondWord + thirdWord + fourthWord;\n\nThe result of that concatenation would be \"My name
+    is Mike\".\n\nTo obtain a single character in a string, you would do the following:\n\nstring colour = \"red\";
+    \nchar singleLetter = colour.charAt(1);\n\nThe variable \"singleLetter\" would be set to \"e\". You may be asking
+    why and how it works? All characters in a string start at position 0. So, in the string \"red\", \"r\" is at
+    position 0 and \"d\" is at position 2. What \"charAt\" does is look for the character at the position number
+    that you have put in-between the brackets (In this case, \"1\") and store the result in \"singleLetter\".
+    \"charAt\" is a method and, when using methods, you place the value you want the method to resolve in the
+    brackets after the method.\n\n\n</string>
+    <string name="string_question">bestFriendsName = \"Jamilla\";</string>
+    <string name="what_is_decisions_text">3.1 Making decisions in Java</string>
+    <string name="what_is_decisions_body">Suppose that you wanted to do an action after checking something first.
+        An example could be that you wanted to check if \'x\' equals a certain value before adding a value to a
+        total, as follows:</string>
+    <string name="what_is_decisions_body1">Java allows you to make decisions using the \"if\" keyword. First,
+        the keyword \"if\" is inserted as above and then you write the condition that you want to check within
+        the brackets. If that condition is true, then the code that has been written within the brackets is
+        executed. If the condition isn\'t true, then everything within the braces is ignored and the program
+        continues reading any code after the braces. As example is below:</string>
+    <string name="what_is_decisions_body2">In the example above, the \'if\' statement first checks whether \'x\'
+        is equal to 1. If it is, then \'1\' is added to the \'total\' and stored in the variable \'total\'.\n\n</string>
+    <string name="java_quiz_13">Would the code within the braces execute in the following example?</string>
+    <string name="java_quiz_13_answer1">Yes</string>
+    <string name="java_quiz_13_answer2">No</string>
+    <string name="java_quiz_13_answer3">Maybe</string>
+    <string name="what_is_elseif_text">3.2 Else-If</string>
+    <string name="what_is_elseif_body">There are scenarios when you may want to check multiple conditions
+    and then execute different statements or code depending on the value of one or more variables:</string>
+    <string name="what_is_elseif_body1">The \"elseif\" keyword allows you to do just that. Going through the code -
+        Initially the condition for the first \"if\" is checked. If that\'s not true, then any \"elseif\" parts
+        are checked in order. If the condition of any \"elseif\" part is correct, then the code within the braces of
+        that \"elseif\" part is executed.\n\nIf, after checking the \"elseif\" parts, none of them are true either, then
+        the \"else\" part at the end is executed.\n\nWhen using an \"if\" statement, the \"elseif\" and \"else\" parts
+    are optional. It is also important to remember that once any part of this statement is executed, whether the
+    \"if\" part, the \"elseif\" part or the \"else\" part, the program executes whatever is in the braces for that
+    part then skips any other parts.\n\n</string>
+    <string name="java_quiz_14">The \"elseif\" part of the following code is executed because x = 7. What
+    part of the code is executed immediately afterwards? The code starting with number..</string>
+    <string name="java_quiz_14_answer1">1</string>
+    <string name="java_quiz_14_answer2">2</string>
+    <string name="java_quiz_14_answer3">3</string>
+    <string name="operators_text">3.3 Relational Operators</string>
+    <string name="operators_body">When using \"if\" statements or anything else that requires you to compare
+    values, there are a range of functions that can be used for this purpose:</string>
+    <string name="operators_body1">So how would you use these operators and when would you want to use them?
+    Let\'s say that x = 5 and y = 7. You want to check using an \"if\" statement whether x is less than y.
+    What you would type is as follows:\n\nif (x &lt; y) {\n...\n}\n\nIf the condition is correct and x is indeed
+        less than y, then the code between the braces is executed. The best way to understand these operators is
+    to read out the explanation as you type the code. For example, using the earlier statement example and the guide
+        above, the statement can be read as \"If x is less than y, then.. \".\n\nThese operators are an important
+    aspect of Java and are used in many things from \"if\" statements to loops (While, Do-While and For loops that
+    you will learn about later) to many other things.\n\n</string>
+    <string name="java_quiz_15">Some sample code is printed below. Once all the code has been executed,
+    the program will print the total. What value will be printed for the total?</string>
+    <string name="java_quiz_15_answer1">0</string>
+    <string name="java_quiz_15_answer2">5</string>
+    <string name="java_quiz_15_answer3">11</string>
+    <string name="boolean_text">3.4 Boolean Operators and Variables</string>
+    <string name="boolean_body">When using the \"if\" statement, you may have noticed that the condition that
+    you\'re trying to test is either true or false. For example:\n\nif (4 &lt;= 5) {...}\n\nevaluates to true
+    because 4 satisfies the \"less than\" part of the condition so the whole condition becomes true. Evaluating
+        anything in this way means that you\'re evaluating \"Boolean\" values. Boolean values are only ever true or
+        false. You can initialise and declare boolean values as follows:\n\nboolean checkCondition = false;\n\nAnd
+        then use this variable in \"if\" statements, loops and other places.\n\nUsing boolean features allows you to
+    use boolean operators like &amp;&amp;, || and !:\n\n&amp;&amp; stands for AND and evaluates to true only if both
+        sides of AND condition are true\n|| stands for OR and evaluates to true if either side of OR condition are
+        true\n! stands for NOT and reverses the boolean value, eg. if the boolean variable is true, then NOT makes
+        it false.\n\nThese boolean operators allow you to make more complex conditions that can be tested:\n\nif
+    (4 &lt; 5 &amp;&amp; 7 > 6) {...}\n\nEvaluates to true because both sides of the AND operator are true.\n\n</string>
+    <string name="java_quiz_16">Please evaluate the following statement - What does the conditional If statement
+        evaluate to?</string>
+    <string name="java_quiz_16_answer1">True</string>
+    <string name="java_quiz_16_answer2">False</string>
+    <string name="java_quiz_17">Please evaluate the following statement - What does the conditional If statement
+        evaluate to?</string>
+    <string name="java_quiz_17_answer1">True</string>
+    <string name="java_quiz_17_answer2">False</string>
 </resources>
