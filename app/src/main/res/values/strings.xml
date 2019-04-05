@@ -275,7 +275,7 @@
     values, there are a range of functions that can be used for this purpose:</string>
     <string name="operators_body1">So how would you use these operators and when would you want to use them?
     Let\'s say that x = 5 and y = 7. You want to check using an \"if\" statement whether x is less than y.
-    What you would type is as follows:\n\nif (x &lt; y) {\n...\n}\n\nIf the condition is correct and x is indeed
+    What you would type is as follows:\n\nif (x &lt; y) {\n&#8230;\n}\n\nIf the condition is correct and x is indeed
         less than y, then the code between the braces is executed. The best way to understand these operators is
     to read out the explanation as you type the code. For example, using the earlier statement example and the guide
         above, the statement can be read as \"If x is less than y, then.. \".\n\nThese operators are an important
@@ -288,7 +288,7 @@
     <string name="java_quiz_15_answer3">11</string>
     <string name="boolean_text">3.4 Boolean Operators and Variables</string>
     <string name="boolean_body">When using the \"if\" statement, you may have noticed that the condition that
-    you\'re trying to test is either true or false. For example:\n\nif (4 &lt;= 5) {...}\n\nevaluates to true
+    you\'re trying to test is either true or false. For example:\n\nif (4 &lt;= 5) {&#8230;}\n\nevaluates to true
     because 4 satisfies the \"less than\" part of the condition so the whole condition becomes true. Evaluating
         anything in this way means that you\'re evaluating \"Boolean\" values. Boolean values are only ever true or
         false. You can initialise and declare boolean values as follows:\n\nboolean checkCondition = false;\n\nAnd
@@ -297,7 +297,7 @@
         sides of AND condition are true\n|| stands for OR and evaluates to true if either side of OR condition are
         true\n! stands for NOT and reverses the boolean value, eg. if the boolean variable is true, then NOT makes
         it false.\n\nThese boolean operators allow you to make more complex conditions that can be tested:\n\nif
-    (4 &lt; 5 &amp;&amp; 7 > 6) {...}\n\nEvaluates to true because both sides of the AND operator are true.\n\n</string>
+    (4 &lt; 5 &amp;&amp; 7 > 6) {&#8230;}\n\nEvaluates to true because both sides of the AND operator are true.\n\n</string>
     <string name="java_quiz_16">Please evaluate the following statement - What does the conditional If statement
         evaluate to?</string>
     <string name="java_quiz_16_answer1">True</string>
@@ -306,4 +306,76 @@
         evaluate to?</string>
     <string name="java_quiz_17_answer1">True</string>
     <string name="java_quiz_17_answer2">False</string>
+    <string name="while_text">4.1 The While loop</string>
+    <string name="while_body">Java has features that can be used called \"loops\". Different loops allow you to
+        do different things depending on what you want done. There are \"while\" loops, \"do-while\" loops
+        and \"for\" loops. This section will teach you about \"while\" loops:</string>
+    <string name="while_body1">You\'ve already encountered \"if\" statements. Now, we have \"while\" loops.
+        Looking at the example above, while loops also use a condition which it checks before executing
+        the code within the braces as long as that condition evaluates to true.\n\nHowever, the key difference
+        over an \"if\" statement is that while loops keep continuing to execute the code within the braces
+        until the condition attached to the while loop becomes false. Once the condition does\'t evaluate to
+        true anymore, the code within the braces isn\'t evaluated and the program continues with any
+        code after the loop.\n\nSomething important to remember about variables is that any variables
+    declared within the braces are destroyed every time the loop iterates. This also applies to the \"if\"
+        statement. If you want to use variables that will be updated by any actions within the loop,
+        you should declare them before the loop starts, as with \"int x = 10;\" above.\n\n\n</string>
+    <string name="java_quiz_18">How many iterations will the while loop below go through before exiting the
+    loop because the condition became false?</string>
+    <string name="java_quiz_18_answer1">1</string>
+    <string name="java_quiz_18_answer2">7</string>
+    <string name="java_quiz_18_answer3">8</string>
+    <string name="do_text">4.2 The Do-While loop</string>
+    <string name="do_body">A \"do-while\" loop is slightly different from a \"while\" loop. Whereas a
+    while loop checks the condition before executing any code and keeps doing it until the condition
+    becomes false, a do-while loop executes the code in the braces first before checking the condition
+    for the first time:</string>
+    <string name="do_body1">After executing the code for the first time, the condition is checked. If the
+        condition is false, the code in the braces isn\'t executed again and the program continues with any
+        code after the loop. If the condition is true, the code in the braces is executed again and again
+        until the condition becomes false.\n\n\n</string>
+    <string name="java_quiz_19">How many iterations will the do-while loop below go through before exiting the
+    loop because the condition became false?</string>
+    <string name="java_quiz_19_answer1">1</string>
+    <string name="java_quiz_19_answer2">7</string>
+    <string name="java_quiz_19_answer3">8</string>
+    <string name="for_text">4.3 The For loop</string>
+    <string name="for_body">A \"for\" loop allows you to give a starting point and an end point:</string>
+    <string name="for_body1">In a \"for\" loop, there are three conditions placed between the brackets. The
+        first is to initialise a variable and the value of this variable acts as a starting point. The
+        condition in the middle is the condition that is checked. If the condition is true, the code between
+        the braces is executed. Finally, the \"update\" part updates the initialised variable and the
+        process is repeated.\n\nFor example, in the image above, the \"for\" loop initialises an int variable
+        named \"i\" and sets it to 0. The condition part checks whether i is less than 10 and, if it
+        is, executes the code between the braces. Afterwards, \"i++\" (Shorthand for \"i = i + 1\") adds 1
+        to \"i\" then the condition is checked again. If it\'s still true, the code between the braces is
+        executed again. This is repeated until the condition returns false. At that point, the loop breaks
+        to the line right after the loop.\n\n\n</string>
+    <string name="java_quiz_20">How many iterations will the For loop below go through before exiting the
+    loop because the condition became false?</string>
+    <string name="java_quiz_20_answer1">1</string>
+    <string name="java_quiz_20_answer2">10</string>
+    <string name="java_quiz_20_answer3">6</string>
+    <string name="nested_for_text">4.4 Nested For loops</string>
+    <string name="nested_for_body">For loops can be nested within one another:</string>
+    <string name="nested_for_body1">Initially, \"i\" is set to 0, the condition is checked and then
+        you reach the second For loop. For this loop, the same process happens where \"j\" is initialised
+        to 0, the condition is checked and then the code within the braces is executed.\n\nThe way to think
+        of this second For loop (Or even more loops nested within one another) is to see them as independent
+        to the others and focus on what\'s happening in the current loop.\n\nSo, for the second For loop,
+        the current value for j will be printed each time the loop iterates. Once the loop ends with
+        j not being less than 10, the current value for \"i\" will be printed. The original For loop is updated
+        using i++, the condition checked and then we arrive at the second For loop again which, once again,
+        prints all current j values. And the cycle repeats until the condition for the First For loop is false
+        and the program exits the entire loop.\n\n\n</string>
+    <string name="java_quiz_21">What is the name of the loop you would use when you want to execute some
+    code once before checking whether a condition is satisfied?</string>
+    <string name="java_quiz_21_answer1">While</string>
+    <string name="java_quiz_21_answer2">For</string>
+    <string name="java_quiz_21_answer3">Do-While</string>
+    <string name="java_quiz_22">What is the name of the loop you would use when you want to execute some
+    code repeatedly just until the condition is satisfied?</string>
+    <string name="java_quiz_22_answer1">While</string>
+    <string name="java_quiz_22_answer2">For</string>
+    <string name="java_quiz_22_answer3">Do-While</string>
 </resources>
