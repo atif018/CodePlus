@@ -144,7 +144,9 @@
         type of value (Can be an integer, float, string or a few others which you will learn about in the
         next section). After that, you choose a name for your variable and, in the example above, we\'ve
         chosen \"numberOfApples\". Finally, you state what value you want the variable to take. In this
-        case, it\'s \"4\".\n\nAlways make sure to end these statements with a semi-colon.\n\n</string>
+        case, it\'s \"4\".\n\nAlways make sure to end these statements with a semi-colon.\n\nFinally,
+        always make sure to spell the variable correctly and capitalise the correct parts since variable
+        names are case-sensitive so \"numberOfApples\" is not the same as \"NumberOfApples\".\n\n</string>
     <string name="types_variable_title">2.1.2 Types of Variables</string>
     <string name="types_variable_body">Below are the types of variables that you can declare. The most popular are:\n\n\"int\" -
     an Integer which is any whole number, for example \"1\", \"1345\" or \"4293\". You can only store
@@ -378,4 +380,84 @@
     <string name="java_quiz_22_answer1">While</string>
     <string name="java_quiz_22_answer2">For</string>
     <string name="java_quiz_22_answer3">Do-While</string>
+    <string name="method_text">5.1 What are Methods?</string>
+    <string name="method_body">Imagine, for a moment, that you have a calculator in front of you. You
+    type in \"2 + 2\" and it returns \"4\". The \"2 + 2\" can be regarded as the input and the \"4\" can
+    be regarded as the output. Do you need to know how the calculator does its job to get the output? No.
+    You simply provide inputs and the calculator calculates the answer.\n\nIn Java, there is something called
+    a \"method\". You don't have to know how a method does its job. All someone needs to do is provide
+    inputs to the method and it will provide an output. You can use methods that someone else has coded
+    in other programs or make your own. The way to declare a method is as follows:</string>
+    <string name="method_body1">- The \"public\" part denotes that the method is usable by the public. There
+        are also private methods\n- The return type is the type of variable that will be returned once the
+        method has finished its job.\n- For the method name, the same rules should be used as if you are
+        declaring a variable.\n- The input type is the variable type that the method needs to do its job.
+        The input name is the name given to the input variable and will be used within the method.\n\nMethods
+        always have starting and ending braces and the code that the method needs to do its job should be
+        placed between them.\n\nReturn statements within the method send the value of the named variable
+        as output back to the program that made the request.\n\n\n</string>
+    <string name="java_quiz_23">What is the return type for the following method?</string>
+    <string name="java_quiz_23_answer1">int</string>
+    <string name="java_quiz_23_answer2">number</string>
+    <string name="java_quiz_23_answer3">double</string>
+    <string name="method_use_text">5.2 Using Methods</string>
+    <string name="method_use_body">You can \"call\" methods from within your Java program to get something
+    done. First, let\'s bring back the example from the previous section:</string>
+    <string name="method_use_body1">Let\'s say that, from within your program, you wanted to call this method
+        because you want to multiply it by itself and then output the result back to you. To call the method above,
+        you would use the following code:\n\nsumOfSquares();\n\nYou simply use the method name and end the call
+        with brackets and a semi-colon. But there\'s a problem in that you need to provide inputs for the method.
+        Let\'s say you wanted to multiply \"4\" with itself and output (return) the result. To call the method,
+        you would do the following:\n\nsumOfSquares(4);\n\nBut now, there\'s another thing we still have to do.
+        We need some place to store the result. That can easily be done by initialising a variable as so:\n\n
+        int result = sumOfSquares(4);\n\nThis is the code you would use to call a method. \"int\" is used here
+        because that\'s the return type for the method. They must always match. Another thing that must match
+        is the input/variable type that you are sending to the method and they must match the input type found between
+        the brackets in the method header.\n\nFinally, methods can be coded to allow more than one input type/
+        variable at one time, for example:\n\npublic static int sumOfNumbers(int number, int number1.. )\n{..etc}\n\n\n</string>
+    <string name="java_quiz_24">How many iterations will the do-while loop below go through before exiting the
+    loop because the condition became false?</string>
+    <string name="java_quiz_24_answer1">1</string>
+    <string name="java_quiz_24_answer2">7</string>
+    <string name="java_quiz_24_answer3">8</string>
+    <string name="return_text">5.3 The Return statement</string>
+    <string name="return_body">The return statement is used to tell the method that all relevant actions
+        have been done by the method and to send the result back to the caller. Using the previous example:</string>
+    <string name="return_body1">In a \"for\" loop, there are three conditions placed between the brackets. The
+        first is to initialise a variable and the value of this variable acts as a starting point. The
+        condition in the middle is the condition that is checked. If the condition is true, the code between
+        the braces is executed. Finally, the \"update\" part updates the initialised variable and the
+        process is repeated.\n\nFor example, in the image above, the \"for\" loop initialises an int variable
+        named \"i\" and sets it to 0. The condition part checks whether i is less than 10 and, if it
+        is, executes the code between the braces. Afterwards, \"i++\" (Shorthand for \"i = i + 1\") adds 1
+        to \"i\" then the condition is checked again. If it\'s still true, the code between the braces is
+        executed again. This is repeated until the condition returns false. At that point, the loop breaks
+        to the line right after the loop.\n\n\n</string>
+    <string name="java_quiz_25">How many iterations will the For loop below go through before exiting the
+    loop because the condition became false?</string>
+    <string name="java_quiz_25_answer1">1</string>
+    <string name="java_quiz_25_answer2">10</string>
+    <string name="java_quiz_25_answer3">6</string>
+    <string name="variable_scope_text">5.4 The importance of Variable Scope</string>
+    <string name="variable_scope_body">For loops can be nested within one another:</string>
+    <string name="variable_scope_body1">Initially, \"i\" is set to 0, the condition is checked and then
+        you reach the second For loop. For this loop, the same process happens where \"j\" is initialised
+        to 0, the condition is checked and then the code within the braces is executed.\n\nThe way to think
+        of this second For loop (Or even more loops nested within one another) is to see them as independent
+        to the others and focus on what\'s happening in the current loop.\n\nSo, for the second For loop,
+        the current value for j will be printed each time the loop iterates. Once the loop ends with
+        j not being less than 10, the current value for \"i\" will be printed. The original For loop is updated
+        using i++, the condition checked and then we arrive at the second For loop again which, once again,
+        prints all current j values. And the cycle repeats until the condition for the First For loop is false
+        and the program exits the entire loop.\n\n\n</string>
+    <string name="java_quiz_26">What is the name of the loop you would use when you want to execute some
+    code once before checking whether a condition is satisfied?</string>
+    <string name="java_quiz_26_answer1">While</string>
+    <string name="java_quiz_26_answer2">For</string>
+    <string name="java_quiz_26_answer3">Do-While</string>
+    <string name="java_quiz_27">What is the name of the loop you would use when you want to execute some
+    code repeatedly just until the condition is satisfied?</string>
+    <string name="java_quiz_27_answer1">While</string>
+    <string name="java_quiz_27_answer2">For</string>
+    <string name="java_quiz_27_answer3">Do-While</string>
 </resources>

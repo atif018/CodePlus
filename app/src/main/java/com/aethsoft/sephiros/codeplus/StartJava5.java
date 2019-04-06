@@ -18,17 +18,17 @@ public class StartJava5 extends AppCompatActivity {
 
     public void startMethodsSection(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-        String topicFourSaves = sharedPref.getString("topic4save", null);
-        if (topicFourSaves != null) {
-            if (topicFourSaves.equals("fourtwo")) {
-                intent = new Intent(this, JavaFourPointTwo.class);
+        String topicFiveSaves = sharedPref.getString("topic5save", null);
+        if (topicFiveSaves != null) {
+            if (topicFiveSaves.equals("fivetwo")) {
+                intent = new Intent(this, JavaFivePointTwo.class);
             }
-            else if (topicFourSaves.equals("fourthree")) {
-                intent = new Intent(this, JavaFourPointThree.class);
+            else if (topicFiveSaves.equals("fivethree")) {
+                intent = new Intent(this, JavaFivePointThree.class);
             }
         }
         else {
-            intent = new Intent(this, JavaFourPointOne.class);
+            intent = new Intent(this, JavaFivePointOne.class);
         }
         startActivity(intent);
     }
