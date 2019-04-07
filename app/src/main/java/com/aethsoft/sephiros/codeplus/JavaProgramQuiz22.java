@@ -42,7 +42,7 @@ public class JavaProgramQuiz22 extends AppCompatActivity {
         editor.putString("topic4save", null);
         editor.commit();
 
-        Intent intent = new Intent(this, startJava5.class);
+        Intent intent = new Intent(this, StartJava5.class);
         startActivity(intent);
     }
 }

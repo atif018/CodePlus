@@ -39,7 +39,7 @@
             android:layout_below="@id/main_title"/>
 
         <ImageView
-            android:id="@+id/method_example"
+            android:id="@+id/return_example"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_below="@id/main_body"
@@ -56,7 +56,27 @@
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_below="@id/method_example"/>
+            android:layout_below="@id/return_example"/>
+
+        <ImageView
+            android:id="@+id/return1_example"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/main_second_body"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/return_example" />
+
+        <TextView
+            android:id="@+id/main_third_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/return_body2"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@id/return1_example"/>
 
         <Button
             android:layout_width="wrap_content"

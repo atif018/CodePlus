@@ -415,49 +415,149 @@
         is the input/variable type that you are sending to the method and they must match the input type found between
         the brackets in the method header.\n\nFinally, methods can be coded to allow more than one input type/
         variable at one time, for example:\n\npublic static int sumOfNumbers(int number, int number1.. )\n{..etc}\n\n\n</string>
-    <string name="java_quiz_24">How many iterations will the do-while loop below go through before exiting the
-    loop because the condition became false?</string>
-    <string name="java_quiz_24_answer1">1</string>
-    <string name="java_quiz_24_answer2">7</string>
-    <string name="java_quiz_24_answer3">8</string>
+    <string name="java_quiz_24">What will be returned by the following method to its caller if the number
+    \"0\" is passed as input to it?</string>
+    <string name="java_quiz_24_answer1">Nothing</string>
+    <string name="java_quiz_24_answer2">0</string>
+    <string name="java_quiz_24_answer3">Return</string>
     <string name="return_text">5.3 The Return statement</string>
     <string name="return_body">The return statement is used to tell the method that all relevant actions
         have been done by the method and to send the result back to the caller. Using the previous example:</string>
-    <string name="return_body1">In a \"for\" loop, there are three conditions placed between the brackets. The
-        first is to initialise a variable and the value of this variable acts as a starting point. The
-        condition in the middle is the condition that is checked. If the condition is true, the code between
-        the braces is executed. Finally, the \"update\" part updates the initialised variable and the
-        process is repeated.\n\nFor example, in the image above, the \"for\" loop initialises an int variable
-        named \"i\" and sets it to 0. The condition part checks whether i is less than 10 and, if it
-        is, executes the code between the braces. Afterwards, \"i++\" (Shorthand for \"i = i + 1\") adds 1
-        to \"i\" then the condition is checked again. If it\'s still true, the code between the braces is
-        executed again. This is repeated until the condition returns false. At that point, the loop breaks
-        to the line right after the loop.\n\n\n</string>
-    <string name="java_quiz_25">How many iterations will the For loop below go through before exiting the
-    loop because the condition became false?</string>
-    <string name="java_quiz_25_answer1">1</string>
-    <string name="java_quiz_25_answer2">10</string>
-    <string name="java_quiz_25_answer3">6</string>
+    <string name="return_body1">The method receives values/inputs/arguments from the method caller. It uses these
+        same arguments in the body of the method to calculate, in this case, the square of the number that was
+        sent to it. After doing that, the return statement is used to send the result back to the caller.\n\n
+        You can use multiple return statements but the the method will end when it reaches the very first
+        return statement:</string>
+    <string name="return_body2">In this example, there are two return statements. The way the method works
+        is that the method is called and inputs/parameters are sent to the method. With the method itself,
+        there is an \"if\" statement. This checks the input sent to the method and, if it is equal to or less
+        than zero, it exits the method and returns to the main program.\n\nTyping just \"return\" means that nothing
+        is returned and the method exits. Upon checking, if the input is not less than or equal to zero, then the
+        code in the \"if\" statement is not activated and the method continues reading any code after this statement.\n\n\n</string>
+    <string name="java_quiz_25">Will the \"total\" variable be available to use outside this method?</string>
+    <string name="java_quiz_25_answer1">Yes</string>
+    <string name="java_quiz_25_answer2">No</string>
+    <string name="java_quiz_25_answer3">Maybe</string>
     <string name="variable_scope_text">5.4 The importance of Variable Scope</string>
-    <string name="variable_scope_body">For loops can be nested within one another:</string>
-    <string name="variable_scope_body1">Initially, \"i\" is set to 0, the condition is checked and then
-        you reach the second For loop. For this loop, the same process happens where \"j\" is initialised
-        to 0, the condition is checked and then the code within the braces is executed.\n\nThe way to think
-        of this second For loop (Or even more loops nested within one another) is to see them as independent
-        to the others and focus on what\'s happening in the current loop.\n\nSo, for the second For loop,
-        the current value for j will be printed each time the loop iterates. Once the loop ends with
-        j not being less than 10, the current value for \"i\" will be printed. The original For loop is updated
-        using i++, the condition checked and then we arrive at the second For loop again which, once again,
-        prints all current j values. And the cycle repeats until the condition for the First For loop is false
-        and the program exits the entire loop.\n\n\n</string>
-    <string name="java_quiz_26">What is the name of the loop you would use when you want to execute some
-    code once before checking whether a condition is satisfied?</string>
-    <string name="java_quiz_26_answer1">While</string>
-    <string name="java_quiz_26_answer2">For</string>
-    <string name="java_quiz_26_answer3">Do-While</string>
-    <string name="java_quiz_27">What is the name of the loop you would use when you want to execute some
-    code repeatedly just until the condition is satisfied?</string>
-    <string name="java_quiz_27_answer1">While</string>
-    <string name="java_quiz_27_answer2">For</string>
-    <string name="java_quiz_27_answer3">Do-While</string>
+    <string name="variable_scope_body">It\'s important to learn about something called Variable Scopes.
+    Imagine writing the following code:</string>
+    <string name="variable_scope_body1">Do you notice anything wrong? Notice that \"x\" has been declared before
+        the while loop with the variable being used within the loop but it\'s again declared and initialised
+        within the loop.\n\nWith the total1 variable, which x should it choose to use in its calculations?
+        This is something called \"overlapping scopes\" and is not allowed in Java. You need to always be aware
+        of the scope of a variable and they must never overlap.\n\nIf you declare a variable outside any methods,
+        the value isn\'t available inside those methods unless you pass that variable to that method. Similarly,
+        any variables that you declare inside a method or loop isn\'t available anywhere outside that method or loop
+        and is destroyed once it exits. Variables declared inside methods or loops are called local variables.\n\n\n</string>
+    <string name="java_quiz_26">What is returned by the method below if number = 5?</string>
+    <string name="java_quiz_26_answer1">Nothing</string>
+    <string name="java_quiz_26_answer2">3</string>
+    <string name="java_quiz_26_answer3">15</string>
+    <string name="java_quiz_27">Assume that you had a method named \"getNames\" and it took a single string as
+    input. Assume that you also had a string variable already initialised outside the method as follows:\n\nstring name = \"Mike\";
+    \n\nHow would you correctly call this method from the choices below?\n\n1. getNames(Mike);\n\n2. getNames();
+    \n\n3. getNames(\"Mike\");</string>
+    <string name="java_quiz_27_answer1">1</string>
+    <string name="java_quiz_27_answer2">2</string>
+    <string name="java_quiz_27_answer3">3</string>
+    <string name="arrays_text">5.1 What are Methods?</string>
+    <string name="arrays_body">Imagine, for a moment, that you have a calculator in front of you. You
+    type in \"2 + 2\" and it returns \"4\". The \"2 + 2\" can be regarded as the input and the \"4\" can
+    be regarded as the output. Do you need to know how the calculator does its job to get the output? No.
+    You simply provide inputs and the calculator calculates the answer.\n\nIn Java, there is something called
+    a \"method\". You don't have to know how a method does its job. All someone needs to do is provide
+    inputs to the method and it will provide an output. You can use methods that someone else has coded
+    in other programs or make your own. The way to declare a method is as follows:</string>
+    <string name="arrays_body1">- The \"public\" part denotes that the method is usable by the public. There
+        are also private methods\n- The return type is the type of variable that will be returned once the
+        method has finished its job.\n- For the method name, the same rules should be used as if you are
+        declaring a variable.\n- The input type is the variable type that the method needs to do its job.
+        The input name is the name given to the input variable and will be used within the method.\n\nMethods
+        always have starting and ending braces and the code that the method needs to do its job should be
+        placed between them.\n\nReturn statements within the method send the value of the named variable
+        as output back to the program that made the request.\n\n\n</string>
+    <string name="java_quiz_28">What is the return type for the following method?</string>
+    <string name="java_quiz_28_answer1">int</string>
+    <string name="java_quiz_28_answer2">number</string>
+    <string name="java_quiz_28_answer3">double</string>
+    <string name="enhanced_text">5.1 What are Methods?</string>
+    <string name="enhanced_body">Imagine, for a moment, that you have a calculator in front of you. You
+    type in \"2 + 2\" and it returns \"4\". The \"2 + 2\" can be regarded as the input and the \"4\" can
+    be regarded as the output. Do you need to know how the calculator does its job to get the output? No.
+    You simply provide inputs and the calculator calculates the answer.\n\nIn Java, there is something called
+    a \"method\". You don't have to know how a method does its job. All someone needs to do is provide
+    inputs to the method and it will provide an output. You can use methods that someone else has coded
+    in other programs or make your own. The way to declare a method is as follows:</string>
+    <string name="enhanced_body1">- The \"public\" part denotes that the method is usable by the public. There
+        are also private methods\n- The return type is the type of variable that will be returned once the
+        method has finished its job.\n- For the method name, the same rules should be used as if you are
+        declaring a variable.\n- The input type is the variable type that the method needs to do its job.
+        The input name is the name given to the input variable and will be used within the method.\n\nMethods
+        always have starting and ending braces and the code that the method needs to do its job should be
+        placed between them.\n\nReturn statements within the method send the value of the named variable
+        as output back to the program that made the request.\n\n\n</string>
+    <string name="java_quiz_29">What is the return type for the following method?</string>
+    <string name="java_quiz_29_answer1">int</string>
+    <string name="java_quiz_29_answer2">number</string>
+    <string name="java_quiz_29_answer3">double</string>
+    <string name="arrays_methods_text">5.1 What are Methods?</string>
+    <string name="arrays_methods_body">Imagine, for a moment, that you have a calculator in front of you. You
+    type in \"2 + 2\" and it returns \"4\". The \"2 + 2\" can be regarded as the input and the \"4\" can
+    be regarded as the output. Do you need to know how the calculator does its job to get the output? No.
+    You simply provide inputs and the calculator calculates the answer.\n\nIn Java, there is something called
+    a \"method\". You don't have to know how a method does its job. All someone needs to do is provide
+    inputs to the method and it will provide an output. You can use methods that someone else has coded
+    in other programs or make your own. The way to declare a method is as follows:</string>
+    <string name="arrays_methods_body1">- The \"public\" part denotes that the method is usable by the public. There
+        are also private methods\n- The return type is the type of variable that will be returned once the
+        method has finished its job.\n- For the method name, the same rules should be used as if you are
+        declaring a variable.\n- The input type is the variable type that the method needs to do its job.
+        The input name is the name given to the input variable and will be used within the method.\n\nMethods
+        always have starting and ending braces and the code that the method needs to do its job should be
+        placed between them.\n\nReturn statements within the method send the value of the named variable
+        as output back to the program that made the request.\n\n\n</string>
+    <string name="java_quiz_30">What is the return type for the following method?</string>
+    <string name="java_quiz_30_answer1">int</string>
+    <string name="java_quiz_30_answer2">number</string>
+    <string name="java_quiz_30_answer3">double</string>
+    <string name="twodimensional_text">5.1 What are Methods?</string>
+    <string name="twodimensional_body">Imagine, for a moment, that you have a calculator in front of you. You
+    type in \"2 + 2\" and it returns \"4\". The \"2 + 2\" can be regarded as the input and the \"4\" can
+    be regarded as the output. Do you need to know how the calculator does its job to get the output? No.
+    You simply provide inputs and the calculator calculates the answer.\n\nIn Java, there is something called
+    a \"method\". You don't have to know how a method does its job. All someone needs to do is provide
+    inputs to the method and it will provide an output. You can use methods that someone else has coded
+    in other programs or make your own. The way to declare a method is as follows:</string>
+    <string name="twodimensional_body1">- The \"public\" part denotes that the method is usable by the public. There
+        are also private methods\n- The return type is the type of variable that will be returned once the
+        method has finished its job.\n- For the method name, the same rules should be used as if you are
+        declaring a variable.\n- The input type is the variable type that the method needs to do its job.
+        The input name is the name given to the input variable and will be used within the method.\n\nMethods
+        always have starting and ending braces and the code that the method needs to do its job should be
+        placed between them.\n\nReturn statements within the method send the value of the named variable
+        as output back to the program that made the request.\n\n\n</string>
+    <string name="java_quiz_31">What is the return type for the following method?</string>
+    <string name="java_quiz_31_answer1">int</string>
+    <string name="java_quiz_31_answer2">number</string>
+    <string name="java_quiz_31_answer3">double</string>
+    <string name="arraylist_text">5.1 What are Methods?</string>
+    <string name="arraylist_body">Imagine, for a moment, that you have a calculator in front of you. You
+    type in \"2 + 2\" and it returns \"4\". The \"2 + 2\" can be regarded as the input and the \"4\" can
+    be regarded as the output. Do you need to know how the calculator does its job to get the output? No.
+    You simply provide inputs and the calculator calculates the answer.\n\nIn Java, there is something called
+    a \"method\". You don't have to know how a method does its job. All someone needs to do is provide
+    inputs to the method and it will provide an output. You can use methods that someone else has coded
+    in other programs or make your own. The way to declare a method is as follows:</string>
+    <string name="arraylist_body1">- The \"public\" part denotes that the method is usable by the public. There
+        are also private methods\n- The return type is the type of variable that will be returned once the
+        method has finished its job.\n- For the method name, the same rules should be used as if you are
+        declaring a variable.\n- The input type is the variable type that the method needs to do its job.
+        The input name is the name given to the input variable and will be used within the method.\n\nMethods
+        always have starting and ending braces and the code that the method needs to do its job should be
+        placed between them.\n\nReturn statements within the method send the value of the named variable
+        as output back to the program that made the request.\n\n\n</string>
+    <string name="java_quiz_32">What is the return type for the following method?</string>
+    <string name="java_quiz_32_answer1">int</string>
+    <string name="java_quiz_32_answer2">number</string>
+    <string name="java_quiz_32_answer3">double</string>
 </resources>
