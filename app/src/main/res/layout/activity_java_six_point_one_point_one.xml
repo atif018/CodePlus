@@ -12,7 +12,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".JavaSixPointOne"
+        tools:context=".JavaSixPointOnePointOne"
         android:background="@color/white">
 
         <TextView
@@ -23,7 +23,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="24dp"
-            android:text="@string/arrays_text"
+            android:text="@string/arrays2_text"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
@@ -32,31 +32,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/arrays_body"
+            android:text="@string/arrays2_body"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_below="@id/main_title"/>
-
-        <ImageView
-            android:id="@+id/arrays_example"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_below="@id/main_body"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="16dp"
-            android:src="@drawable/array_example" />
-
-        <TextView
-            android:id="@+id/main_second_body"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="@string/arrays_body1"
-            android:textSize="20sp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_below="@id/arrays_example"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -65,7 +45,8 @@
             android:layout_alignParentBottom="true"
             android:text="@string/go_to_next"
             android:layout_margin="32dp"
-            android:onClick="javaSixPointOnePointOne"/>
+            android:onClick="javaProgramQuiz28"/>
 
     </RelativeLayout>
 </ScrollView>
+
