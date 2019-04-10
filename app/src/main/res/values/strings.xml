@@ -426,7 +426,7 @@
     <string name="return_body1">The method receives values/inputs/arguments from the method caller. It uses these
         same arguments in the body of the method to calculate, in this case, the square of the number that was
         sent to it. After doing that, the return statement is used to send the result back to the caller.\n\n
-        You can use multiple return statements but the the method will end when it reaches the very first
+        You can use multiple return statements but the method will end when it reaches the very first
         return statement:</string>
     <string name="return_body2">In this example, there are two return statements. The way the method works
         is that the method is called and inputs/parameters are sent to the method. With the method itself,
@@ -473,7 +473,8 @@
         integers and the arrays name will be \"numbers\". Then, the new arrays length will be \"4\". You don\'t
         have to use int and can use any other variable type like double or string as well.\n\nFinally, arrays
         are of a fixed size so if an array of length 10 is declared, it cannot be changed so that it\'s bigger
-        or smaller.\n\n\n</string>
+        or smaller. You can find the length of an array and/or store it in a variable at any time using .length,
+        eg:\nnumbers.length();\n\n\n\n</string>
     <string name="arrays2_text">6.1.1 How to use Arrays</string>
     <string name="arrays2_body">In the previous section, we saw how to declare arrays. To declare a array with
     the name \"typesOfVans\" that will store strings and will be of length 10, you\'d use the following code:\n\n
@@ -533,28 +534,98 @@
         in a 2D array, you would type:\n\nint numberOfBits = bits[2][3];\n\nBasically, you\'re saying that you
         want to access the element in the 2D array named \"bits\" on row 2 and column 3 and you want to store that
         value in the variable \"numberOfBits\".\n\n\n</string>
-    <string name="java_quiz_31">What is the return type for the following method?</string>
-    <string name="java_quiz_31_answer1">int</string>
-    <string name="java_quiz_31_answer2">number</string>
-    <string name="java_quiz_31_answer3">double</string>
+    <string name="java_quiz_31">You\'ve declared the following array:\n\ndouble[][] supervisors = new
+    double[8][9];\n\nWhat would you type to access the element on the 4th row and the 7th column? Please choose one of the
+    following:\n\n1. supervisors[4][7];\n2. supervisors[3][6];\n3. supervisors[5][8];</string>
+    <string name="java_quiz_31_answer1">1</string>
+    <string name="java_quiz_31_answer2">2</string>
+    <string name="java_quiz_31_answer3">3</string>
     <string name="arraylist_text">6.5 Arraylists</string>
-    <string name="arraylist_body">Imagine, for a moment, that you have a calculator in front of you. You
-    type in \"2 + 2\" and it returns \"4\". The \"2 + 2\" can be regarded as the input and the \"4\" can
-    be regarded as the output. Do you need to know how the calculator does its job to get the output? No.
-    You simply provide inputs and the calculator calculates the answer.\n\nIn Java, there is something called
-    a \"method\". You don't have to know how a method does its job. All someone needs to do is provide
-    inputs to the method and it will provide an output. You can use methods that someone else has coded
-    in other programs or make your own. The way to declare a method is as follows:</string>
-    <string name="arraylist_body1">- The \"public\" part denotes that the method is usable by the public. There
-        are also private methods\n- The return type is the type of variable that will be returned once the
-        method has finished its job.\n- For the method name, the same rules should be used as if you are
-        declaring a variable.\n- The input type is the variable type that the method needs to do its job.
-        The input name is the name given to the input variable and will be used within the method.\n\nMethods
-        always have starting and ending braces and the code that the method needs to do its job should be
-        placed between them.\n\nReturn statements within the method send the value of the named variable
-        as output back to the program that made the request.\n\n\n</string>
-    <string name="java_quiz_32">What is the return type for the following method?</string>
-    <string name="java_quiz_32_answer1">int</string>
-    <string name="java_quiz_32_answer2">number</string>
-    <string name="java_quiz_32_answer3">double</string>
+    <string name="arraylist_body">When you declare an array of a certain length, the length will always remain the
+    same for that array and cannot be modified. But is there a type of array where the length can change? Yes, and
+    they\'re called ArrayLists.\n\nAn ArrayList is similar to an array but you can add/modify and delete values
+    whenever needed. When adding values, the length/list grows and, when deleting values, it gets smaller. As with arrays,
+        the index also starts at 0. To declare an ArrayList, use the following code:</string>
+    <string name="arraylist_body1">An ArrayList is empty when you first declare it. You may have also noticed
+        that the first letter of the \"double\" type is capitalised for ArrayLists. It\'s because something called \"wrappers\"
+        need to be used for ArrayLists. To summarise, for these data types, you need to capitalise the first letter of any
+        data type you want to use, eg. \"int\" would become \"Integer\", \"double\" becomes \"Double\", \"string\"
+        becomes \"String\" etc. To add values, use the following:\n\nvalues.add(14);\n\n\"14\" is then added at the bottom of
+        the list (In this case, with the empty list, the position will be 0). To add a value at a certain position, you\'d
+        use:\n\nvalues.add(4, 57);\n\nWhich would add \"57\" at index 4. If a value already exists at that position, it
+        would be pushed to position 5, with the value at position 5 being pushed to position 6 etc.\n\nTo get a value at a certain
+        position, use:\n\nvalues.get(4);\n\nWhich returns the value at position 4. To overwrite a value at a certain position, use:\n\n
+        values.set(2, 32);\n\nWhich, in this case, overwrites position 2 with the value \"32\".\n\nFinally, to remove values,
+        use:\n\nvalues.remove(3);\n\nWhich removes the value stored at position 3. When removing, all values stored after
+        that position automatically move up one position, eg. from position 5 to position 4.\n\nFinally, wth arrays, you can
+        find the length of the array by using .length(). With ArrayLists, you can find the length by using .size().\n\n\n</string>
+    <string name="java_quiz_32">How would you declare an ArrayList of type String?\n\n1. ArrayList&lt;String&gt; cars =
+    new ArrayList&lt;String&gt;();\n2. ArrayList&lt;string&gt; cars = new ArrayList&lt;string&gt;();\n3. arraylist&lt;String&gt;
+        cars = new arraylist&lt;String&gt;();</string>
+    <string name="java_quiz_32_answer1">1</string>
+    <string name="java_quiz_32_answer2">2</string>
+    <string name="java_quiz_32_answer3">3</string>
+    <string name="java_quiz_33">How would you declare an ArrayList of type String?\n\n1. ArrayList&lt;String&gt; cars =
+    new ArrayList&lt;String&gt;();\n2. ArrayList&lt;string&gt; cars = new ArrayList&lt;string&gt;();\n3. arraylist&lt;String&gt;
+        cars = new arraylist&lt;String&gt;();</string>
+    <string name="java_quiz_33_answer1">1</string>
+    <string name="java_quiz_33_answer2">2</string>
+    <string name="java_quiz_33_answer3">3</string>
+    <string name="java_quiz_34">How would you declare an ArrayList of type String?\n\n1. ArrayList&lt;String&gt; cars =
+    new ArrayList&lt;String&gt;();\n2. ArrayList&lt;string&gt; cars = new ArrayList&lt;string&gt;();\n3. arraylist&lt;String&gt;
+        cars = new arraylist&lt;String&gt;();</string>
+    <string name="java_quiz_34_answer1">1</string>
+    <string name="java_quiz_34_answer2">2</string>
+    <string name="java_quiz_34_answer3">3</string>
+    <string name="java_quiz_35">How would you declare an ArrayList of type String?\n\n1. ArrayList&lt;String&gt; cars =
+    new ArrayList&lt;String&gt;();\n2. ArrayList&lt;string&gt; cars = new ArrayList&lt;string&gt;();\n3. arraylist&lt;String&gt;
+        cars = new arraylist&lt;String&gt;();</string>
+    <string name="java_quiz_35_answer1">1</string>
+    <string name="java_quiz_35_answer2">2</string>
+    <string name="java_quiz_35_answer3">3</string>
+    <string name="java_quiz_36">How would you declare an ArrayList of type String?\n\n1. ArrayList&lt;String&gt; cars =
+    new ArrayList&lt;String&gt;();\n2. ArrayList&lt;string&gt; cars = new ArrayList&lt;string&gt;();\n3. arraylist&lt;String&gt;
+        cars = new arraylist&lt;String&gt;();</string>
+    <string name="java_quiz_36_answer1">1</string>
+    <string name="java_quiz_36_answer2">2</string>
+    <string name="java_quiz_36_answer3">3</string>
+    <string name="java_quiz_37">How would you declare an ArrayList of type String?\n\n1. ArrayList&lt;String&gt; cars =
+    new ArrayList&lt;String&gt;();\n2. ArrayList&lt;string&gt; cars = new ArrayList&lt;string&gt;();\n3. arraylist&lt;String&gt;
+        cars = new arraylist&lt;String&gt;();</string>
+    <string name="java_quiz_37_answer1">1</string>
+    <string name="java_quiz_37_answer2">2</string>
+    <string name="java_quiz_37_answer3">3</string>
+    <string name="java_quiz_38">How would you declare an ArrayList of type String?\n\n1. ArrayList&lt;String&gt; cars =
+    new ArrayList&lt;String&gt;();\n2. ArrayList&lt;string&gt; cars = new ArrayList&lt;string&gt;();\n3. arraylist&lt;String&gt;
+        cars = new arraylist&lt;String&gt;();</string>
+    <string name="java_quiz_38_answer1">1</string>
+    <string name="java_quiz_38_answer2">2</string>
+    <string name="java_quiz_38_answer3">3</string>
+    <string name="classes_text">7.1 What are classes and Objects?</string>
+    <string name="classes_body">We learned back in section one that Classes can be seen as the blueprints for something,
+        for example a Person. A Person can have different physical traits and perform different skills and actions so you would
+        program this into the class. In this example, it would be called the \"Person class\" and the name of the class
+        would be \"Person\".\n\nClasses can consist of variables, methods and other elements such as constructors. The variables
+        would be declared at the beginning of the class and will be those that you intend to use throughout the class. You\'ll
+        then have the constructors after the variables and then the methods.\n\nConstructors are used to initialise the variables
+        you declared with initial values. The methods you\'ll declare afterwards could be thought of as actions that you\'d
+        want any objects to carry out.\n\nOnce you\'ve made these blueprints, you can create something called Objects from
+        them which you can use to do things with. You can have many Objects of the same class communicating with one
+        another or even between different objects made from different classes.\n\n\n</string>
+    <string name="declare_class_text">7.1.1 How do you create classes?</string>
+    <string name="declare_class_body">The basic structure of a class is as follows:</string>
+    <string name="declare_class_body1">From left to right, the example above shows a public class being
+        declared. \n\n\n</string>
+    <string name="arraylist_text">7.2 Arraylists</string>
+    <string name="arraylist_body">When </string>
+    <string name="arraylist_body1">An ArrayList is empty when you first declare it. You may have also noticed
+        that the first letter of the \"doub\n\n\n</string>
+    <string name="arraylist_text">7.3 Arraylists</string>
+    <string name="arraylist_body">When </string>
+    <string name="arraylist_body1">An ArrayList is empty when you first declare it. You may have also noticed
+        that the first letter of the \"doub\n\n\n</string>
+    <string name="arraylist_text">7.4 Arraylists</string>
+    <string name="arraylist_body">When </string>
+    <string name="arraylist_body1">An ArrayList is empty when you first declare it. You may have also noticed
+        that the first letter of the \"doub\n\n\n</string>
 </resources>

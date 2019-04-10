@@ -19,7 +19,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".JavaProgramQuiz32"></activity>
+        <activity android:name=".JavaSevenPointOnePointOne"></activity>
+        <activity android:name=".JavaProgramQuiz38" />
+        <activity android:name=".JavaProgramQuiz37" />
+        <activity android:name=".JavaProgramQuiz36" />
+        <activity android:name=".JavaProgramQuiz35" />
+        <activity android:name=".JavaProgramQuiz34" />
+        <activity android:name=".JavaProgramQuiz33" />
+        <activity android:name=".JavaProgramQuiz32" />
         <activity android:name=".JavaProgramQuiz30" />
         <activity android:name=".JavaProgramQuiz31" />
         <activity android:name=".JavaProgramQuiz29" />

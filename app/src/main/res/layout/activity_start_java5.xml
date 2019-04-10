@@ -58,7 +58,7 @@
             android:layout_below="@id/what_are_loops"
             android:layout_marginTop="16dp"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/j5c"
+            android:src="@drawable/j5b"
             android:onClick="startMethodsSection"/>
 
         <ImageView
@@ -67,8 +67,7 @@
             android:layout_height="200dp"
             android:layout_below="@id/what_are_methods"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/j6b"
-            android:onClick="startArraysSection"/>
+            android:src="@drawable/j6a" />
 
         <ImageView
             android:id="@+id/what_are_classes"

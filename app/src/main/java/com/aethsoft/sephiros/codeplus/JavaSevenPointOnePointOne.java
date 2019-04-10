@@ -6,21 +6,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class JavaSixPointFive extends AppCompatActivity {
+public class JavaSevenPointOnePointOne extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_java_six_point_five);
+        setContentView(R.layout.activity_java_seven_point_one_point_one);
     }
 
-    public void javaProgramQuiz32(View view) {
+    public void javaSevenPointOnePointTwo(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("topic6save", "quiz32");
+        editor.putString("save", "JavaSevenPointOnePointTwo");
         editor.commit();
 
-        Intent intent = new Intent(this, JavaProgramQuiz32.class);
+        Intent intent = new Intent(this, JavaSevenPointOnePointTwo.class);
         startActivity(intent);
     }
 }
