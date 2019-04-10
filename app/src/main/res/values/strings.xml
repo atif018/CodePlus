@@ -615,7 +615,23 @@
     <string name="declare_class_text">7.1.1 How do you create classes?</string>
     <string name="declare_class_body">The basic structure of a class is as follows:</string>
     <string name="declare_class_body1">From left to right, the example above shows a public class being
-        declared. \n\n\n</string>
+        declared. The name of the class is \"Person\". The example also shows where you would place any variables,
+        constructors and methods.\n\n\n</string>
+    <string name="declare_variables_text">7.1.2 Adding variables to classes</string>
+    <string name="declare_variables_body">To add variables, you would add them as follows:</string>
+    <string name="declare_variables_body1">Any declaration of variables in classes (Called instance variables) should
+        be private and that can be done by using the \"private\" keyword before declaring the variable. Variables and
+        methods can be \"private\", \"public\" or \"protected\". We are using the \"private\" keyword because we
+        only want this class to be able to see it. Using no keyword, public or protected means that other classes/
+        packages/subclasses can see it but that isn\'t necessarily a good thing.\n\nAfterwards, declare the
+        variable as normal and they may be initialised at this point but it\'s recommended to let constructors
+        do so as in the next section.\n\nGenerally speaking, instance variables should be private and methods in
+        classes should be public.\n\n\n</string>
+    <string name="declare_constructor_text">7.1.3 Adding constructors to classes</string>
+    <string name="declare_constructor_body">To add a constructor, you would add one as follows:</string>
+    <string name="declare_constructor_body1">From left to right, you\'d add a public constructor and the
+        name of the constructor should match the name of the class. Inside the class, you can initialise
+        each of the instance variables that were declared earlier.\n\n\n</string>
     <string name="arraylist_text">7.2 Arraylists</string>
     <string name="arraylist_body">When </string>
     <string name="arraylist_body1">An ArrayList is empty when you first declare it. You may have also noticed
