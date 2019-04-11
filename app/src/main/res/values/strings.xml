@@ -565,42 +565,24 @@
     <string name="java_quiz_32_answer1">1</string>
     <string name="java_quiz_32_answer2">2</string>
     <string name="java_quiz_32_answer3">3</string>
-    <string name="java_quiz_33">How would you declare an ArrayList of type String?\n\n1. ArrayList&lt;String&gt; cars =
-    new ArrayList&lt;String&gt;();\n2. ArrayList&lt;string&gt; cars = new ArrayList&lt;string&gt;();\n3. arraylist&lt;String&gt;
-        cars = new arraylist&lt;String&gt;();</string>
+    <string name="java_quiz_33">What components make up a typical class?\n\n1. Instance variables, Constructors
+    and Methods\n2. Instance variables and Methods\n3. Constructors and Methods</string>
     <string name="java_quiz_33_answer1">1</string>
     <string name="java_quiz_33_answer2">2</string>
     <string name="java_quiz_33_answer3">3</string>
-    <string name="java_quiz_34">How would you declare an ArrayList of type String?\n\n1. ArrayList&lt;String&gt; cars =
-    new ArrayList&lt;String&gt;();\n2. ArrayList&lt;string&gt; cars = new ArrayList&lt;string&gt;();\n3. arraylist&lt;String&gt;
-        cars = new arraylist&lt;String&gt;();</string>
+    <string name="java_quiz_34">Suppose you wrote a new class called \"Car\" and there was a method inside
+    it with the name \"setTypeOfCar\" which took \"string type\" as its parameter. Now, assume that you created
+    a Car object named \"car\" and want to call this method to set the type of car to \"Ford\". Please select
+        the method call you would use?\n\n1. Car.type(\"Ford\");\n2. Car.setTypeOfCar(\"Ford\");\n3. car.setTypeOfCar
+    (\"Ford\");</string>
     <string name="java_quiz_34_answer1">1</string>
     <string name="java_quiz_34_answer2">2</string>
     <string name="java_quiz_34_answer3">3</string>
-    <string name="java_quiz_35">How would you declare an ArrayList of type String?\n\n1. ArrayList&lt;String&gt; cars =
-    new ArrayList&lt;String&gt;();\n2. ArrayList&lt;string&gt; cars = new ArrayList&lt;string&gt;();\n3. arraylist&lt;String&gt;
-        cars = new arraylist&lt;String&gt;();</string>
-    <string name="java_quiz_35_answer1">1</string>
-    <string name="java_quiz_35_answer2">2</string>
-    <string name="java_quiz_35_answer3">3</string>
-    <string name="java_quiz_36">How would you declare an ArrayList of type String?\n\n1. ArrayList&lt;String&gt; cars =
-    new ArrayList&lt;String&gt;();\n2. ArrayList&lt;string&gt; cars = new ArrayList&lt;string&gt;();\n3. arraylist&lt;String&gt;
-        cars = new arraylist&lt;String&gt;();</string>
-    <string name="java_quiz_36_answer1">1</string>
-    <string name="java_quiz_36_answer2">2</string>
-    <string name="java_quiz_36_answer3">3</string>
-    <string name="java_quiz_37">How would you declare an ArrayList of type String?\n\n1. ArrayList&lt;String&gt; cars =
-    new ArrayList&lt;String&gt;();\n2. ArrayList&lt;string&gt; cars = new ArrayList&lt;string&gt;();\n3. arraylist&lt;String&gt;
-        cars = new arraylist&lt;String&gt;();</string>
-    <string name="java_quiz_37_answer1">1</string>
-    <string name="java_quiz_37_answer2">2</string>
-    <string name="java_quiz_37_answer3">3</string>
-    <string name="java_quiz_38">How would you declare an ArrayList of type String?\n\n1. ArrayList&lt;String&gt; cars =
-    new ArrayList&lt;String&gt;();\n2. ArrayList&lt;string&gt; cars = new ArrayList&lt;string&gt;();\n3. arraylist&lt;String&gt;
-        cars = new arraylist&lt;String&gt;();</string>
-    <string name="java_quiz_38_answer1">1</string>
-    <string name="java_quiz_38_answer2">2</string>
-    <string name="java_quiz_38_answer3">3</string>
+    <string name="java_quiz_35">Please complete the following:\n\nSubclasses _____ instance variables
+    and methods from their superclass</string>
+    <string name="java_quiz_35_answer1">Do not inherit</string>
+    <string name="java_quiz_35_answer2">Inherit</string>
+    <string name="java_quiz_35_answer3">Read</string>
     <string name="classes_text">7.1 What are classes and Objects?</string>
     <string name="classes_body">We learned back in section one that Classes can be seen as the blueprints for something,
         for example a Person. A Person can have different physical traits and perform different skills and actions so you would
@@ -631,17 +613,51 @@
     <string name="declare_constructor_body">To add a constructor, you would add one as follows:</string>
     <string name="declare_constructor_body1">From left to right, you\'d add a public constructor and the
         name of the constructor should match the name of the class. Inside the class, you can initialise
-        each of the instance variables that were declared earlier.\n\n\n</string>
-    <string name="arraylist_text">7.2 Arraylists</string>
-    <string name="arraylist_body">When </string>
-    <string name="arraylist_body1">An ArrayList is empty when you first declare it. You may have also noticed
-        that the first letter of the \"doub\n\n\n</string>
-    <string name="arraylist_text">7.3 Arraylists</string>
-    <string name="arraylist_body">When </string>
-    <string name="arraylist_body1">An ArrayList is empty when you first declare it. You may have also noticed
-        that the first letter of the \"doub\n\n\n</string>
-    <string name="arraylist_text">7.4 Arraylists</string>
-    <string name="arraylist_body">When </string>
-    <string name="arraylist_body1">An ArrayList is empty when you first declare it. You may have also noticed
-        that the first letter of the \"doub\n\n\n</string>
+        each of the instance variables that were declared earlier. In this example, both strings have been
+        initialised as empty strings using \"\" and the variable \"age\" has been initialised with a value
+        of 0.\n\n\n</string>
+    <string name="declare_method_text">7.1.4 Adding methods to classes</string>
+    <string name="declare_method_body">To add a method, you would add them as follows:</string>
+    <string name="declare_method_body1">The structure of the method uses the same format as the ones you
+        learned about in Section 5 but you need to remove the \"static\" part in the method header. Methods
+        should be public rather than private so they can be used by everyone, including other programmers and objects.
+        \n\nIn the first method, a parameter is passed to it as \"ageOfPerson\". Inside the method for this example,
+        the instance variable for the class takes on and stores the value for ageOfPerson when this method is
+        called.\n\n\"void\" simply means that nothing is returned to the method caller.\n\n\n</string>
+    <string name="objects_text">7.2 Declaring Objects</string>
+    <string name="objects_body">Now that you know how to program classes, you can now learn how to
+    create Objects. Basically, objects are classes brought to life which you can use to perform
+    actions. They can be changed and modified as well with new values and you can create multiple
+    objects of the same class if you wanted to.\n\nWe\'ll now create a Person object using the Person
+    class that was shown in the previous section:\n\nPerson mike = new Person();\n\nThe above statement is
+        saying that, using the Person class, we want to create a new person named \"mike\". Now that \"mike\"
+    has been constructed as an object, we can change mike and his behaviour by accessing any methods that
+    mike has. For example, if we wanted to say that mike is 36 years old, we\'d do the following:\n\nmike.
+    addAge(36);\n\nWhat we are saying is that we want to access the \"addAge\" method in the mike object and
+    sending \"36\" as the parameter to it. The method would alter the objects \"age\" instance variable to 36.\n\n\n</string>
+    <string name="objects1_text">7.2.1 Declaring Objects (Continued)</string>
+    <string name="objects1_body">
+        You must ensure that what you are sending to a method matches the type of parameters that it accepts.\n\n
+    You can have all kinds of methods within a class. Some methods will return the instance variable back to their
+    original values, some will keep a running total and some will return a value back to the method caller. Suppose
+    we had a method that started something like this:\n\npublic int getAge() {\n return age;\n}\n\nAnd used the following
+    method caller:\n\nint myAge = mike.getAge();\n\nThe statement is saying that you want to access the mike object,
+    access the \"getAge\" method and store the result in a newly declared variable called \"myAge\".\n\n\n</string>
+    <string name="subclasses_text">7.3 What are subclasses?</string>
+    <string name="subclasses_body">Let\'s assume that you\'ve already created a \"vehicle\" class. This Vehicle
+    class contains instance variables, constructors and methods that describe all types of Vehicles. Now, suppose that
+    we wanted to extend that class into a class that specially describes, for example, a car. This is where subclasses
+    come in.\n\nSubclasses extend a class into something more specific. Subclasses also inherit all the instance variables
+    and methods of the main class (Called the superclass when dealing with subclasses). However, something important to
+    remember is that, even though subclasses inherit variables and methods, they do NOT inherit existing values or anything
+    else.</string>
+    <string name="subclasses_body1">The \"extends\" keyword means that the subclass is inheriting from the
+        superclass. You don\'t declare the same instance or variables in the superclass again in the subclass since they were
+    already inherited and can be used. Only any new instance variables or methods not in the superclass are declared
+    in the subclass which you can use. To create an object using the subclass, you\'d use the same method as creating an
+    object for any other class except, this time, using the name of the subclass. \n\n\n</string>
+    <string name="java_complete_body">We hope that this course successfully taught you the fundamentals
+    of Java and also ignited a desire in you to learn more about this popular language. If you haven\'t
+    already done so, we encourage you to take the other courses available through this app to learn more
+    languages.\n\nIn the meantime, we thank you for choosing to learn how to program with Code+.\n\n</string>
 </resources>

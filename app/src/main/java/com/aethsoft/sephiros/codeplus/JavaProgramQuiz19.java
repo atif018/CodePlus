@@ -39,7 +39,7 @@ public class JavaProgramQuiz19 extends AppCompatActivity {
     public void javaFourPointThree() {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("topic4save", "fourthree");
+        editor.putString("save", "JavaFourPointThree");
         editor.commit();
 
         Intent intent = new Intent(this, JavaFourPointThree.class);

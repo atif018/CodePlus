@@ -15,6 +15,10 @@ public class JavaTwoPointOnePointThree extends AppCompatActivity {
     }
 
     public void javaTwoPointOnePointThree(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString("save", "JavaProgramQuiz7");
+        editor.commit();
 
         Intent intent = new Intent(this, JavaProgramQuiz7.class);
         startActivity(intent);

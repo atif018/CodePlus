@@ -39,7 +39,7 @@ public class JavaProgramQuiz23 extends AppCompatActivity {
     public void javaFivePointThree() {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("topic5save", "fivethree");
+        editor.putString("save", "JavaFivePointThree");
         editor.commit();
 
         Intent intent = new Intent(this, JavaFivePointThree.class);

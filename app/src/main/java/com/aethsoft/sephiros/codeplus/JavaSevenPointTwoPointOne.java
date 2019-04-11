@@ -6,21 +6,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class JavaTwoPointOnePointOne extends AppCompatActivity {
+public class JavaSevenPointTwoPointOne extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_java_two_point_one_point_one);
+        setContentView(R.layout.activity_java_seven_point_two_point_one);
     }
 
-    public void javaTwoPointOnePointTwo(View view) {
+    public void javaProgramQuiz34(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("save", "JavaTwoPointOnePointTwo");
+        editor.putString("save", "JavaProgramQuiz34");
         editor.commit();
 
-        Intent intent = new Intent(this, JavaTwoPointOnePointTwo.class);
+        Intent intent = new Intent(this, JavaProgramQuiz34.class);
         startActivity(intent);
     }
 }

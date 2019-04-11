@@ -17,7 +17,7 @@ public class JavaSixPointFive extends AppCompatActivity {
     public void javaProgramQuiz32(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("topic6save", "quiz32");
+        editor.putString("save", "JavaProgramQuiz32");
         editor.commit();
 
         Intent intent = new Intent(this, JavaProgramQuiz32.class);

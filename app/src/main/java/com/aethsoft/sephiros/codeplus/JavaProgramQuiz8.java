@@ -43,13 +43,15 @@ public class JavaProgramQuiz8 extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         int srStatus = sharedPref.getInt("JavaSRActivate", -1);
-        editor.putString("topic2save", "SR6");
-        editor.commit();
 
         if (srStatus == 1) {
             intent = new Intent(this, JavaTwoSR2.class);
+            editor.putString("save", "JavaTwoSR2");
+            editor.commit();
         } else {
             intent = new Intent(this, JavaTwoPointThree.class);
+            editor.putString("save", "JavaTwoPointThree");
+            editor.commit();
         }
         startActivity(intent);
     }

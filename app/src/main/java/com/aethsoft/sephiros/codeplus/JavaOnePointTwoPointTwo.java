@@ -17,7 +17,7 @@ public class JavaOnePointTwoPointTwo extends AppCompatActivity {
     public void javaOnePointTwoPointThree(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("topic1save", "onetwothree");
+        editor.putString("save", "JavaOnePointTwoPointThree");
         editor.commit();
 
         Intent intent = new Intent(this, JavaOnePointTwoPointThree.class);

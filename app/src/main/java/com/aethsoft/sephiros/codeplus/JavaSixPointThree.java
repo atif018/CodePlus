@@ -19,7 +19,7 @@ public class JavaSixPointThree extends AppCompatActivity {
     public void javaProgramQuiz30(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("topic6save", "quiz30");
+        editor.putString("save", "JavaProgramQuiz30");
         editor.commit();
 
         Intent intent = new Intent(this, JavaProgramQuiz30.class);

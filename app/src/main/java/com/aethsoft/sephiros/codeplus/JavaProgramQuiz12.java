@@ -43,13 +43,15 @@ public class JavaProgramQuiz12 extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         int srStatus = sharedPref.getInt("JavaSRActivate", -1);
-        editor.putString("topic2save", null);
-        editor.commit();
 
         if (srStatus == 1) {
             intent = new Intent(this, JavaTwoSR3.class);
+            editor.putString("save", "JavaTwoSR3");
+            editor.commit();
         } else {
             intent = new Intent(this, StartJava3.class);
+            editor.putString("save", "StartJava3");
+            editor.commit();
         }
         startActivity(intent);
     }

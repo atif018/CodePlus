@@ -43,13 +43,15 @@ public class JavaProgramQuiz4 extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         int srStatus = sharedPref.getInt("JavaSRActivate", -1);
-        editor.putString("topic1save", "onefour");
-        editor.commit();
 
         if (srStatus == 1) {
             intent = new Intent(this, JavaOneSR3.class);
+            editor.putString("save", "JavaOneSR3");
+            editor.commit();
         } else {
             intent = new Intent(this, JavaOnePointFour.class);
+            editor.putString("save", "JavaOnePointFour");
+            editor.commit();
         }
         startActivity(intent);
     }

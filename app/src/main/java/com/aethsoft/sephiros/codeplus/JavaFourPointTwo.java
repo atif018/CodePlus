@@ -19,7 +19,7 @@ public class JavaFourPointTwo extends AppCompatActivity {
     public void javaProgramQuiz19(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("topic4save", "quiz19");
+        editor.putString("save", "JavaProgramQuiz19");
         editor.commit();
 
         Intent intent = new Intent(this, JavaProgramQuiz19.class);

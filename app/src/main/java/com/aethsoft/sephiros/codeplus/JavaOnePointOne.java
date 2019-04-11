@@ -20,13 +20,15 @@ public class JavaOnePointOne extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         int srStatus = sharedPref.getInt("JavaSRActivate", -1);
-        editor.putString("topic1save", "onetwo");
-        editor.commit();
 
         if (srStatus == 1) {
             intent = new Intent(this, JavaOneSR1.class);
+            editor.putString("save", "JavaOneSR1");
+            editor.commit();
         } else {
             intent = new Intent(this, JavaOnePointTwo.class);
+            editor.putString("save", "JavaOnePointTwo");
+            editor.commit();
         }
         startActivity(intent);
     }

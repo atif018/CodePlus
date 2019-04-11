@@ -23,7 +23,7 @@ public class JavaOnePointFour extends AppCompatActivity {
     public void javaProgramQuiz2(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("topic1save", "onequiztwo");
+        editor.putString("save", "JavaProgramQuiz2");
         editor.commit();
 
         getSR1 = getSR1 - 1;
