@@ -32,6 +32,7 @@
         android:layout_centerHorizontal="true"
         android:text="@string/select_python"
         android:layout_below="@id/java_button"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:onClick="startPythonActivity"/>
 
 </RelativeLayout>

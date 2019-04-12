@@ -58,6 +58,8 @@
     called a String. We\'ll learn more about Strings later.\n\n\n</string>
     <string name="go_to_next">Continue</string>
     <string name="go_to_quiz">Quiz!</string>
+    <string name="text_public">public</string>
+    <string name="text_helloworld">HelloWorld</string>
     <string name="possible_answers">Possible answers: </string>
     <string name="java_quiz_1">How many public classes can a Java Source File have?</string>
     <string name="java_quiz_1_answer1">One</string>
@@ -67,12 +69,47 @@
     <string name="java_quiz_2_answer1">String</string>
     <string name="java_quiz_2_answer2">Main</string>
     <string name="java_quiz_2_answer3">Class</string>
-    <string name="text_public">public</string>
-    <string name="text_helloworld">HelloWorld</string>
     <string name="java_quiz_3">What kind of Method must every Java program have?</string>
     <string name="java_quiz_3_answer1">Class</string>
     <string name="java_quiz_3_answer2">Println</string>
     <string name="java_quiz_3_answer3">Main</string>
+    <string name="java_quiz_4">What should you design prior to starting any programming?</string>
+    <string name="java_quiz_4_answer1">Class</string>
+    <string name="java_quiz_4_answer2">Algorithm</string>
+    <string name="java_quiz_4_answer3">Method</string>
+    <string name="java_quiz_5">What should you always place after any declaration of a Class or Method?</string>
+    <string name="java_quiz_5_answer1">Brackets</string>
+    <string name="java_quiz_5_answer2">Braces</string>
+    <string name="java_quiz_5_answer3">Parentheses</string>
+    <string name="java_quiz_6">Please complete the following:</string>
+    <string name="java_quiz_6_answer1">Println</string>
+    <string name="java_quiz_6_answer2">Class</string>
+    <string name="java_quiz_6_answer3">Object</string>
+    <string name="java_quiz_7">Please complete the following:</string>
+    <string name="java_quiz_7_answer1">Double</string>
+    <string name="java_quiz_7_answer2">String</string>
+    <string name="java_quiz_7_answer3">double</string>
+    <string name="java_quiz_8">If you saw \"quantity++\" in some Java code, what does it mean?</string>
+    <string name="java_quiz_8_answer1">Add twice</string>
+    <string name="java_quiz_8_answer2">Increment</string>
+    <string name="java_quiz_8_answer3">Decrement</string>
+    <string name="java_quiz_9">When using the method charAt, what does .charAt(4) return in the string \"Jasmine\"?</string>
+    <string name="java_quiz_9_answer1">n</string>
+    <string name="java_quiz_9_answer2">m</string>
+    <string name="java_quiz_9_answer3">i</string>
+    <string name="java_quiz_10">What number type is the number \"43.564\"?</string>
+    <string name="java_quiz_10_answer1">int</string>
+    <string name="java_quiz_10_answer2">double</string>
+    <string name="java_quiz_10_answer3">short</string>
+    <string name="java_quiz_11">Please complete the following:</string>
+    <string name="java_quiz_11_answer1">long</string>
+    <string name="java_quiz_11_answer2">Integer</string>
+    <string name="java_quiz_11_answer3">string</string>
+    <string name="java_quiz_12">What is the term used to describe variable names that start with a
+    lower-case letter or underscore and capitalise every subsequent word, eg. \"numberOfCars\"?</string>
+    <string name="java_quiz_12_answer1">Camelcase</string>
+    <string name="java_quiz_12_answer2">Reserved</string>
+    <string name="java_quiz_12_answer3">Objects</string>
     <string name="java_pseudocode">1.3 The importance of Pseudocode and Algorithms</string>
     <string name="java_pseudocode_body">Before beginning any programming, it is good practice to break
     a problem down into a series of steps using simple language. For example, let\'s assume that you
@@ -88,10 +125,6 @@
     and exactly how to achieve that goal. This process can be called \"Pseudocode\" or, as it\'s more
     commonly known, an \"Algorithm\". An Algorithm needs to be easy to understand and you should be
     able to program it into a computer.\n\n\n</string>
-    <string name="java_quiz_4">What should you design prior to starting any programming?</string>
-    <string name="java_quiz_4_answer1">Class</string>
-    <string name="java_quiz_4_answer2">Algorithm</string>
-    <string name="java_quiz_4_answer3">Method</string>
     <string name="java_structure">1.4 The importance of practicing your programming skills</string>
     <string name="java_structure_body">Java programs typically consist of classes, methods, a main method,
     objects, interfaces, arrays, variables and many other components including a rich library. So how would
@@ -104,14 +137,6 @@
         but there are others that those new to programming can use including \"Alice\" and another called
         \"Scratch\".\n\n\n</string>
     <string name="go_to_end_quiz">End of Chapter Quiz!</string>
-    <string name="java_quiz_5">What should you always place after any declaration of a Class or Method?</string>
-    <string name="java_quiz_5_answer1">Brackets</string>
-    <string name="java_quiz_5_answer2">Braces</string>
-    <string name="java_quiz_5_answer3">Parentheses</string>
-    <string name="java_quiz_6">Please complete the following:</string>
-    <string name="java_quiz_6_answer1">Println</string>
-    <string name="java_quiz_6_answer2">Class</string>
-    <string name="java_quiz_6_answer3">Object</string>
     <string name="text_statement">System.out.</string>
     <string name="text_argument">(\"Hello, World!\");</string>
     <string name="sr_text">How difficult was this topic for you?</string>
@@ -153,7 +178,7 @@
     integers between about -2 billion to +2 billion.\n\n\"double\" - Double values are numbers which are
     fractional such as \"3.55\", \"4293.493762\" or \"3048723.736254224\".\n\n\"short\" - A short integer
     where the value is between around -32,000 to +32,000. \n\n\"long\" - A long integer where it can store
-        values bigger than the standard int type.\n\n\There's also a \"byte\", \"float\" and \"char\" types.\n</string>
+        values bigger than the standard int type.\n\n\There\'s also a \"byte\", \"float\" and \"char\" types.\n</string>
     <string name="types_variable_body1">Let\'s say that you wanted to store \"4\" in \"numberOfApples\",
     then you would initialise the variable with \"4\". If you wanted to store \"Hello\" in a variable called
     \"greeting\", then you would initialise the variable with \"string\". You must always use the same types
@@ -171,31 +196,6 @@
     a variable. The way to do that is as follows:\n\nfinal int NUMBER_OF_APPLES = 4;\n\nUsing \"final\" keeps the value
     at 4 for this variable. You must use the keyword before declaring and initialising any variables, just like in the
         example above.\n\nFinally, the variable name should be in caps to make it easier when reading code.\n\n</string>
-    <string name="java_quiz_7">Please complete the following:</string>
-    <string name="java_quiz_7_answer1">Double</string>
-    <string name="java_quiz_7_answer2">String</string>
-    <string name="java_quiz_7_answer3">double</string>
-    <string name="java_quiz_8">If you saw \"quantity++\" in some Java code, what does it mean?</string>
-    <string name="java_quiz_8_answer1">Add twice</string>
-    <string name="java_quiz_8_answer2">Increment</string>
-    <string name="java_quiz_8_answer3">Decrement</string>
-    <string name="java_quiz_9">When using the method charAt, what does .charAt(4) return in the string \"Jasmine\"?</string>
-    <string name="java_quiz_9_answer1">n</string>
-    <string name="java_quiz_9_answer2">m</string>
-    <string name="java_quiz_9_answer3">i</string>
-    <string name="java_quiz_10">What number type is the number \"43.564\"?</string>
-    <string name="java_quiz_10_answer1">int</string>
-    <string name="java_quiz_10_answer2">double</string>
-    <string name="java_quiz_10_answer3">short</string>
-    <string name="java_quiz_11">Please complete the following:</string>
-    <string name="java_quiz_11_answer1">long</string>
-    <string name="java_quiz_11_answer2">Integer</string>
-    <string name="java_quiz_11_answer3">string</string>
-    <string name="java_quiz_12">What is the term used to describe variable names that start with a
-    lower-case letter or underscore and capitalise every subsequent word, eg. \"numberOfCars\"?</string>
-    <string name="java_quiz_12_answer1">Camelcase</string>
-    <string name="java_quiz_12_answer2">Reserved</string>
-    <string name="java_quiz_12_answer3">Objects</string>
     <string name="text_initialise">sumOfFractions = 3.14159265;</string>
     <string name="java_arithmetic">2.2 Arithmetic with variables</string>
     <string name="java_arithmetic_body">You can use arithmetic with different variables. Suppose we have
@@ -225,7 +225,7 @@
     is initialised and the word \"red\" is stored within it.\n\nstring colour = \"red\";\n\nA string is something
     called an \"object\" (Which you will learn more about later) and that means that it can be manipulated.
     \n\nYou can find the length of the colour string by doing the following:\n\nint colourWordLength =
-    colour.length();\n\nThe dot after \"colour\" (An object) means that you're calling a method (Which you\'ll
+    colour.length();\n\nThe dot after \"colour\" (An object) means that you\'re calling a method (Which you\'ll
         learn more about later too) and the \"length\" method allows you to find the length.\n\n\n</string>
     <string name="java_strings2">2.3.1 Using Strings 2</string>
     <string name="java_strings2_body">Strings can be something called \"concatenated\". This involves taking
@@ -385,7 +385,7 @@
     type in \"2 + 2\" and it returns \"4\". The \"2 + 2\" can be regarded as the input and the \"4\" can
     be regarded as the output. Do you need to know how the calculator does its job to get the output? No.
     You simply provide inputs and the calculator calculates the answer.\n\nIn Java, there is something called
-    a \"method\". You don't have to know how a method does its job. All someone needs to do is provide
+    a \"method\". You don\'t have to know how a method does its job. All someone needs to do is provide
     inputs to the method and it will provide an output. You can use methods that someone else has coded
     in other programs or make your own. The way to declare a method is as follows:</string>
     <string name="method_body1">- The \"public\" part denotes that the method is usable by the public. There
