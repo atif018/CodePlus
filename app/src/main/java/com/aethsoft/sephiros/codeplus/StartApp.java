@@ -15,10 +15,40 @@ public class StartApp extends AppCompatActivity {
     }
 
     public void startJavaActivity(View view) {
-        String javaTopic = "this, StartJava.class";
-        Intent intent = new Intent();
-        intent.
-        startActivity(intent);
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        String coolName = sharedPref.getString("javaTopicSave", null);
+        if (coolName != null) {
+            switch (coolName) {
+                case "StartJava2":
+                    Intent intent2 = new Intent(this, StartJava2.class);
+                    startActivity(intent2);
+                    break;
+                case "StartJava3":
+                    Intent intent3 = new Intent(this, StartJava3.class);
+                    startActivity(intent3);
+                    break;
+                case "StartJava4":
+                    Intent intent4 = new Intent(this, StartJava4.class);
+                    startActivity(intent4);
+                    break;
+                case "StartJava5":
+                    Intent intent5 = new Intent(this, StartJava5.class);
+                    startActivity(intent5);
+                    break;
+                case "StartJava6":
+                    Intent intent6 = new Intent(this, StartJava6.class);
+                    startActivity(intent6);
+                    break;
+                case "StartJava7":
+                    Intent intent7 = new Intent(this, StartJava7.class);
+                    startActivity(intent7);
+                    break;
+            }
+        }
+        else {
+            Intent intent = new Intent(this, StartJava.class);
+            startActivity(intent);
+        }
     }
 
     public void startPythonActivity(View view) {

@@ -6,6 +6,7 @@
     <string name="facebook_app_id">978526122346925</string>
     <string name="fb_login_protocol_scheme">fb978526122346925</string>
     <string name="start_app">Start!</string>
+    <string name="name_text">Otherwise please enter your first name below:</string>
     <string name="what_is_java_text">1.1 What is Java?</string>
     <string name="what_is_java_body">Java officially appeared in 1995 and, since then,
         has been widely adopted by programmers the world over. Java is one of the most widely
