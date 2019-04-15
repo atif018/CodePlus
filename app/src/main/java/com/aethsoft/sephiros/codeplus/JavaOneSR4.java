@@ -13,8 +13,6 @@ public class JavaOneSR4 extends AppCompatActivity {
     int getSR1 = sharedPref.getInt("SR1", -1);
     int getSR2 = sharedPref.getInt("SR2", -1);
     int getSR3 = sharedPref.getInt("SR3", -1);
-    int getSR4 = sharedPref.getInt("SR4", -1);
-    int getSRTopicNumber = sharedPref.getInt("endoftopic1", -1);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,39 +43,28 @@ public class JavaOneSR4 extends AppCompatActivity {
 
     public void startSR() {
         if (getSR1 <= 0) {
-            editor.putInt("endoftopic1", 1);
+            editor.putInt("endOfTopicOne", 1);
             editor.commit();
             Intent intent = new Intent(this, JavaOnePointOne.class);
             startActivity(intent);
         }
         if (getSR2 <= 0) {
-            editor.putInt("endoftopic1", 1);
+            editor.putInt("endOfTopicOne", 1);
             editor.commit();
             Intent intent = new Intent(this, JavaOnePointTwo.class);
             startActivity(intent);
         }
         if (getSR3 <= 0) {
-            editor.putInt("endoftopic1", 1);
+            editor.putInt("endOfTopicOne", 1);
             editor.commit();
             Intent intent = new Intent(this, JavaOnePointThree.class);
-            startActivity(intent);
-        }
-        if (getSR4 <= 0) {
-            editor.putInt("endoftopic1", 1);
-            editor.commit();
-            Intent intent = new Intent(this, JavaOnePointFour.class);
             startActivity(intent);
         }
     }
 
     public void setTopic1Status() {
-        if (getSRTopicNumber == 1) {
-            editor.putInt("endoftopic1", 0);
-            editor.commit();
-            Intent intent = new Intent(this, JavaOneSR4.class);
-            startActivity(intent);
-        }
         startSR();
+        editor.putString("javaSaveOne", null);
         Intent intent = new Intent(this, StartJava2.class);
         startActivity(intent);
     }

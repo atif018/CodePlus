@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class JavaProgramQuiz extends AppCompatActivity {
+
     private String answer = "one";
     Intent intent;
 
@@ -44,13 +45,12 @@ public class JavaProgramQuiz extends AppCompatActivity {
 
         if (srStatus == 1) {
             intent = new Intent(this, JavaOneSR2.class);
-            editor.putString("save", "JavaOneSR2");
-            editor.commit();
+            editor.putString("javaSaveOne", "JavaOneSR2");
         } else {
             intent = new Intent(this, JavaOnePointThree.class);
-            editor.putString("save", "JavaOnePointThree");
-            editor.commit();
+            editor.putString("javaSaveOne", "JavaOnePointThree");
         }
+        editor.commit();
         startActivity(intent);
     }
 

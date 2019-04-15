@@ -30,6 +30,7 @@ public class JavaSRQuestion extends AppCompatActivity {
     }
 
     public void startJavaOnePointOne() {
+        editor.putString("javaSaveOne", "JavaOnePointOne");
         editor.commit();
         Intent intent = new Intent(this, JavaOnePointOne.class);
         startActivity(intent);

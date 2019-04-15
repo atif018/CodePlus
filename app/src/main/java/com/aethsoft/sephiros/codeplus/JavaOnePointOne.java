@@ -23,13 +23,12 @@ public class JavaOnePointOne extends AppCompatActivity {
 
         if (srStatus == 1) {
             intent = new Intent(this, JavaOneSR1.class);
-            editor.putString("save", "JavaOneSR1");
-            editor.commit();
+            editor.putString("javaSaveOne", "JavaOneSR1");
         } else {
             intent = new Intent(this, JavaOnePointTwo.class);
-            editor.putString("save", "JavaOnePointTwo");
-            editor.commit();
+            editor.putString("javaSaveOne", "JavaOnePointTwo");
         }
+        editor.commit();
         startActivity(intent);
     }
 }

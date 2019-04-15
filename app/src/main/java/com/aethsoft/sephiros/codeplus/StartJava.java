@@ -9,8 +9,6 @@ import android.widget.Toast;
 
 public class StartJava extends AppCompatActivity {
 
-    Intent intent;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,48 +17,38 @@ public class StartJava extends AppCompatActivity {
 
     public void startJavaSection(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-        String topicOneSaves = sharedPref.getString("topic1save", null);
-        if (topicOneSaves != null) {
-            if (topicOneSaves.equals("onetwo")) {
-                intent = new Intent(this, JavaOnePointTwo.class);
-            }
-            else if (topicOneSaves.equals("onetwoone")) {
-                intent = new Intent(this, JavaOnePointTwoPointOne.class);
-            }
-            else if (topicOneSaves.equals("onetwotwo")) {
-                intent = new Intent(this, JavaOnePointTwoPointTwo.class);
-            }
-            else if (topicOneSaves.equals("onetwothree")) {
-                intent = new Intent(this, JavaOnePointTwoPointThree.class);
-            }
-            else if (topicOneSaves.equals("onethree")) {
-                intent = new Intent(this, JavaOnePointThree.class);
-            }
-            else if (topicOneSaves.equals("onefour")) {
-                intent = new Intent(this, JavaOnePointFour.class);
-            }
-            else if (topicOneSaves.equals("onequizone")) {
-                intent = new Intent(this, JavaProgramQuiz.class);
-            }
-            else if (topicOneSaves.equals("onequiztwo")) {
-                intent = new Intent(this, JavaProgramQuiz2.class);
-            }
-            else if (topicOneSaves.equals("onequizthree")) {
-                intent = new Intent(this, JavaProgramQuiz3.class);
-            }
-            else if (topicOneSaves.equals("onequizfour")) {
-                intent = new Intent(this, JavaProgramQuiz4.class);
-            }
-            else if (topicOneSaves.equals("onequizfive")) {
-                intent = new Intent(this, JavaProgramQuiz5.class);
-            }
-            else if (topicOneSaves.equals("onequizsix")) {
-                intent = new Intent(this, JavaProgramQuiz6.class);
+        String javaSaveOne = sharedPref.getString("javaSaveOne", null);
+        if (javaSaveOne != null) {
+            switch (javaSaveOne) {
+                case "StartJava2":
+                    Intent intent2 = new Intent(this, StartJava2.class);
+                    startActivity(intent2);
+                    break;
+                case "StartJava3":
+                    Intent intent3 = new Intent(this, StartJava3.class);
+                    startActivity(intent3);
+                    break;
+                case "StartJava4":
+                    Intent intent4 = new Intent(this, StartJava4.class);
+                    startActivity(intent4);
+                    break;
+                case "StartJava5":
+                    Intent intent5 = new Intent(this, StartJava5.class);
+                    startActivity(intent5);
+                    break;
+                case "StartJava6":
+                    Intent intent6 = new Intent(this, StartJava6.class);
+                    startActivity(intent6);
+                    break;
+                case "StartJava7":
+                    Intent intent7 = new Intent(this, StartJava7.class);
+                    startActivity(intent7);
+                    break;
             }
         }
         else {
-            intent = new Intent(this, JavaSRQuestion.class);
+            Intent intent = new Intent(this, JavaSRQuestion.class);
+            startActivity(intent);
         }
-        startActivity(intent);
     }
 }

@@ -10,7 +10,7 @@ public class JavaTwoSR1 extends AppCompatActivity {
 
     SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
     SharedPreferences.Editor editor = sharedPref.edit();
-    int getSRTopicNumber = sharedPref.getInt("endoftopic2", -1);
+    int getSRTopicNumber = sharedPref.getInt("endOfTopicTwo", -1);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,11 +41,12 @@ public class JavaTwoSR1 extends AppCompatActivity {
 
     public void setTopic2Status() {
         if (getSRTopicNumber == 1) {
-            editor.putInt("endoftopic2", 0);
+            editor.putInt("endOfTopicTwo", 0);
             editor.commit();
             Intent intent = new Intent(this, JavaTwoSR3.class);
             startActivity(intent);
         }
+        editor.putString("javaSaveTwo", "JavaTwoPointTwo");
         Intent intent = new Intent(this, JavaTwoPointTwo.class);
         startActivity(intent);
     }

@@ -8,8 +8,6 @@ import android.view.View;
 
 public class JavaTwoPointOne extends AppCompatActivity {
 
-    Intent intent;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +17,7 @@ public class JavaTwoPointOne extends AppCompatActivity {
     public void javaTwoPointOnePointOne(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("save", "JavaTwoPointOnePointOne");
+        editor.putString("javaSaveTwo", "JavaTwoPointOnePointOne");
         editor.commit();
 
         Intent intent = new Intent(this, JavaTwoPointOnePointOne.class);

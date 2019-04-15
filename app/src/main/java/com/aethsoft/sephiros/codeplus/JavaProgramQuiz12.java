@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class JavaProgramQuiz12 extends AppCompatActivity {
 
+    SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
     private String answer = "camelcase";
     Intent intent;
 
@@ -40,19 +41,18 @@ public class JavaProgramQuiz12 extends AppCompatActivity {
     }
 
     public void javaTwoSR3() {
-        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+
         SharedPreferences.Editor editor = sharedPref.edit();
         int srStatus = sharedPref.getInt("JavaSRActivate", -1);
 
         if (srStatus == 1) {
             intent = new Intent(this, JavaTwoSR3.class);
-            editor.putString("save", "JavaTwoSR3");
-            editor.commit();
+            editor.putString("javaSaveTwo", "JavaTwoSR3");
         } else {
             intent = new Intent(this, StartJava3.class);
-            editor.putString("save", "StartJava3");
-            editor.commit();
+            editor.putString("javaSaveTwo", null);
         }
+        editor.commit();
         startActivity(intent);
     }
 }

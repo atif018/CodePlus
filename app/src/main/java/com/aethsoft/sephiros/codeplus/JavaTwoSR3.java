@@ -14,7 +14,8 @@ public class JavaTwoSR3 extends AppCompatActivity {
     int getSR2 = sharedPref.getInt("SR2", -1);
     int getSR3 = sharedPref.getInt("SR3", -1);
     int getSR4 = sharedPref.getInt("SR4", -1);
-    int getSRTopicNumber = sharedPref.getInt("endoftopic1", -1);
+    int getSR5 = sharedPref.getInt("SR5", -1);
+    int getSR6 = sharedPref.getInt("SR6", -1);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,21 +24,21 @@ public class JavaTwoSR3 extends AppCompatActivity {
     }
 
     public void javaStartJava3A(View view) {
-        editor.putInt("SR4", 11);
+        editor.putInt("SR7", 11);
         editor.commit();
 
         setTopic2Status();
     }
 
     public void javaStartJava3B(View view) {
-        editor.putInt("SR4", 7);
+        editor.putInt("SR7", 7);
         editor.commit();
 
         setTopic2Status();
     }
 
     public void javaStartJava3C(View view) {
-        editor.putInt("SR4", 3);
+        editor.putInt("SR7", 3);
         editor.commit();
 
         setTopic2Status();
@@ -45,39 +46,46 @@ public class JavaTwoSR3 extends AppCompatActivity {
 
     public void startSR() {
         if (getSR1 <= 0) {
-            editor.putInt("endoftopic1", 1);
+            editor.putInt("endOfTopicTwo", 1);
             editor.commit();
             Intent intent = new Intent(this, JavaOnePointOne.class);
             startActivity(intent);
         }
         if (getSR2 <= 0) {
-            editor.putInt("endoftopic1", 1);
+            editor.putInt("endOfTopicTwo", 1);
             editor.commit();
             Intent intent = new Intent(this, JavaOnePointTwo.class);
             startActivity(intent);
         }
         if (getSR3 <= 0) {
-            editor.putInt("endoftopic1", 1);
+            editor.putInt("endOfTopicTwo", 1);
             editor.commit();
             Intent intent = new Intent(this, JavaOnePointThree.class);
             startActivity(intent);
         }
         if (getSR4 <= 0) {
-            editor.putInt("endoftopic1", 1);
+            editor.putInt("endOfTopicTwo", 1);
             editor.commit();
             Intent intent = new Intent(this, JavaOnePointFour.class);
+            startActivity(intent);
+        }
+        if (getSR5 <= 0) {
+            editor.putInt("endOfTopicTwo", 1);
+            editor.commit();
+            Intent intent = new Intent(this, JavaTwoPointOne.class);
+            startActivity(intent);
+        }
+        if (getSR6 <= 0) {
+            editor.putInt("endOfTopicTwo", 1);
+            editor.commit();
+            Intent intent = new Intent(this, JavaTwoPointTwo.class);
             startActivity(intent);
         }
     }
 
     public void setTopic2Status() {
-        if (getSRTopicNumber == 1) {
-            editor.putInt("endoftopic2", 0);
-            editor.commit();
-            Intent intent = new Intent(this, JavaTwoSR3.class);
-            startActivity(intent);
-        }
         startSR();
+        editor.putString("javaSaveTwo", null);
         Intent intent = new Intent(this, StartJava3.class);
         startActivity(intent);
     }

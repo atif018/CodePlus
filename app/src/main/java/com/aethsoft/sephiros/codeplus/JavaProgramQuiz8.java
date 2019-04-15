@@ -46,13 +46,12 @@ public class JavaProgramQuiz8 extends AppCompatActivity {
 
         if (srStatus == 1) {
             intent = new Intent(this, JavaTwoSR2.class);
-            editor.putString("save", "JavaTwoSR2");
-            editor.commit();
+            editor.putString("javaSaveTwo", "JavaTwoSR2");
         } else {
             intent = new Intent(this, JavaTwoPointThree.class);
-            editor.putString("save", "JavaTwoPointThree");
-            editor.commit();
+            editor.putString("javaSaveTwo", "JavaTwoPointThree");
         }
+        editor.commit();
         startActivity(intent);
     }
 }

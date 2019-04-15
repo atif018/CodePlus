@@ -10,7 +10,7 @@ public class JavaOneSR1 extends AppCompatActivity {
 
     SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
     SharedPreferences.Editor editor = sharedPref.edit();
-    int getSRTopicNumber = sharedPref.getInt("endoftopic1", -1);
+    int getSRTopicNumber = sharedPref.getInt("endOfTopicOne", -1);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,30 +22,31 @@ public class JavaOneSR1 extends AppCompatActivity {
         editor.putInt("SR1", 11);
         editor.commit();
 
-        setTopic1Status();
+        setTopicOneStatus();
     }
 
     public void javaOnePointTwoB(View view) {
         editor.putInt("SR1", 7);
         editor.commit();
 
-        setTopic1Status();
+        setTopicOneStatus();
     }
 
     public void javaOnePointTwoC(View view) {
         editor.putInt("SR1", 3);
         editor.commit();
 
-        setTopic1Status();
+        setTopicOneStatus();
     }
 
-    public void setTopic1Status() {
+    public void setTopicOneStatus() {
         if (getSRTopicNumber == 1) {
-            editor.putInt("endoftopic1", 0);
+            editor.putInt("endOfTopicOne", 0);
             editor.commit();
             Intent intent = new Intent(this, JavaOneSR4.class);
             startActivity(intent);
         }
+        editor.putString("javaSaveOne", "JavaOnePointTwo");
         Intent intent = new Intent(this, JavaOnePointTwo.class);
         startActivity(intent);
     }

@@ -43,13 +43,12 @@ public class JavaProgramQuiz7 extends AppCompatActivity {
 
         if (srStatus == 1) {
             intent = new Intent(this, JavaTwoSR1.class);
-            editor.putString("save", "JavaTwoSR1");
-            editor.commit();
+            editor.putString("javaSaveTwo", "JavaTwoSR1");
         } else {
             intent = new Intent(this, JavaTwoPointTwo.class);
-            editor.putString("save", "JavaTwoPointTwo");
-            editor.commit();
+            editor.putString("javaSaveTwo", "JavaTwoPointTwo");
         }
+        editor.commit();
         startActivity(intent);
     }
 }
