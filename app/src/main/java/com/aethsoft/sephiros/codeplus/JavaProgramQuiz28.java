@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class JavaProgramQuiz28 extends AppCompatActivity {
 
     private String answer = "2";
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,7 @@ public class JavaProgramQuiz28 extends AppCompatActivity {
                 String input = attemptedAnswer.toLowerCase();
                 if (input.equals(answer)) {
                     Toast.makeText(getApplicationContext(), "Excellent work!", Toast.LENGTH_LONG).show();
-                    javaSixPointTwo();
+                    javaSixSR1();
                 } else {
                     Toast.makeText(getApplicationContext(), "That is incorrect! Please try again!", Toast.LENGTH_LONG).show();
 
@@ -36,13 +37,19 @@ public class JavaProgramQuiz28 extends AppCompatActivity {
         });
     }
 
-    public void javaSixPointTwo() {
+    public void javaSixSR1() {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("save", "JavaSixPointTwo");
-        editor.commit();
+        int srStatus = sharedPref.getInt("JavaSRActivate", -1);
 
-        Intent intent = new Intent(this, JavaSixPointTwo.class);
+        if (srStatus == 1) {
+            intent = new Intent(this, JavaSixSR1.class);
+            editor.putString("javaSaveSix", "JavaSixSR1");
+        } else {
+            intent = new Intent(this, JavaSixPointTwo.class);
+            editor.putString("javaSaveSix", "JavaSixPointTwo");
+        }
+        editor.commit();
         startActivity(intent);
     }
 }

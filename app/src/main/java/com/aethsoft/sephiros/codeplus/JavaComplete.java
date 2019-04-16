@@ -7,6 +7,9 @@ import android.os.Bundle;
 
 public class JavaComplete extends AppCompatActivity {
 
+    SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+    SharedPreferences.Editor editor = sharedPref.edit();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,6 +17,7 @@ public class JavaComplete extends AppCompatActivity {
     }
 
     public void restartApp() {
+        editor.putString("javaSaveSeven", null);
         Intent intent = new Intent(this, StartApp.class);
         startActivity(intent);
     }

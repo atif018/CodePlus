@@ -23,7 +23,7 @@ public class JavaTwoPointTwoPointOne extends AppCompatActivity {
     }
 
     public void javaProgramQuiz8(View view) {
-        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveTwo", "JavaProgramQuiz8");
         editor.commit();

@@ -19,7 +19,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SetName"></activity>
+        <activity android:name=".JavaSevenSR3"></activity>
+        <activity android:name=".JavaSevenSR2" />
+        <activity android:name=".JavaSevenSR1" />
+        <activity android:name=".JavaSixSR5" />
+        <activity android:name=".JavaSixSR4" />
+        <activity android:name=".JavaSixSR3" />
+        <activity android:name=".JavaSixSR2" />
+        <activity android:name=".JavaSixSR1" />
+        <activity android:name=".SetName" />
         <activity android:name=".setName" />
         <activity android:name=".J1" />
         <activity android:name=".JavaComplete" />
