@@ -15,9 +15,10 @@ public class JavaSevenPointOnePointThree extends AppCompatActivity {
     }
 
     public void javaSevenPointOnePointFour(View view) {
+
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("save", "JavaSevenPointOnePointFour");
+        editor.putString("javaSaveSeven", "JavaSevenPointOnePointFour");
         editor.commit();
 
         Intent intent = new Intent(this, JavaSevenPointOnePointFour.class);

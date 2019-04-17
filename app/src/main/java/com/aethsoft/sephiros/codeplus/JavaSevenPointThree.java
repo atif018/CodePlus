@@ -8,35 +8,6 @@ import android.view.View;
 
 public class JavaSevenPointThree extends AppCompatActivity {
 
-    SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-    SharedPreferences.Editor editor = sharedPref.edit();
-    int getSR1 = sharedPref.getInt("SR1", -1);
-    int getSR2 = sharedPref.getInt("SR2", -1);
-    int getSR3 = sharedPref.getInt("SR3", -1);
-    int getSR4 = sharedPref.getInt("SR4", -1);
-    int getSR5 = sharedPref.getInt("SR5", -1);
-    int getSR6 = sharedPref.getInt("SR6", -1);
-    int getSR7 = sharedPref.getInt("SR7", -1);
-    int getSR8 = sharedPref.getInt("SR8", -1);
-    int getSR9 = sharedPref.getInt("SR9", -1);
-    int getSR10 = sharedPref.getInt("SR10", -1);
-    int getSR11 = sharedPref.getInt("SR11", -1);
-    int getSR12 = sharedPref.getInt("SR12", -1);
-    int getSR13 = sharedPref.getInt("SR13", -1);
-    int getSR14 = sharedPref.getInt("SR14", -1);
-    int getSR15 = sharedPref.getInt("SR15", -1);
-    int getSR16 = sharedPref.getInt("SR16", -1);
-    int getSR17 = sharedPref.getInt("SR17", -1);
-    int getSR18 = sharedPref.getInt("SR18", -1);
-    int getSR19 = sharedPref.getInt("SR19", -1);
-    int getSR20 = sharedPref.getInt("SR20", -1);
-    int getSR21 = sharedPref.getInt("SR21", -1);
-    int getSR22 = sharedPref.getInt("SR22", -1);
-    int getSR23 = sharedPref.getInt("SR23", -1);
-    int getSR24 = sharedPref.getInt("SR24", -1);
-    int getSR25 = sharedPref.getInt("SR25", -1);
-    int getSR26 = sharedPref.getInt("SR26", -1);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,9 +16,37 @@ public class JavaSevenPointThree extends AppCompatActivity {
 
     public void javaProgramQuiz35(View view) {
 
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveSeven", "JavaProgramQuiz35");
         editor.commit();
+
+        int getSR1 = sharedPref.getInt("SR1", -1);
+        int getSR2 = sharedPref.getInt("SR2", -1);
+        int getSR3 = sharedPref.getInt("SR3", -1);
+        int getSR4 = sharedPref.getInt("SR4", -1);
+        int getSR5 = sharedPref.getInt("SR5", -1);
+        int getSR6 = sharedPref.getInt("SR6", -1);
+        int getSR7 = sharedPref.getInt("SR7", -1);
+        int getSR8 = sharedPref.getInt("SR8", -1);
+        int getSR9 = sharedPref.getInt("SR9", -1);
+        int getSR10 = sharedPref.getInt("SR10", -1);
+        int getSR11 = sharedPref.getInt("SR11", -1);
+        int getSR12 = sharedPref.getInt("SR12", -1);
+        int getSR13 = sharedPref.getInt("SR13", -1);
+        int getSR14 = sharedPref.getInt("SR14", -1);
+        int getSR15 = sharedPref.getInt("SR15", -1);
+        int getSR16 = sharedPref.getInt("SR16", -1);
+        int getSR17 = sharedPref.getInt("SR17", -1);
+        int getSR18 = sharedPref.getInt("SR18", -1);
+        int getSR19 = sharedPref.getInt("SR19", -1);
+        int getSR20 = sharedPref.getInt("SR20", -1);
+        int getSR21 = sharedPref.getInt("SR21", -1);
+        int getSR22 = sharedPref.getInt("SR22", -1);
+        int getSR23 = sharedPref.getInt("SR23", -1);
+        int getSR24 = sharedPref.getInt("SR24", -1);
+        int getSR25 = sharedPref.getInt("SR25", -1);
+        int getSR26 = sharedPref.getInt("SR26", -1);
 
         getSR1 = getSR1 - 1;
         getSR2 = getSR2 - 1;
@@ -75,31 +74,57 @@ public class JavaSevenPointThree extends AppCompatActivity {
         getSR24 = getSR24 - 1;
         getSR25 = getSR25 - 1;
         getSR26 = getSR26 - 1;
+
         editor.putInt("SR1", getSR1);
+        editor.commit();
         editor.putInt("SR2", getSR2);
+        editor.commit();
         editor.putInt("SR3", getSR3);
+        editor.commit();
         editor.putInt("SR4", getSR4);
+        editor.commit();
         editor.putInt("SR5", getSR5);
+        editor.commit();
         editor.putInt("SR6", getSR6);
+        editor.commit();
         editor.putInt("SR7", getSR7);
+        editor.commit();
         editor.putInt("SR8", getSR8);
+        editor.commit();
         editor.putInt("SR9", getSR9);
+        editor.commit();
         editor.putInt("SR10", getSR10);
+        editor.commit();
         editor.putInt("SR11", getSR11);
+        editor.commit();
         editor.putInt("SR12", getSR12);
+        editor.commit();
         editor.putInt("SR13", getSR13);
+        editor.commit();
         editor.putInt("SR14", getSR14);
+        editor.commit();
         editor.putInt("SR15", getSR15);
+        editor.commit();
         editor.putInt("SR16", getSR16);
+        editor.commit();
         editor.putInt("SR17", getSR17);
+        editor.commit();
         editor.putInt("SR18", getSR18);
+        editor.commit();
         editor.putInt("SR19", getSR19);
+        editor.commit();
         editor.putInt("SR20", getSR20);
+        editor.commit();
         editor.putInt("SR21", getSR21);
+        editor.commit();
         editor.putInt("SR22", getSR22);
+        editor.commit();
         editor.putInt("SR23", getSR23);
+        editor.commit();
         editor.putInt("SR24", getSR24);
+        editor.commit();
         editor.putInt("SR25", getSR25);
+        editor.commit();
         editor.putInt("SR26", getSR26);
         editor.commit();
 

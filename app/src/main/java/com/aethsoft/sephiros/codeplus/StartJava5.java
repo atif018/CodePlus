@@ -8,8 +8,6 @@ import android.view.View;
 
 public class StartJava5 extends AppCompatActivity {
 
-    Intent intent;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

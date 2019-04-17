@@ -8,32 +8,6 @@ import android.view.View;
 
 public class JavaSixSR5 extends AppCompatActivity {
 
-    SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-    SharedPreferences.Editor editor = sharedPref.edit();
-    int getSR1 = sharedPref.getInt("SR1", -1);
-    int getSR2 = sharedPref.getInt("SR2", -1);
-    int getSR3 = sharedPref.getInt("SR3", -1);
-    int getSR4 = sharedPref.getInt("SR4", -1);
-    int getSR5 = sharedPref.getInt("SR5", -1);
-    int getSR6 = sharedPref.getInt("SR6", -1);
-    int getSR7 = sharedPref.getInt("SR7", -1);
-    int getSR8 = sharedPref.getInt("SR8", -1);
-    int getSR9 = sharedPref.getInt("SR9", -1);
-    int getSR10 = sharedPref.getInt("SR10", -1);
-    int getSR11 = sharedPref.getInt("SR11", -1);
-    int getSR12 = sharedPref.getInt("SR12", -1);
-    int getSR13 = sharedPref.getInt("SR13", -1);
-    int getSR14 = sharedPref.getInt("SR14", -1);
-    int getSR15 = sharedPref.getInt("SR15", -1);
-    int getSR16 = sharedPref.getInt("SR16", -1);
-    int getSR17 = sharedPref.getInt("SR17", -1);
-    int getSR18 = sharedPref.getInt("SR18", -1);
-    int getSR19 = sharedPref.getInt("SR19", -1);
-    int getSR20 = sharedPref.getInt("SR20", -1);
-    int getSR21 = sharedPref.getInt("SR21", -1);
-    int getSR22 = sharedPref.getInt("SR22", -1);
-    int getSR23 = sharedPref.getInt("SR23", -1);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,27 +15,57 @@ public class JavaSixSR5 extends AppCompatActivity {
     }
 
     public void javaStartJava7A(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR24", 11);
         editor.commit();
-
         setTopic6Status();
     }
 
     public void javaStartJava7B(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR24", 7);
         editor.commit();
-
         setTopic6Status();
     }
 
     public void javaStartJava7C(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR24", 3);
         editor.commit();
-
         setTopic6Status();
     }
 
     public void startSR() {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
+
+        int getSR1 = sharedPref.getInt("SR1", -1);
+        int getSR2 = sharedPref.getInt("SR2", -1);
+        int getSR3 = sharedPref.getInt("SR3", -1);
+        int getSR4 = sharedPref.getInt("SR4", -1);
+        int getSR5 = sharedPref.getInt("SR5", -1);
+        int getSR6 = sharedPref.getInt("SR6", -1);
+        int getSR7 = sharedPref.getInt("SR7", -1);
+        int getSR8 = sharedPref.getInt("SR8", -1);
+        int getSR9 = sharedPref.getInt("SR9", -1);
+        int getSR10 = sharedPref.getInt("SR10", -1);
+        int getSR11 = sharedPref.getInt("SR11", -1);
+        int getSR12 = sharedPref.getInt("SR12", -1);
+        int getSR13 = sharedPref.getInt("SR13", -1);
+        int getSR14 = sharedPref.getInt("SR14", -1);
+        int getSR15 = sharedPref.getInt("SR15", -1);
+        int getSR16 = sharedPref.getInt("SR16", -1);
+        int getSR17 = sharedPref.getInt("SR17", -1);
+        int getSR18 = sharedPref.getInt("SR18", -1);
+        int getSR19 = sharedPref.getInt("SR19", -1);
+        int getSR20 = sharedPref.getInt("SR20", -1);
+        int getSR21 = sharedPref.getInt("SR21", -1);
+        int getSR22 = sharedPref.getInt("SR22", -1);
+        int getSR23 = sharedPref.getInt("SR23", -1);
+
         if (getSR1 <= 0) {
             editor.putInt("endOfTopicSix", 1);
             editor.commit();
@@ -204,8 +208,12 @@ public class JavaSixSR5 extends AppCompatActivity {
 
     public void setTopic6Status() {
         startSR();
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveSix", null);
+        editor.commit();
         editor.putString("javaTopicSave", "StartJava7");
+        editor.commit();
         Intent intent = new Intent(this, StartJava7.class);
         startActivity(intent);
     }

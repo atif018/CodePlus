@@ -8,21 +8,6 @@ import android.view.View;
 
 public class JavaFourPointTwo extends AppCompatActivity {
 
-    SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-    SharedPreferences.Editor editor = sharedPref.edit();
-    int getSR1 = sharedPref.getInt("SR1", -1);
-    int getSR2 = sharedPref.getInt("SR2", -1);
-    int getSR3 = sharedPref.getInt("SR3", -1);
-    int getSR4 = sharedPref.getInt("SR4", -1);
-    int getSR5 = sharedPref.getInt("SR5", -1);
-    int getSR6 = sharedPref.getInt("SR6", -1);
-    int getSR7 = sharedPref.getInt("SR7", -1);
-    int getSR8 = sharedPref.getInt("SR8", -1);
-    int getSR9 = sharedPref.getInt("SR9", -1);
-    int getSR10 = sharedPref.getInt("SR10", -1);
-    int getSR11 = sharedPref.getInt("SR11", -1);
-    int getSR12 = sharedPref.getInt("SR12", -1);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,9 +16,23 @@ public class JavaFourPointTwo extends AppCompatActivity {
 
     public void javaProgramQuiz19(View view) {
 
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveFour", "JavaProgramQuiz19");
         editor.commit();
+
+        int getSR1 = sharedPref.getInt("SR1", -1);
+        int getSR2 = sharedPref.getInt("SR2", -1);
+        int getSR3 = sharedPref.getInt("SR3", -1);
+        int getSR4 = sharedPref.getInt("SR4", -1);
+        int getSR5 = sharedPref.getInt("SR5", -1);
+        int getSR6 = sharedPref.getInt("SR6", -1);
+        int getSR7 = sharedPref.getInt("SR7", -1);
+        int getSR8 = sharedPref.getInt("SR8", -1);
+        int getSR9 = sharedPref.getInt("SR9", -1);
+        int getSR10 = sharedPref.getInt("SR10", -1);
+        int getSR11 = sharedPref.getInt("SR11", -1);
+        int getSR12 = sharedPref.getInt("SR12", -1);
 
         getSR1 = getSR1 - 1;
         getSR2 = getSR2 - 1;
@@ -47,17 +46,29 @@ public class JavaFourPointTwo extends AppCompatActivity {
         getSR10 = getSR10 - 1;
         getSR11 = getSR11 - 1;
         getSR12 = getSR12 - 1;
+
         editor.putInt("SR1", getSR1);
+        editor.commit();
         editor.putInt("SR2", getSR2);
+        editor.commit();
         editor.putInt("SR3", getSR3);
+        editor.commit();
         editor.putInt("SR4", getSR4);
+        editor.commit();
         editor.putInt("SR5", getSR5);
+        editor.commit();
         editor.putInt("SR6", getSR6);
+        editor.commit();
         editor.putInt("SR7", getSR7);
+        editor.commit();
         editor.putInt("SR8", getSR8);
+        editor.commit();
         editor.putInt("SR9", getSR9);
+        editor.commit();
         editor.putInt("SR10", getSR10);
+        editor.commit();
         editor.putInt("SR11", getSR11);
+        editor.commit();
         editor.putInt("SR12", getSR12);
         editor.commit();
 

@@ -8,10 +8,6 @@ import android.view.View;
 
 public class JavaFourSR3 extends AppCompatActivity {
 
-    SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-    SharedPreferences.Editor editor = sharedPref.edit();
-    int getSRTopicNumber = sharedPref.getInt("endOfTopicFour", -1);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,27 +15,33 @@ public class JavaFourSR3 extends AppCompatActivity {
     }
 
     public void javaFourPointFourA(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR14", 11);
         editor.commit();
-
         setTopic4Status();
     }
 
     public void javaFourPointFourB(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR14", 7);
         editor.commit();
-
         setTopic4Status();
     }
 
     public void javaFourPointFourC(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR14", 3);
         editor.commit();
-
         setTopic4Status();
     }
 
     public void setTopic4Status() {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        int getSRTopicNumber = sharedPref.getInt("endOfTopicFour", -1);
         if (getSRTopicNumber == 1) {
             editor.putInt("endOfTopicFour", 0);
             editor.commit();
@@ -47,6 +49,7 @@ public class JavaFourSR3 extends AppCompatActivity {
             startActivity(intent);
         }
         editor.putString("javaSaveFour", "JavaFourPointFour");
+        editor.commit();
         Intent intent = new Intent(this, JavaFourPointFour.class);
         startActivity(intent);
     }

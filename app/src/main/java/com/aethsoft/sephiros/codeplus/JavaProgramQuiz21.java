@@ -12,7 +12,6 @@ import android.widget.Toast;
 public class JavaProgramQuiz21 extends AppCompatActivity {
 
     private String answer = "do-while";
-    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +37,7 @@ public class JavaProgramQuiz21 extends AppCompatActivity {
     }
 
     public void javaProgramQuiz22() {
+
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveFour", "JavaProgramQuiz22");

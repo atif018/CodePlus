@@ -12,7 +12,6 @@ import android.widget.Toast;
 public class JavaProgramQuiz11 extends AppCompatActivity {
 
     private String answer = "string";
-    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -8,10 +8,6 @@ import android.view.View;
 
 public class JavaOneSR2 extends AppCompatActivity {
 
-    SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-    SharedPreferences.Editor editor = sharedPref.edit();
-    int getSRTopicNumber = sharedPref.getInt("endOfTopicOne", -1);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,27 +15,33 @@ public class JavaOneSR2 extends AppCompatActivity {
     }
 
     public void javaOnePointThreeA(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR2", 11);
         editor.commit();
-
         setTopic1Status();
     }
 
     public void javaOnePointThreeB(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR2", 7);
         editor.commit();
-
         setTopic1Status();
     }
 
     public void javaOnePointThreeC(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR2", 3);
         editor.commit();
-
         setTopic1Status();
     }
 
     public void setTopic1Status() {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        int getSRTopicNumber = sharedPref.getInt("endOfTopicOne", -1);
         if (getSRTopicNumber == 1) {
             editor.putInt("endOfTopicOne", 0);
             editor.commit();
@@ -47,6 +49,7 @@ public class JavaOneSR2 extends AppCompatActivity {
             startActivity(intent);
         }
         editor.putString("javaSaveOne", "JavaOnePointThree");
+        editor.commit();
         Intent intent = new Intent(this, JavaOnePointThree.class);
         startActivity(intent);
     }

@@ -8,10 +8,6 @@ import android.view.View;
 
 public class JavaFiveSR1 extends AppCompatActivity {
 
-    SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-    SharedPreferences.Editor editor = sharedPref.edit();
-    int getSRTopicNumber = sharedPref.getInt("endOfTopicFive", -1);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,27 +15,33 @@ public class JavaFiveSR1 extends AppCompatActivity {
     }
 
     public void javaFivePointTwoA(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR16", 11);
         editor.commit();
-
         setTopic5Status();
     }
 
     public void javaFivePointTwoB(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR16", 7);
         editor.commit();
-
         setTopic5Status();
     }
 
     public void javaFivePointTwoC(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR16", 3);
         editor.commit();
-
         setTopic5Status();
     }
 
     public void setTopic5Status() {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        int getSRTopicNumber = sharedPref.getInt("endOfTopicFive", -1);
         if (getSRTopicNumber == 1) {
             editor.putInt("endOfTopicFive", 0);
             editor.commit();
@@ -47,6 +49,7 @@ public class JavaFiveSR1 extends AppCompatActivity {
             startActivity(intent);
         }
         editor.putString("javaSaveFive", "JavaFivePointTwo");
+        editor.commit();
         Intent intent = new Intent(this, JavaFivePointTwo.class);
         startActivity(intent);
     }

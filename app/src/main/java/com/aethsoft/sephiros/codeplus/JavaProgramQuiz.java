@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class JavaProgramQuiz extends AppCompatActivity {
 
     private String answer = "one";
-    Intent intent;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,11 +46,12 @@ public class JavaProgramQuiz extends AppCompatActivity {
         if (srStatus == 1) {
             intent = new Intent(this, JavaOneSR2.class);
             editor.putString("javaSaveOne", "JavaOneSR2");
+            editor.commit();
         } else {
             intent = new Intent(this, JavaOnePointThree.class);
             editor.putString("javaSaveOne", "JavaOnePointThree");
+            editor.commit();
         }
-        editor.commit();
         startActivity(intent);
     }
 

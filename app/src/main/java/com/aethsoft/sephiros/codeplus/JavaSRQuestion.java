@@ -8,9 +8,6 @@ import android.view.View;
 
 public class JavaSRQuestion extends AppCompatActivity {
 
-    SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-    SharedPreferences.Editor editor = sharedPref.edit();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,18 +15,24 @@ public class JavaSRQuestion extends AppCompatActivity {
     }
 
     public void javaOnePointOneA(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("JavaSRActivate", 1);
-
+        editor.commit();
         startJavaOnePointOne();
     }
 
     public void javaOnePointOneB(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("JavaSRActivate", 0);
-
+        editor.commit();
         startJavaOnePointOne();
     }
 
     public void startJavaOnePointOne() {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveOne", "JavaOnePointOne");
         editor.commit();
         Intent intent = new Intent(this, JavaOnePointOne.class);

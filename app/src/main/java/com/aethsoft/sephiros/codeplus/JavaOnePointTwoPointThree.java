@@ -8,10 +8,6 @@ import android.view.View;
 
 public class JavaOnePointTwoPointThree extends AppCompatActivity {
 
-    SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-    SharedPreferences.Editor editor = sharedPref.edit();
-    int getSR1 = sharedPref.getInt("SR1", -1);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,12 +15,18 @@ public class JavaOnePointTwoPointThree extends AppCompatActivity {
     }
 
     public void javaProgramQuiz(View view) {
+
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveOne", "JavaProgramQuiz");
+        editor.commit();
+
+        int getSR1 = sharedPref.getInt("SR1", -1);
 
         getSR1 = getSR1 - 1;
+
         editor.putInt("SR1", getSR1);
+
         editor.commit();
 
         Intent intent = new Intent(this, JavaProgramQuiz.class);

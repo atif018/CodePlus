@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class JavaProgramQuiz7 extends AppCompatActivity {
 
     private String answer = "double";
-    Intent intent;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +44,12 @@ public class JavaProgramQuiz7 extends AppCompatActivity {
         if (srStatus == 1) {
             intent = new Intent(this, JavaTwoSR1.class);
             editor.putString("javaSaveTwo", "JavaTwoSR1");
+            editor.commit();
         } else {
             intent = new Intent(this, JavaTwoPointTwo.class);
             editor.putString("javaSaveTwo", "JavaTwoPointTwo");
+            editor.commit();
         }
-        editor.commit();
         startActivity(intent);
     }
 }

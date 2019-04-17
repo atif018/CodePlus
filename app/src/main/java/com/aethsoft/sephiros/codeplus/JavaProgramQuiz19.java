@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class JavaProgramQuiz19 extends AppCompatActivity {
 
     private String answer = "8";
-    Intent intent;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,7 @@ public class JavaProgramQuiz19 extends AppCompatActivity {
     }
 
     public void javaFourSR2() {
+
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         int srStatus = sharedPref.getInt("JavaSRActivate", -1);
@@ -45,11 +46,12 @@ public class JavaProgramQuiz19 extends AppCompatActivity {
         if (srStatus == 1) {
             intent = new Intent(this, JavaFourSR2.class);
             editor.putString("javaSaveFour", "JavaFourSR2");
+            editor.commit();
         } else {
             intent = new Intent(this, JavaFourPointThree.class);
             editor.putString("javaSaveFour", "JavaFourPointThree");
+            editor.commit();
         }
-        editor.commit();
         startActivity(intent);
     }
 }

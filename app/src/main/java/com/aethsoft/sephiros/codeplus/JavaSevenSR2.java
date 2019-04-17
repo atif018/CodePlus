@@ -8,10 +8,6 @@ import android.view.View;
 
 public class JavaSevenSR2 extends AppCompatActivity {
 
-    SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-    SharedPreferences.Editor editor = sharedPref.edit();
-    int getSRTopicNumber = sharedPref.getInt("endOfTopicSeven", -1);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,27 +15,33 @@ public class JavaSevenSR2 extends AppCompatActivity {
     }
 
     public void javaSevenPointThreeA(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR26", 11);
         editor.commit();
-
         setTopic7Status();
     }
 
     public void javaSevenPointThreeB(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR26", 7);
         editor.commit();
-
         setTopic7Status();
     }
 
     public void javaSevenPointThreeC(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR26", 3);
         editor.commit();
-
         setTopic7Status();
     }
 
     public void setTopic7Status() {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        int getSRTopicNumber = sharedPref.getInt("endOfTopicSeven", -1);
         if (getSRTopicNumber == 1) {
             editor.putInt("endOfTopicSeven", 0);
             editor.commit();
@@ -47,6 +49,7 @@ public class JavaSevenSR2 extends AppCompatActivity {
             startActivity(intent);
         }
         editor.putString("javaSaveSeven", "JavaSevenPointThree");
+        editor.commit();
         Intent intent = new Intent(this, JavaSevenPointThree.class);
         startActivity(intent);
     }

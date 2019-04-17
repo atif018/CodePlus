@@ -11,9 +11,8 @@ import android.widget.Toast;
 
 public class JavaProgramQuiz4 extends AppCompatActivity {
 
-    SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
     private String answer = "algorithm";
-    Intent intent;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +23,7 @@ public class JavaProgramQuiz4 extends AppCompatActivity {
         quizQuestion.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
                 String attemptedAnswer = v.getText().toString();
                 String input = attemptedAnswer.toLowerCase();
                 String fbName = sharedPref.getString("name", null);
@@ -41,17 +41,19 @@ public class JavaProgramQuiz4 extends AppCompatActivity {
 
     public void javaOneSR3() {
 
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         int srStatus = sharedPref.getInt("JavaSRActivate", -1);
 
         if (srStatus == 1) {
             intent = new Intent(this, JavaOneSR3.class);
             editor.putString("javaSaveOne", "JavaOneSR3");
+            editor.commit();
         } else {
             intent = new Intent(this, JavaOnePointFour.class);
             editor.putString("javaSaveOne", "JavaOnePointFour");
+            editor.commit();
         }
-        editor.commit();
         startActivity(intent);
     }
 }

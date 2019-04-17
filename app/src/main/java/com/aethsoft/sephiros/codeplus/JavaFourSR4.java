@@ -8,23 +8,6 @@ import android.view.View;
 
 public class JavaFourSR4 extends AppCompatActivity {
 
-    SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-    SharedPreferences.Editor editor = sharedPref.edit();
-    int getSR1 = sharedPref.getInt("SR1", -1);
-    int getSR2 = sharedPref.getInt("SR2", -1);
-    int getSR3 = sharedPref.getInt("SR3", -1);
-    int getSR4 = sharedPref.getInt("SR4", -1);
-    int getSR5 = sharedPref.getInt("SR5", -1);
-    int getSR6 = sharedPref.getInt("SR6", -1);
-    int getSR7 = sharedPref.getInt("SR7", -1);
-    int getSR8 = sharedPref.getInt("SR8", -1);
-    int getSR9 = sharedPref.getInt("SR9", -1);
-    int getSR10 = sharedPref.getInt("SR10", -1);
-    int getSR11 = sharedPref.getInt("SR11", -1);
-    int getSR12 = sharedPref.getInt("SR12", -1);
-    int getSR13 = sharedPref.getInt("SR13", -1);
-    int getSR14 = sharedPref.getInt("SR14", -1);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,27 +15,49 @@ public class JavaFourSR4 extends AppCompatActivity {
     }
 
     public void javaStartJava5A(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR15", 11);
         editor.commit();
-
         setTopic4Status();
     }
 
     public void javaStartJava5B(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR15", 7);
         editor.commit();
-
         setTopic4Status();
     }
 
     public void javaStartJava5C(View view) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("SR15", 3);
         editor.commit();
-
         setTopic4Status();
     }
 
     public void startSR() {
+
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
+
+        int getSR1 = sharedPref.getInt("SR1", -1);
+        int getSR2 = sharedPref.getInt("SR2", -1);
+        int getSR3 = sharedPref.getInt("SR3", -1);
+        int getSR4 = sharedPref.getInt("SR4", -1);
+        int getSR5 = sharedPref.getInt("SR5", -1);
+        int getSR6 = sharedPref.getInt("SR6", -1);
+        int getSR7 = sharedPref.getInt("SR7", -1);
+        int getSR8 = sharedPref.getInt("SR8", -1);
+        int getSR9 = sharedPref.getInt("SR9", -1);
+        int getSR10 = sharedPref.getInt("SR10", -1);
+        int getSR11 = sharedPref.getInt("SR11", -1);
+        int getSR12 = sharedPref.getInt("SR12", -1);
+        int getSR13 = sharedPref.getInt("SR13", -1);
+        int getSR14 = sharedPref.getInt("SR14", -1);
+
         if (getSR1 <= 0) {
             editor.putInt("endOfTopicFour", 1);
             editor.commit();
@@ -141,8 +146,12 @@ public class JavaFourSR4 extends AppCompatActivity {
 
     public void setTopic4Status() {
         startSR();
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveFour", null);
+        editor.commit();
         editor.putString("javaTopicSave", "StartJava5");
+        editor.commit();
         Intent intent = new Intent(this, StartJava5.class);
         startActivity(intent);
     }
