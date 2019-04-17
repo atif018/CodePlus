@@ -27,7 +27,7 @@ public class JavaProgramQuiz21 extends AppCompatActivity {
                 String input = attemptedAnswer.toLowerCase();
                 if (input.equals(answer)) {
                     Toast.makeText(getApplicationContext(), "Excellent work!", Toast.LENGTH_LONG).show();
-                    javaFourSR4();
+                    javaProgramQuiz22();
                 } else {
                     Toast.makeText(getApplicationContext(), "That is incorrect! Please try again!", Toast.LENGTH_LONG).show();
 
@@ -37,19 +37,13 @@ public class JavaProgramQuiz21 extends AppCompatActivity {
         });
     }
 
-    public void javaFourSR4() {
+    public void javaProgramQuiz22() {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        int srStatus = sharedPref.getInt("JavaSRActivate", -1);
-
-        if (srStatus == 1) {
-            intent = new Intent(this, JavaFourSR4.class);
-            editor.putString("javaSaveFour", "JavaFourSR4");
-        } else {
-            intent = new Intent(this, StartJava5.class);
-            editor.putString("javaSaveFour", null);
-        }
+        editor.putString("javaSaveFour", "JavaProgramQuiz22");
         editor.commit();
+
+        Intent intent = new Intent(this, JavaProgramQuiz22.class);
         startActivity(intent);
     }
 }

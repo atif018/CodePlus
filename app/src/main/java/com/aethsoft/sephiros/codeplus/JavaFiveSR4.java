@@ -170,6 +170,7 @@ public class JavaFiveSR4 extends AppCompatActivity {
     public void setTopic5Status() {
         startSR();
         editor.putString("javaSaveFive", null);
+        editor.putString("javaTopicSave", "StartJava6");
         Intent intent = new Intent(this, StartJava6.class);
         startActivity(intent);
     }

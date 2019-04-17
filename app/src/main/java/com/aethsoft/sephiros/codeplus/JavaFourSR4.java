@@ -142,6 +142,7 @@ public class JavaFourSR4 extends AppCompatActivity {
     public void setTopic4Status() {
         startSR();
         editor.putString("javaSaveFour", null);
+        editor.putString("javaTopicSave", "StartJava5");
         Intent intent = new Intent(this, StartJava5.class);
         startActivity(intent);
     }

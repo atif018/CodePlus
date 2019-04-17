@@ -86,6 +86,7 @@ public class JavaTwoSR3 extends AppCompatActivity {
     public void setTopic2Status() {
         startSR();
         editor.putString("javaSaveTwo", null);
+        editor.putString("javaTopicSave", "StartJava3");
         Intent intent = new Intent(this, StartJava3.class);
         startActivity(intent);
     }

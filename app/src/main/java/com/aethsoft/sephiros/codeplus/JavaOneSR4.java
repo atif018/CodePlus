@@ -65,6 +65,7 @@ public class JavaOneSR4 extends AppCompatActivity {
     public void setTopic1Status() {
         startSR();
         editor.putString("javaSaveOne", null);
+        editor.putString("javaTopicSave", "StartJava2");
         Intent intent = new Intent(this, StartJava2.class);
         startActivity(intent);
     }

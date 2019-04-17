@@ -114,6 +114,7 @@ public class JavaThreeSR4 extends AppCompatActivity {
     public void setTopic3Status() {
         startSR();
         editor.putString("javaSaveThree", null);
+        editor.putString("javaTopicSave", "StartJava4");
         Intent intent = new Intent(this, StartJava4.class);
         startActivity(intent);
     }

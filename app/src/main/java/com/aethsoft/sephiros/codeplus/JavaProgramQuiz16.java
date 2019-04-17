@@ -12,7 +12,6 @@ import android.widget.Toast;
 public class JavaProgramQuiz16 extends AppCompatActivity {
 
     private String answer = "true";
-    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +26,7 @@ public class JavaProgramQuiz16 extends AppCompatActivity {
                 String input = attemptedAnswer.toLowerCase();
                 if (input.equals(answer)) {
                     Toast.makeText(getApplicationContext(), "Excellent work!", Toast.LENGTH_LONG).show();
-                    javaThreeSR4();
+                    javaProgramQuiz17();
                 } else {
                     Toast.makeText(getApplicationContext(), "That is incorrect! Please try again!", Toast.LENGTH_LONG).show();
 
@@ -37,19 +36,13 @@ public class JavaProgramQuiz16 extends AppCompatActivity {
         });
     }
 
-    public void javaThreeSR4() {
+    public void javaProgramQuiz17() {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        int srStatus = sharedPref.getInt("JavaSRActivate", -1);
-
-        if (srStatus == 1) {
-            intent = new Intent(this, JavaThreeSR4.class);
-            editor.putString("javaSaveThree", "JavaThreeSR4");
-        } else {
-            intent = new Intent(this, StartJava4.class);
-            editor.putString("javaSaveThree", null);
-        }
+        editor.putString("javaSaveThree", "JavaProgramQuiz17");
         editor.commit();
+
+        Intent intent = new Intent(this, JavaProgramQuiz17.class);
         startActivity(intent);
     }
 }
