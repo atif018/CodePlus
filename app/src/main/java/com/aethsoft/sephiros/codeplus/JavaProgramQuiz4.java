@@ -23,12 +23,10 @@ public class JavaProgramQuiz4 extends AppCompatActivity {
         quizQuestion.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
                 String attemptedAnswer = v.getText().toString();
                 String input = attemptedAnswer.toLowerCase();
-                String fbName = sharedPref.getString("name", null);
                 if (input.equals(answer)) {
-                    Toast.makeText(getApplicationContext(), "Great stuff, " + fbName + "!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Great stuff!", Toast.LENGTH_LONG).show();
                     javaOneSR3();
                 } else {
                     Toast.makeText(getApplicationContext(), "That is incorrect! Please try again!", Toast.LENGTH_LONG).show();

@@ -15,12 +15,12 @@
     features that helped it explode in popularity including a huge library of packages to help
         programmers make many kinds of programs, how safe it is to use, how portable it
     is (Can run the same program on different Operating Systems) and how much simpler it is to use
-        over another popular language - C++.\n\n</string>
+        over another popular language - C++.\n\n\n</string>
     <string name="intro_to_java_programs">1.2 Introduction to Java Programs</string>
     <string name="intro_to_java_programs_body1">The following is the structure of a basic Java
         program:</string>
     <string name="intro_to_java_programs_body2">This may look a bit daunting but hang in there! We
-    just need to deconstruct what\'s being shown so that it\'s easier to understand.\n\n</string>
+    just need to deconstruct what\'s being shown so that it\'s easier to understand.\n\n\n</string>
     <string name="java_deconstruct">1.2.1 Deconstructing the basic Java program</string>
     <string name="java_deconstruct_body">In the purple box, we have \"public class HelloWorld\" - Using
         the reserved word \"public\" means that something in the program, from Methods (Which you\'ll
@@ -59,6 +59,7 @@
     called a String. We\'ll learn more about Strings later.\n\n\n</string>
     <string name="go_to_next">Continue</string>
     <string name="go_to_quiz">Quiz!</string>
+    <string name="go_to_finish">Finished</string>
     <string name="text_public">public</string>
     <string name="text_helloworld">HelloWorld</string>
     <string name="possible_answers">Possible answers: </string>
@@ -94,7 +95,7 @@
     <string name="java_quiz_8_answer1">Add twice</string>
     <string name="java_quiz_8_answer2">Increment</string>
     <string name="java_quiz_8_answer3">Decrement</string>
-    <string name="java_quiz_9">When using the method charAt, what does .charAt(4) return in the string \"Jasmine\"?</string>
+    <string name="java_quiz_9">When using the method charAt, what does .charAt(4) return in the String \"Jasmine\"?</string>
     <string name="java_quiz_9_answer1">n</string>
     <string name="java_quiz_9_answer2">m</string>
     <string name="java_quiz_9_answer3">i</string>
@@ -105,7 +106,7 @@
     <string name="java_quiz_11">Please complete the following:</string>
     <string name="java_quiz_11_answer1">long</string>
     <string name="java_quiz_11_answer2">Integer</string>
-    <string name="java_quiz_11_answer3">string</string>
+    <string name="java_quiz_11_answer3">String</string>
     <string name="java_quiz_12">What is the term used to describe variable names that start with a
     lower-case letter or underscore and capitalise every subsequent word, eg. \"numberOfCars\"?</string>
     <string name="java_quiz_12_answer1">Camelcase</string>
@@ -148,7 +149,7 @@
         If you activate this feature then, at the end of each subtopic, you will be asked how confident
         you are with what you have learned. Depending on what is chosen, the same subtopic will be shown to
     you to go over however many times you want until you are confident with the material shown. This
-    repetition of subtopics will only be done at the end of every topic.</string>
+    repetition of subtopics will only be done at the end of every topic.\n\n\n</string>
     <string name="java_sr_option">Would you like to activate this feature?</string>
     <string name="java_activate_button">Activate</string>
     <string name="java_dont_activate_button">Don\'t activate</string>
@@ -158,8 +159,8 @@
     other things, as shown in the following example.</string>
     <string name="what_is_data_body1">The box is considered a variable. When we assign a value to that variable,
     the variable stores that value. In the example above, "5" gets stored in the box. If we wanted to store
-    a new value in the box, that can also be done by overwriting the value stored in the box.</string>
-    <string name="initialise_variable_title">2.1.1 How to declare variables</string>
+    a new value in the box, that can also be done by overwriting the value stored in the box.\n\n\n</string>
+    <string name="initialise_variable_title">2.1.1 How to declare variables/</string>
     <string name="how_to_initialise_body">In the previous section, you saw how to place and store a
     value in a box. Now, you will be shown how to do it in a Java program! Below, there is an image.</string>
     <string name="how_to_initialise_body1">Say that we want to count the number of Apples we have and store
@@ -172,7 +173,7 @@
         chosen \"numberOfApples\". Finally, you state what value you want the variable to take. In this
         case, it\'s \"4\".\n\nAlways make sure to end these statements with a semi-colon.\n\nFinally,
         always make sure to spell the variable correctly and capitalise the correct parts since variable
-        names are case-sensitive so \"numberOfApples\" is not the same as \"NumberOfApples\".\n\n</string>
+        names are case-sensitive so \"numberOfApples\" is not the same as \"NumberOfApples\".\n\n\n</string>
     <string name="types_variable_title">2.1.2 Types of Variables</string>
     <string name="types_variable_body">Below are the types of variables that you can declare. The most popular are:\n\n\"int\" -
     an Integer which is any whole number, for example \"1\", \"1345\" or \"4293\". You can only store
@@ -182,10 +183,10 @@
         values bigger than the standard int type.\n\n\There\'s also a \"byte\", \"float\" and \"char\" types.\n</string>
     <string name="types_variable_body1">Let\'s say that you wanted to store \"4\" in \"numberOfApples\",
     then you would initialise the variable with \"4\". If you wanted to store \"Hello\" in a variable called
-    \"greeting\", then you would initialise the variable with \"string\". You must always use the same types
+    \"greeting\", then you would initialise the variable with \"String\". You must always use the same types
     of variables when initialising and storing otherwise you will get an error and types of variables are case-sensitive.
         For example, if a variable is
-    a string type, you must always store a string value in that variable.\n\nWhen naming variables, you should
+    a String type, you must always store a String value in that variable.\n\nWhen naming variables, you should
     use \"camel-case\". Camel-case naming is where the first word is lowercase and any following words capitalise
     the first letter. For example, \"heightOfPlant\" or \"totalSize\" would be appropriate names to use.\n\nYou should
     always start the variable name with either an underscore or a lowercase letter. The rest of the name can consist
@@ -196,7 +197,7 @@
     <string name="final_variable_body">You can use the keyword \"final\" to stop any attempt to change the value of
     a variable. The way to do that is as follows:\n\nfinal int NUMBER_OF_APPLES = 4;\n\nUsing \"final\" keeps the value
     at 4 for this variable. You must use the keyword before declaring and initialising any variables, just like in the
-        example above.\n\nFinally, the variable name should be in caps to make it easier when reading code.\n\n</string>
+        example above.\n\nFinally, the variable name should be in caps to make it easier when reading code.\n\n\n</string>
     <string name="text_initialise">sumOfFractions = 3.14159265;</string>
     <string name="java_arithmetic">2.2 Arithmetic with variables</string>
     <string name="java_arithmetic_body">You can use arithmetic with different variables. Suppose we have
@@ -222,21 +223,21 @@
     <string name="java_strings">2.3 Using Strings</string>
     <string name="java_strings_body">You may be asking \"What are Strings\"? Strings are basically anything
     encapsulated by a pair of quotation marks like \"red\" or \"banana\". Anything within those quotation marks
-    can be used as a value and/or stored in a string variable. An example is as follows where a string variable
-    is initialised and the word \"red\" is stored within it.\n\nstring colour = \"red\";\n\nA string is something
-    called an \"object\" (Which you will learn more about later) and that means that it can be manipulated.
-    \n\nYou can find the length of the colour string by doing the following:\n\nint colourWordLength =
+    can be used as a value and/or stored in a string variable. An example is as follows where a String variable
+    is initialised and the word \"red\" is stored within it.\n\nString colour = \"red\";\n\nA String is something
+    called an \"Object\" (Which you will learn more about later) and that means that it can be manipulated.
+    \n\nYou can find the length of the colour String by doing the following:\n\nint colourWordLength =
     colour.length();\n\nThe dot after \"colour\" (An object) means that you\'re calling a method (Which you\'ll
         learn more about later too) and the \"length\" method allows you to find the length.\n\n\n</string>
     <string name="java_strings2">2.3.1 Using Strings 2</string>
     <string name="java_strings2_body">Strings can be something called \"concatenated\". This involves taking
-    some strings and turning them into one longer one. An example is as follows:\n\nstring firstWord = \"My\";
-    \n\nstring secondWord = \"name\";\n\nstring thirdWord = \"is\";\n\nstring fourthWord = \"Mike\";\n\nYou now
-    have four strings. If you wanted to concatenate them, you\'d do the following:\n\nstring message =
-    firstWord + secondWord + thirdWord + fourthWord;\n\nThe result of that concatenation would be \"My name
-    is Mike\".\n\nTo obtain a single character in a string, you would do the following:\n\nstring colour = \"red\";
+    some Strings and turning them into one longer one. An example is as follows:\n\nString firstWord = \"My\";
+    \n\nString secondWord = \"name\";\n\nString thirdWord = \"is\";\n\nString fourthWord = \"Mike\";\n\nYou now
+    have four Strings. If you wanted to concatenate them, you\'d do the following:\n\nString message =
+    firstWord + \" \" + secondWord + \" \" + thirdWord + \" \" + fourthWord;\n\nThe result of that concatenation would be \"My name
+    is Mike\".\n\nTo obtain a single character in a String, you would do the following:\n\nString colour = \"red\";
     \nchar singleLetter = colour.charAt(1);\n\nThe variable \"singleLetter\" would be set to \"e\". You may be asking
-    why and how it works? All characters in a string start at position 0. So, in the string \"red\", \"r\" is at
+    why and how it works? All characters in a String start at position 0. So, in the String \"red\", \"r\" is at
     position 0 and \"d\" is at position 2. What \"charAt\" does is look for the character at the position number
     that you have put in-between the brackets (In this case, \"1\") and store the result in \"singleLetter\".
     \"charAt\" is a method and, when using methods, you place the value you want the method to resolve in the
@@ -252,7 +253,7 @@
         executed. If the condition isn\'t true, then everything within the braces is ignored and the program
         continues reading any code after the braces. As example is below:</string>
     <string name="what_is_decisions_body2">In the example above, the \'if\' statement first checks whether \'x\'
-        is equal to 1. If it is, then \'1\' is added to the \'total\' and stored in the variable \'total\'.\n\n</string>
+        is equal to 1. If it is, then \'1\' is added to the \'total\' and stored in the variable \'total\'.\n\n\n</string>
     <string name="java_quiz_13">Would the code within the braces execute in the following example?</string>
     <string name="java_quiz_13_answer1">Yes</string>
     <string name="java_quiz_13_answer2">No</string>
@@ -267,7 +268,7 @@
         the \"else\" part at the end is executed.\n\nWhen using an \"if\" statement, the \"elseif\" and \"else\" parts
     are optional. It is also important to remember that once any part of this statement is executed, whether the
     \"if\" part, the \"elseif\" part or the \"else\" part, the program executes whatever is in the braces for that
-    part then skips any other parts.\n\n</string>
+    part then skips any other parts.\n\n\n</string>
     <string name="java_quiz_14">The \"elseif\" part of the following code is executed because x = 7. What
     part of the code is executed immediately afterwards? The code starting with number..</string>
     <string name="java_quiz_14_answer1">1</string>
@@ -283,7 +284,7 @@
     to read out the explanation as you type the code. For example, using the earlier statement example and the guide
         above, the statement can be read as \"If x is less than y, then.. \".\n\nThese operators are an important
     aspect of Java and are used in many things from \"if\" statements to loops (While, Do-While and For loops that
-    you will learn about later) to many other things.\n\n</string>
+    you will learn about later) to many other things.\n\n\n</string>
     <string name="java_quiz_15">Some sample code is printed below. Once all the code has been executed,
     the program will print the total. What value will be printed for the total?</string>
     <string name="java_quiz_15_answer1">0</string>
@@ -300,7 +301,7 @@
         sides of AND condition are true\n|| stands for OR and evaluates to true if either side of OR condition are
         true\n! stands for NOT and reverses the boolean value, eg. if the boolean variable is true, then NOT makes
         it false.\n\nThese boolean operators allow you to make more complex conditions that can be tested:\n\nif
-    (4 &lt; 5 &amp;&amp; 7 > 6) {&#8230;}\n\nEvaluates to true because both sides of the AND operator are true.\n\n</string>
+    (4 &lt; 5 &amp;&amp; 7 > 6) {&#8230;}\n\nEvaluates to true because both sides of the AND operator are true.\n\n\n</string>
     <string name="java_quiz_16">Please evaluate the following statement - What does the conditional If statement
         evaluate to?</string>
     <string name="java_quiz_16_answer1">True</string>
@@ -454,8 +455,8 @@
     <string name="java_quiz_26_answer1">Nothing</string>
     <string name="java_quiz_26_answer2">3</string>
     <string name="java_quiz_26_answer3">15</string>
-    <string name="java_quiz_27">Assume that you had a method named \"getNames\" and it took a single string as
-    input. Assume that you also had a string variable already initialised outside the method as follows:\n\nstring name = \"Mike\";
+    <string name="java_quiz_27">Assume that you had a method named \"getNames\" and it took a single String as
+    input. Assume that you also had a String variable already initialised outside the method as follows:\n\nString name = \"Mike\";
     \n\nHow would you correctly call this method from the choices below?\n\n1. getNames(Mike);\n\n2. getNames();
     \n\n3. getNames(\"Mike\");</string>
     <string name="java_quiz_27_answer1">1</string>
@@ -472,21 +473,21 @@
         you want to declare an array as above and want to name it \"numbers\":\n\nint[] numbers = new int[4];\n\n
         Read from left to right, you\'re saying that you want to declare a new \"int\" array which will hold
         integers and the arrays name will be \"numbers\". Then, the new arrays length will be \"4\". You don\'t
-        have to use int and can use any other variable type like double or string as well.\n\nFinally, arrays
+        have to use int and can use any other variable type like double or String as well.\n\nFinally, arrays
         are of a fixed size so if an array of length 10 is declared, it cannot be changed so that it\'s bigger
         or smaller. You can find the length of an array and/or store it in a variable at any time using .length,
-        eg:\nnumbers.length();\n\n\n\n</string>
+        eg:\nnumbers.length();\n\n\n</string>
     <string name="arrays2_text">6.1.1 How to use Arrays</string>
     <string name="arrays2_body">In the previous section, we saw how to declare arrays. To declare a array with
     the name \"typesOfVans\" that will store strings and will be of length 10, you\'d use the following code:\n\n
-    string[] typesOfVans = new string[10];\n\nWhen a new array is declared, it is empty but if you have values that
-        you want to add to the array at the same time as declaring, you would do the following:\n\nstring[] typesOfCars
+    String[] typesOfVans = new String[10];\n\nWhen a new array is declared, it is empty but if you have values that
+        you want to add to the array at the same time as declaring, you would do the following:\n\nString[] typesOfCars
         = {\"Ford\", \"Honda\", \"Hyundai\", \"Audi\", \"BMW\", \"Mercedes\"};\n\nGoing back to the original empty
         array, you can add values to the array by typing the following:\n\ntypesOfVans[3] = \"Ford\";\n\nThe \"3\"
     is the index of the array and you would be stating that you want to insert the value \"4\" into the array at
-    index 3.\n\nTo take a value stored in an array and store in a variable, you would do the following:\n\nstring
+    index 3.\n\nTo take a value stored in an array and store in a variable, you would do the following:\n\nString
     name = typesOfCars[2];\n\nThis would store the value stored at index/position 2 in typesOfCars in the variable
-    \"name\".</string>
+    \"name\".\n\n\n</string>
     <string name="java_quiz_28">There are three different snippets of code below. Please type out the one
     which declares an array with the name of \"sum\", is of length 20 and will store values of type double?\n\n1.
     double[] sum = [20];\n2. double[] sum = new double[20];\n3. Double[] sum = new Double[20];</string>
@@ -494,13 +495,13 @@
     <string name="java_quiz_28_answer2">2</string>
     <string name="java_quiz_28_answer3">3</string>
     <string name="enhanced_text">6.2 The enhanced-for loop</string>
-    <string name="enhanced_body">Suppose that you had an array of strings and wanted to go through the
+    <string name="enhanced_body">Suppose that you had an array of Strings and wanted to go through the
     array to perform some action using each element of the array. There is a loop for that called the
     \"enhanced-for\" loop. This loop works for other data types as well including int and double.</string>
     <string name="enhanced_body1">In the example above, there is an array called names which has 3 elements
         stored in it. The enhanced-for loop works in a similar way to the traditional \"for\" loop however
         you cannot modify any elements in an array using the enhanced-for loop. What the loop is basically
-        saying is that \"for each element of this type (In this case, for each string) in this named array,
+        saying is that \"for each element of this type (In this case, for each String) in this named array,
         do the following\". So, for the \"names\" array, print each element one by one. The data type for the array
         and the one in the brackets for the enhanced-for loop must match.\n\nIn this example, we\'ve named each
         element \"name\" but you can use anything you like and you would use this element name within the loop
@@ -550,7 +551,7 @@
     <string name="arraylist_body1">An ArrayList is empty when you first declare it. You may have also noticed
         that the first letter of the \"double\" type is capitalised for ArrayLists. It\'s because something called \"wrappers\"
         need to be used for ArrayLists. To summarise, for these data types, you need to capitalise the first letter of any
-        data type you want to use, eg. \"int\" would become \"Integer\", \"double\" becomes \"Double\", \"string\"
+        data type you want to use, eg. \"int\" would become \"Integer\", \"double\" becomes \"Double\", \"String\"
         becomes \"String\" etc. To add values, use the following:\n\nvalues.add(14);\n\n\"14\" is then added at the bottom of
         the list (In this case, with the empty list, the position will be 0). To add a value at a certain position, you\'d
         use:\n\nvalues.add(4, 57);\n\nWhich would add \"57\" at index 4. If a value already exists at that position, it
@@ -572,7 +573,7 @@
     <string name="java_quiz_33_answer2">2</string>
     <string name="java_quiz_33_answer3">3</string>
     <string name="java_quiz_34">Suppose you wrote a new class called \"Car\" and there was a method inside
-    it with the name \"setTypeOfCar\" which took \"string type\" as its parameter. Now, assume that you created
+    it with the name \"setTypeOfCar\" which took \"String type\" as its parameter. Now, assume that you created
     a Car object named \"car\" and want to call this method to set the type of car to \"Ford\". Please select
         the method call you would use?\n\n1. Car.type(\"Ford\");\n2. Car.setTypeOfCar(\"Ford\");\n3. car.setTypeOfCar
     (\"Ford\");</string>
@@ -614,7 +615,7 @@
     <string name="declare_constructor_body">To add a constructor, you would add one as follows:</string>
     <string name="declare_constructor_body1">From left to right, you\'d add a public constructor and the
         name of the constructor should match the name of the class. Inside the class, you can initialise
-        each of the instance variables that were declared earlier. In this example, both strings have been
+        each of the instance variables that were declared earlier. In this example, both Strings have been
         initialised as empty strings using \"\" and the variable \"age\" has been initialised with a value
         of 0.\n\n\n</string>
     <string name="declare_method_text">7.1.4 Adding methods to classes</string>
@@ -660,5 +661,5 @@
     <string name="java_complete_body">We hope that this course successfully taught you the fundamentals
     of Java and also ignited a desire in you to learn more about this popular language. If you haven\'t
     already done so, we encourage you to take the other courses available through this app to learn more
-    languages.\n\nIn the meantime, we thank you for choosing to learn how to program with Code+.\n\n</string>
+    languages.\n\nIn the meantime, we thank you for choosing to learn how to program with Code+.\n\n\n</string>
 </resources>

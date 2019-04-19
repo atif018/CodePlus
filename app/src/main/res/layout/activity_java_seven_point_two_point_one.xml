@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            android:text="@string/go_to_next"
+            android:text="@string/go_to_quiz"
             android:layout_margin="32dp"
             android:onClick="javaProgramQuiz34"/>
 

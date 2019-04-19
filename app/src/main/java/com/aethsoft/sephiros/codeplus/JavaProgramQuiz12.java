@@ -23,12 +23,10 @@ public class JavaProgramQuiz12 extends AppCompatActivity {
         quizQuestion.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
                 String attemptedAnswer = v.getText().toString();
                 String input = attemptedAnswer.toLowerCase();
-                String fbName = sharedPref.getString("name", null);
                 if (input.equals(answer)) {
-                    Toast.makeText(getApplicationContext(), "Correct! You've completed Chapter 2, " + fbName + "!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Correct! You've completed Chapter 2!", Toast.LENGTH_LONG).show();
                     javaTwoSR3();
                 } else {
                     Toast.makeText(getApplicationContext(), "That is incorrect! Please try again!", Toast.LENGTH_LONG).show();

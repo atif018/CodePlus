@@ -49,7 +49,7 @@ public class SignInActivity extends AppCompatActivity {
             editor.putString("name", firstName);
             editor.commit();
 
-            Toast.makeText(getApplicationContext(), "Welcome back to Code+ , " + firstName + "!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Welcome to Code+, " + firstName + "!", Toast.LENGTH_LONG).show();
             startCodeApp();
 
         }
@@ -75,12 +75,12 @@ public class SignInActivity extends AppCompatActivity {
                         }
                     });
 
-            LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
+            //LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
 
         }
 
-        EditText getUsersName = (EditText) findViewById(R.id.name_input);
-        getUsersName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+        EditText getUserName = (EditText) findViewById(R.id.name_input);
+        getUserName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 nameOfUser = v.getText().toString();

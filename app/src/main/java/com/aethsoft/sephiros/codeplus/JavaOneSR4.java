@@ -43,7 +43,7 @@ public class JavaOneSR4 extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
 
-        int getSR1 = sharedPref.getInt("SR1", -1);
+        int getSR1 = 0;
         int getSR2 = sharedPref.getInt("SR2", -1);
         int getSR3 = sharedPref.getInt("SR3", -1);
 

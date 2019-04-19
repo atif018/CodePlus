@@ -26,7 +26,7 @@ public class JavaProgramQuiz28 extends AppCompatActivity {
                 String attemptedAnswer = v.getText().toString();
                 String input = attemptedAnswer.toLowerCase();
                 if (input.equals(answer)) {
-                    Toast.makeText(getApplicationContext(), "Excellent work!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Great stuff!", Toast.LENGTH_LONG).show();
                     javaSixSR1();
                 } else {
                     Toast.makeText(getApplicationContext(), "That is incorrect! Please try again!", Toast.LENGTH_LONG).show();

@@ -26,7 +26,7 @@ public class JavaProgramQuiz35 extends AppCompatActivity {
                 String attemptedAnswer = v.getText().toString();
                 String input = attemptedAnswer.toLowerCase();
                 if (input.equals(answer)) {
-                    Toast.makeText(getApplicationContext(), "Excellent work!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Correct! You've completed Chapter 7!", Toast.LENGTH_LONG).show();
                     javaComplete();
                 } else {
                     Toast.makeText(getApplicationContext(), "That is incorrect! Please try again!", Toast.LENGTH_LONG).show();

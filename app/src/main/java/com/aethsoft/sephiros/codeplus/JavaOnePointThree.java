@@ -21,17 +21,6 @@ public class JavaOnePointThree extends AppCompatActivity {
         editor.putString("javaSaveOne", "JavaProgramQuiz4");
         editor.commit();
 
-        int getSR1 = sharedPref.getInt("SR1", -1);
-        int getSR2 = sharedPref.getInt("SR2", -1);
-
-        getSR1 = getSR1 - 1;
-        getSR2 = getSR2 - 1;
-
-        editor.putInt("SR1", getSR1);
-        editor.commit();
-        editor.putInt("SR2", getSR2);
-        editor.commit();
-
         Intent intent = new Intent(this, JavaProgramQuiz4.class);
         startActivity(intent);
     }
