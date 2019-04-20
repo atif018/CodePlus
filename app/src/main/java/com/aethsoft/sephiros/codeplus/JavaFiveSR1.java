@@ -41,16 +41,20 @@ public class JavaFiveSR1 extends AppCompatActivity {
     public void setTopic5Status() {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        int getSRTopicNumber = sharedPref.getInt("endOfTopicFive", -1);
-        if (getSRTopicNumber == 1) {
-            editor.putInt("endOfTopicFive", 0);
-            editor.commit();
-            Intent intent = new Intent(this, JavaFiveSR4.class);
-            startActivity(intent);
-        }
         editor.putString("javaSaveFive", "JavaFivePointTwo");
         editor.commit();
-        Intent intent = new Intent(this, JavaFivePointTwo.class);
-        startActivity(intent);
+
+        int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
+
+        if (getSRTopicNumber == 1) {
+            editor.putInt("endOfTopic", 0);
+            editor.commit();
+            Intent intent2 = new Intent(this, JavaSRTopics.class);
+            startActivity(intent2);
+        }
+        else {
+            Intent intent = new Intent(this, JavaFivePointTwo.class);
+            startActivity(intent);
+        }
     }
 }

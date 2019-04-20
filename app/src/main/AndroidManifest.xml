@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".JavaSevenSR3"></activity>
+        <activity android:name=".JavaSRTopics"></activity>
+        <activity android:name=".JavaSevenSR3" />
         <activity android:name=".JavaSevenSR2" />
         <activity android:name=".JavaSevenSR1" />
         <activity android:name=".JavaSixSR5" />
@@ -27,19 +28,12 @@
         <activity android:name=".JavaSixSR3" />
         <activity android:name=".JavaSixSR2" />
         <activity android:name=".JavaSixSR1" />
-        <activity android:name=".SetName" />
-        <activity android:name=".setName" />
-        <activity android:name=".J1" />
         <activity android:name=".JavaComplete" />
         <activity android:name=".JavaSevenPointTwoPointOne" />
-        <activity android:name=".JavaSevenPointOnePointFive" />
         <activity android:name=".JavaSevenPointOnePointFour" />
         <activity android:name=".JavaSevenPointOnePointThree" />
         <activity android:name=".JavaSevenPointOnePointTwo" />
         <activity android:name=".JavaSevenPointOnePointOne" />
-        <activity android:name=".JavaProgramQuiz38" />
-        <activity android:name=".JavaProgramQuiz37" />
-        <activity android:name=".JavaProgramQuiz36" />
         <activity android:name=".JavaProgramQuiz35" />
         <activity android:name=".JavaProgramQuiz34" />
         <activity android:name=".JavaProgramQuiz33" />
@@ -49,7 +43,6 @@
         <activity android:name=".JavaProgramQuiz29" />
         <activity android:name=".JavaProgramQuiz28" />
         <activity android:name=".JavaSixPointOnePointOne" />
-        <activity android:name=".JavaSevenPointFour" />
         <activity android:name=".JavaSevenPointThree" />
         <activity android:name=".JavaSevenPointTwo" />
         <activity android:name=".JavaSevenPointOne" />
@@ -135,8 +128,6 @@
         <activity android:name=".JavaOnePointTwoPointThree" />
         <activity android:name=".JavaOnePointTwoPointTwo" />
         <activity android:name=".JavaOnePointTwoPointOne" />
-        <activity android:name=".JavaFirstSpacedRepetition" />
-        <activity android:name=".JavaFirstQuiz" />
         <activity android:name=".JavaOnePointThree" />
         <activity android:name=".JavaOnePointTwo" />
         <activity android:name=".JavaOnePointOne" />

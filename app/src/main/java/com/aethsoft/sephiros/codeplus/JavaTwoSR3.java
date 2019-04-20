@@ -38,65 +38,13 @@ public class JavaTwoSR3 extends AppCompatActivity {
         setTopic2Status();
     }
 
-    public void startSR() {
-
-        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-        SharedPreferences.Editor editor = sharedPref.edit();
-
-        int getSR1 = sharedPref.getInt("SR1", -1);
-        int getSR2 = sharedPref.getInt("SR2", -1);
-        int getSR3 = sharedPref.getInt("SR3", -1);
-        int getSR4 = sharedPref.getInt("SR4", -1);
-        int getSR5 = sharedPref.getInt("SR5", -1);
-        int getSR6 = sharedPref.getInt("SR6", -1);
-
-        if (getSR1 <= 0) {
-            editor.putInt("endOfTopicTwo", 1);
-            editor.commit();
-            Intent intent = new Intent(this, JavaOnePointOne.class);
-            startActivity(intent);
-        }
-        if (getSR2 <= 0) {
-            editor.putInt("endOfTopicTwo", 1);
-            editor.commit();
-            Intent intent = new Intent(this, JavaOnePointTwo.class);
-            startActivity(intent);
-        }
-        if (getSR3 <= 0) {
-            editor.putInt("endOfTopicTwo", 1);
-            editor.commit();
-            Intent intent = new Intent(this, JavaOnePointThree.class);
-            startActivity(intent);
-        }
-        if (getSR4 <= 0) {
-            editor.putInt("endOfTopicTwo", 1);
-            editor.commit();
-            Intent intent = new Intent(this, JavaOnePointFour.class);
-            startActivity(intent);
-        }
-        if (getSR5 <= 0) {
-            editor.putInt("endOfTopicTwo", 1);
-            editor.commit();
-            Intent intent = new Intent(this, JavaTwoPointOne.class);
-            startActivity(intent);
-        }
-        if (getSR6 <= 0) {
-            editor.putInt("endOfTopicTwo", 1);
-            editor.commit();
-            Intent intent = new Intent(this, JavaTwoPointTwo.class);
-            startActivity(intent);
-        }
-    }
-
     public void setTopic2Status() {
-        startSR();
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveTwo", null);
         editor.commit();
-        editor.putString("javaTopicSave", "StartJava3");
-        editor.commit();
-        Intent intent = new Intent(this, StartJava3.class);
+
+        Intent intent = new Intent(this, JavaSRTopics.class);
         startActivity(intent);
     }
 }

@@ -21,6 +21,17 @@ public class JavaSixPointFive extends AppCompatActivity {
         editor.putString("javaSaveSix", "JavaProgramQuiz32");
         editor.commit();
 
+        for (int i = 1; i < 24; i++)
+        {
+
+            String srCurrent = "SR" + (i);
+            int srI = sharedPref.getInt(srCurrent, -1);
+            srI = srI - 1;
+            editor.putInt(srCurrent, srI);
+            editor.commit();
+
+        }
+
         Intent intent = new Intent(this, JavaProgramQuiz32.class);
         startActivity(intent);
     }

@@ -41,16 +41,20 @@ public class JavaSevenSR2 extends AppCompatActivity {
     public void setTopic7Status() {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        int getSRTopicNumber = sharedPref.getInt("endOfTopicSeven", -1);
-        if (getSRTopicNumber == 1) {
-            editor.putInt("endOfTopicSeven", 0);
-            editor.commit();
-            Intent intent = new Intent(this, JavaSevenSR3.class);
-            startActivity(intent);
-        }
         editor.putString("javaSaveSeven", "JavaSevenPointThree");
         editor.commit();
-        Intent intent = new Intent(this, JavaSevenPointThree.class);
-        startActivity(intent);
+
+        int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
+
+        if (getSRTopicNumber == 1) {
+            editor.putInt("endOfTopic", 0);
+            editor.commit();
+            Intent intent2 = new Intent(this, JavaSRTopics.class);
+            startActivity(intent2);
+        }
+        else {
+            Intent intent = new Intent(this, JavaSevenPointThree.class);
+            startActivity(intent);
+        }
     }
 }

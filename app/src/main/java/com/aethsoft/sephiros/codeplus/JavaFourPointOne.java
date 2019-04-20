@@ -21,6 +21,17 @@ public class JavaFourPointOne extends AppCompatActivity {
         editor.putString("javaSaveFour", "JavaProgramQuiz18");
         editor.commit();
 
+        for (int i = 1; i < 12; i++)
+        {
+
+            String srCurrent = "SR" + (i);
+            int srI = sharedPref.getInt(srCurrent, -1);
+            srI = srI - 1;
+            editor.putInt(srCurrent, srI);
+            editor.commit();
+
+        }
+
         Intent intent = new Intent(this, JavaProgramQuiz18.class);
         startActivity(intent);
     }

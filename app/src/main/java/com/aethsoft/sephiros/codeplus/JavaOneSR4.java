@@ -38,44 +38,13 @@ public class JavaOneSR4 extends AppCompatActivity {
         setTopic1Status();
     }
 
-    public void startSR() {
-
-        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-        SharedPreferences.Editor editor = sharedPref.edit();
-
-        int getSR1 = 0;
-        int getSR2 = sharedPref.getInt("SR2", -1);
-        int getSR3 = sharedPref.getInt("SR3", -1);
-
-        if (getSR1 <= 0) {
-            editor.putInt("endOfTopicOne", 1);
-            editor.commit();
-            Intent intent = new Intent(this, JavaOnePointOne.class);
-            startActivity(intent);
-        }
-        if (getSR2 <= 0) {
-            editor.putInt("endOfTopicOne", 1);
-            editor.commit();
-            Intent intent = new Intent(this, JavaOnePointTwo.class);
-            startActivity(intent);
-        }
-        if (getSR3 <= 0) {
-            editor.putInt("endOfTopicOne", 1);
-            editor.commit();
-            Intent intent = new Intent(this, JavaOnePointThree.class);
-            startActivity(intent);
-        }
-    }
-
     public void setTopic1Status() {
-        startSR();
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveOne", null);
         editor.commit();
-        editor.putString("javaTopicSave", "StartJava2");
-        editor.commit();
-        Intent intent = new Intent(this, StartJava2.class);
+
+        Intent intent = new Intent(this, JavaSRTopics.class);
         startActivity(intent);
     }
 }

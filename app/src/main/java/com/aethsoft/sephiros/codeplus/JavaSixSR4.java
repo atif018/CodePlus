@@ -41,16 +41,20 @@ public class JavaSixSR4 extends AppCompatActivity {
     public void setTopic6Status() {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        int getSRTopicNumber = sharedPref.getInt("endOfTopicSix", -1);
-        if (getSRTopicNumber == 1) {
-            editor.putInt("endOfTopicSix", 0);
-            editor.commit();
-            Intent intent = new Intent(this, JavaSixSR5.class);
-            startActivity(intent);
-        }
         editor.putString("javaSaveSix", "JavaSixPointFive");
         editor.commit();
-        Intent intent = new Intent(this, JavaSixPointFive.class);
-        startActivity(intent);
+
+        int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
+
+        if (getSRTopicNumber == 1) {
+            editor.putInt("endOfTopic", 0);
+            editor.commit();
+            Intent intent2 = new Intent(this, JavaSRTopics.class);
+            startActivity(intent2);
+        }
+        else {
+            Intent intent = new Intent(this, JavaSixPointFive.class);
+            startActivity(intent);
+        }
     }
 }

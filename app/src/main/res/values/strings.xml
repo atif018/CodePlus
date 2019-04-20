@@ -662,4 +662,8 @@
     of Java and also ignited a desire in you to learn more about this popular language. If you haven\'t
     already done so, we encourage you to take the other courses available through this app to learn more
     languages.\n\nIn the meantime, we thank you for choosing to learn how to program with Code+.\n\n\n</string>
+    <string name="SR_next_topic">This is the Spaced Repetition section where you\'ll have the opportunity
+    to repeat subtopics based on your responses to how confident you felt learning about any section. Please
+    press \"Continue\" below and a relevant subtopic will appear. If no topics appear, then you will forwarded to the
+    main screen to choose another topic.</string>
 </resources>
