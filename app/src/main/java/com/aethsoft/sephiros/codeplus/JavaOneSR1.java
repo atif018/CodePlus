@@ -42,7 +42,7 @@ public class JavaOneSR1 extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveOne", "JavaOnePointTwo");
-        editor.commit();
+        editor.apply();
 
         int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
 

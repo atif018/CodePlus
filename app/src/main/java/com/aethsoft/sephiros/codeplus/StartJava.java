@@ -19,6 +19,9 @@ public class StartJava extends AppCompatActivity {
 
     public void startJavaSection(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString("javaTopicSave", "StartJava");
+        editor.apply();
         String javaSaveOne = sharedPref.getString("javaSaveOne", null);
         if (javaSaveOne != null) {
             switch (javaSaveOne) {

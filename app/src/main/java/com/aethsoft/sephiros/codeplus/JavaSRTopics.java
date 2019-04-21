@@ -16,14 +16,18 @@ public class JavaSRTopics extends AppCompatActivity {
 
     public void nextSRTopic(View view) {
 
-        for (int i = 1; i < 27; i++) {
+        for (int i = 1; i < 28; i++) {
 
             SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
             SharedPreferences.Editor editor = sharedPref.edit();
 
-            String srCurrent = "SR" + (i);
+            String srCurrent = "SR" + i;
+
             int srI = sharedPref.getInt(srCurrent, -1);
+
             if (srI <= 0) {
+                editor.putInt("endOfTopic", 1);
+                editor.apply();
                 switch (srCurrent) {
                     case "SR1":
                         Intent intent2 = new Intent(this, JavaOnePointOne.class);
@@ -134,35 +138,42 @@ public class JavaSRTopics extends AppCompatActivity {
                         startActivity(intent28);
                         break;
                 }
-                String coolName = sharedPref.getString("javaTopicSave", null);
-                if (coolName != null) {
-                    switch (coolName) {
-                        case "StartJava2":
-                            Intent intent2 = new Intent(this, StartJava2.class);
-                            startActivity(intent2);
-                            break;
-                        case "StartJava3":
-                            Intent intent3 = new Intent(this, StartJava3.class);
-                            startActivity(intent3);
-                            break;
-                        case "StartJava4":
-                            Intent intent4 = new Intent(this, StartJava4.class);
-                            startActivity(intent4);
-                            break;
-                        case "StartJava5":
-                            Intent intent5 = new Intent(this, StartJava5.class);
-                            startActivity(intent5);
-                            break;
-                        case "StartJava6":
-                            Intent intent6 = new Intent(this, StartJava6.class);
-                            startActivity(intent6);
-                            break;
-                        case "StartJava7":
-                            Intent intent7 = new Intent(this, StartJava7.class);
-                            startActivity(intent7);
-                            break;
-                    }
-                }
+            }
+        }
+
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        String topicSave = sharedPref.getString("javaTopicSave", null);
+
+        if (topicSave != null) {
+            switch (topicSave) {
+                case "StartJava":
+                    Intent intent2 = new Intent(this, StartJava2.class);
+                    startActivity(intent2);
+                    break;
+                case "StartJava2":
+                    Intent intent3 = new Intent(this, StartJava3.class);
+                    startActivity(intent3);
+                    break;
+                case "StartJava3":
+                    Intent intent4 = new Intent(this, StartJava4.class);
+                    startActivity(intent4);
+                    break;
+                case "StartJava4":
+                    Intent intent5 = new Intent(this, StartJava5.class);
+                    startActivity(intent5);
+                    break;
+                case "StartJava5":
+                    Intent intent6 = new Intent(this, StartJava6.class);
+                    startActivity(intent6);
+                    break;
+                case "StartJava6":
+                    Intent intent7 = new Intent(this, StartJava7.class);
+                    startActivity(intent7);
+                    break;
+                case "StartJava7":
+                    Intent intent8 = new Intent(this, JavaComplete.class);
+                    startActivity(intent8);
+                    break;
             }
         }
     }

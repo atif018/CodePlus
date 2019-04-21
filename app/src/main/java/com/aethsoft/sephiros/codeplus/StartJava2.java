@@ -20,6 +20,9 @@ public class StartJava2 extends AppCompatActivity {
     public void startJavaSection(View view) {
 
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString("javaTopicSave", "StartJava2");
+        editor.apply();
         String javaSaveOne = sharedPref.getString("javaSaveOne", null);
         if (javaSaveOne != null) {
             switch (javaSaveOne) {
@@ -102,6 +105,9 @@ public class StartJava2 extends AppCompatActivity {
     public void startDataSection(View view) {
 
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString("javaTopicSave", "StartJava2");
+        editor.apply();
         String javaSaveTwo = sharedPref.getString("javaSaveTwo", null);
         if (javaSaveTwo != null) {
             switch (javaSaveTwo) {
