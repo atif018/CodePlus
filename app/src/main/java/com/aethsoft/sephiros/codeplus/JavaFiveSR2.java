@@ -17,24 +17,24 @@ public class JavaFiveSR2 extends AppCompatActivity {
     public void javaFivePointThreeA(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR17", 11);
-        editor.commit();
+        editor.putInt("SR11", 11);
+        editor.apply();
         setTopic5Status();
     }
 
     public void javaFivePointThreeB(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR17", 7);
-        editor.commit();
+        editor.putInt("SR11", 7);
+        editor.apply();
         setTopic5Status();
     }
 
     public void javaFivePointThreeC(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR17", 3);
-        editor.commit();
+        editor.putInt("SR11", 3);
+        editor.apply();
         setTopic5Status();
     }
 
@@ -42,19 +42,20 @@ public class JavaFiveSR2 extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveFive", "JavaFivePointThree");
-        editor.commit();
+        editor.apply();
 
-        int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
+        for (int i = 27; i > 11; i--)
+        {
 
-        if (getSRTopicNumber == 1) {
-            editor.putInt("endOfTopic", 0);
-            editor.commit();
-            Intent intent2 = new Intent(this, JavaSRTopics.class);
-            startActivity(intent2);
+            String srCurrent = "SR" + (i);
+            int srI = sharedPref.getInt(srCurrent, -1);
+            srI = srI - 1;
+            editor.putInt(srCurrent, srI);
+            editor.apply();
+
         }
-        else {
-            Intent intent = new Intent(this, JavaFivePointThree.class);
-            startActivity(intent);
-        }
+
+        Intent intent = new Intent(this, JavaFivePointThree.class);
+        startActivity(intent);
     }
 }

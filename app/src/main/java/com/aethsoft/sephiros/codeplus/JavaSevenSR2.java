@@ -17,7 +17,7 @@ public class JavaSevenSR2 extends AppCompatActivity {
     public void javaSevenPointThreeA(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR26", 11);
+        editor.putInt("SR2", 9);
         editor.commit();
         setTopic7Status();
     }
@@ -25,7 +25,7 @@ public class JavaSevenSR2 extends AppCompatActivity {
     public void javaSevenPointThreeB(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR26", 7);
+        editor.putInt("SR2", 6);
         editor.commit();
         setTopic7Status();
     }
@@ -33,7 +33,7 @@ public class JavaSevenSR2 extends AppCompatActivity {
     public void javaSevenPointThreeC(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR26", 3);
+        editor.putInt("SR2", 3);
         editor.commit();
         setTopic7Status();
     }
@@ -44,17 +44,18 @@ public class JavaSevenSR2 extends AppCompatActivity {
         editor.putString("javaSaveSeven", "JavaSevenPointThree");
         editor.commit();
 
-        int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
+        for (int i = 27; i > 2; i--)
+        {
 
-        if (getSRTopicNumber == 1) {
-            editor.putInt("endOfTopic", 0);
+            String srCurrent = "SR" + (i);
+            int srI = sharedPref.getInt(srCurrent, -1);
+            srI = srI - 1;
+            editor.putInt(srCurrent, srI);
             editor.commit();
-            Intent intent2 = new Intent(this, JavaSRTopics.class);
-            startActivity(intent2);
+
         }
-        else {
-            Intent intent = new Intent(this, JavaSevenPointThree.class);
-            startActivity(intent);
-        }
+
+        Intent intent = new Intent(this, JavaSevenPointThree.class);
+        startActivity(intent);
     }
 }

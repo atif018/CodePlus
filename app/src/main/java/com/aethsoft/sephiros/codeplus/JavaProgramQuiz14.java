@@ -43,14 +43,21 @@ public class JavaProgramQuiz14 extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPref.edit();
         int srStatus = sharedPref.getInt("JavaSRActivate", -1);
 
-        if (srStatus == 1) {
+        int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
+
+        if (getSRTopicNumber == 1) {
+            editor.putInt("endOfTopic", 0);
+            editor.apply();
+            intent = new Intent(this, JavaSRTopics.class);
+        }
+        else if (srStatus == 1) {
             intent = new Intent(this, JavaThreeSR2.class);
             editor.putString("javaSaveThree", "JavaThreeSR2");
-            editor.commit();
+            editor.apply();
         } else {
             intent = new Intent(this, JavaThreePointThree.class);
             editor.putString("javaSaveThree", "JavaThreePointThree");
-            editor.commit();
+            editor.apply();
         }
         startActivity(intent);
     }

@@ -27,7 +27,7 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/java_quiz_10"
             android:textSize="20sp"
-            android:width="60dp"
+            android:width="70dp"
             android:maxLength="7"
             android:inputType="text"
             android:singleLine="true"

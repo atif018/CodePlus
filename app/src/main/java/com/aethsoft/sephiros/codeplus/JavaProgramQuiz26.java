@@ -41,7 +41,7 @@ public class JavaProgramQuiz26 extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveFive", "JavaProgramQuiz27");
-        editor.commit();
+        editor.apply();
 
         Intent intent = new Intent(this, JavaProgramQuiz27.class);
         startActivity(intent);

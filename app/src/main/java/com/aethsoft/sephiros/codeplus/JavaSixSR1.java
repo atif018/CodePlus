@@ -17,7 +17,7 @@ public class JavaSixSR1 extends AppCompatActivity {
     public void javaSixPointTwoA(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR20", 11);
+        editor.putInt("SR8", 9);
         editor.commit();
         setTopic6Status();
     }
@@ -25,7 +25,7 @@ public class JavaSixSR1 extends AppCompatActivity {
     public void javaSixPointTwoB(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR20", 7);
+        editor.putInt("SR8", 6);
         editor.commit();
         setTopic6Status();
     }
@@ -33,7 +33,7 @@ public class JavaSixSR1 extends AppCompatActivity {
     public void javaSixPointTwoC(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR20", 3);
+        editor.putInt("SR8", 3);
         editor.commit();
         setTopic6Status();
     }
@@ -44,17 +44,18 @@ public class JavaSixSR1 extends AppCompatActivity {
         editor.putString("javaSaveSix", "JavaSixPointTwo");
         editor.commit();
 
-        int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
+        for (int i = 27; i > 8; i--)
+        {
 
-        if (getSRTopicNumber == 1) {
-            editor.putInt("endOfTopic", 0);
+            String srCurrent = "SR" + (i);
+            int srI = sharedPref.getInt(srCurrent, -1);
+            srI = srI - 1;
+            editor.putInt(srCurrent, srI);
             editor.commit();
-            Intent intent2 = new Intent(this, JavaSRTopics.class);
-            startActivity(intent2);
+
         }
-        else {
-            Intent intent = new Intent(this, JavaSixPointTwo.class);
-            startActivity(intent);
-        }
+
+        Intent intent = new Intent(this, JavaSixPointTwo.class);
+        startActivity(intent);
     }
 }

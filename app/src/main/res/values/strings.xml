@@ -145,8 +145,8 @@
     <string name="java_sr_title">About this App</string>
     <string name="java_sr_text">This app has a special feature that incorporates a learning
     technique called \"Spaced Repetition\". The technique involves the regular repeating of material
-    that you want to learn or have learned so that your brain better retains the knowledge learned.\n\n
-        If you activate this feature then, at the end of each subtopic, you will be asked how confident
+    that you want to learn or have learned so that your brain better retains the knowledge
+        learned.\n\nIf you activate this feature then, at the end of each subtopic, you will be asked how confident
         you are with what you have learned. Depending on what is chosen, the same subtopic will be shown to
     you to go over however many times you want until you are confident with the material shown. This
     repetition of subtopics will only be done at the end of every topic.\n\n\n</string>
@@ -664,6 +664,7 @@
     languages.\n\nIn the meantime, we thank you for choosing to learn how to program with Code+.\n\n\n</string>
     <string name="SR_next_topic">This is the Spaced Repetition section where you\'ll have the opportunity
     to repeat subtopics based on your responses to how confident you felt learning about any section. Please
-    press \"Continue\" below and a relevant subtopic will appear. If no topics appear, then you will forwarded to the
-    main screen to choose another topic.</string>
+    press \"Continue\" below and a relevant subtopic will appear. If no topics appear, then please press the
+    \"Next Topic!\" button to continue onto the next section.</string>
+    <string name="go_to_topic">Next Topic!</string>
 </resources>

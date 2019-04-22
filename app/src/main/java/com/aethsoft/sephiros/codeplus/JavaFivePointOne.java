@@ -19,18 +19,7 @@ public class JavaFivePointOne extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveFive", "JavaFivePointTwo");
-        editor.commit();
-
-        for (int i = 1; i < 16; i++)
-        {
-
-            String srCurrent = "SR" + (i);
-            int srI = sharedPref.getInt(srCurrent, -1);
-            srI = srI - 1;
-            editor.putInt(srCurrent, srI);
-            editor.commit();
-
-        }
+        editor.apply();
 
         Intent intent = new Intent(this, JavaFiveSR1.class);
         startActivity(intent);

@@ -17,7 +17,7 @@ public class JavaTwoSR1 extends AppCompatActivity {
     public void javaTwoPointTwoA(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR5", 11);
+        editor.putInt("SR23", 12);
         editor.commit();
         setTopic2Status();
     }
@@ -25,7 +25,7 @@ public class JavaTwoSR1 extends AppCompatActivity {
     public void javaTwoPointTwoB(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR5", 7);
+        editor.putInt("SR23", 8);
         editor.commit();
         setTopic2Status();
     }
@@ -33,7 +33,7 @@ public class JavaTwoSR1 extends AppCompatActivity {
     public void javaTwoPointTwoC(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR5", 3);
+        editor.putInt("SR23", 3);
         editor.commit();
         setTopic2Status();
     }
@@ -44,17 +44,18 @@ public class JavaTwoSR1 extends AppCompatActivity {
         editor.putString("javaSaveTwo", "JavaTwoPointTwo");
         editor.commit();
 
-        int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
+        for (int i = 27; i > 23; i--)
+        {
 
-        if (getSRTopicNumber == 1) {
-            editor.putInt("endOfTopic", 0);
+            String srCurrent = "SR" + (i);
+            int srI = sharedPref.getInt(srCurrent, -1);
+            srI = srI - 1;
+            editor.putInt(srCurrent, srI);
             editor.commit();
-            Intent intent2 = new Intent(this, JavaSRTopics.class);
-            startActivity(intent2);
+
         }
-        else {
-            Intent intent = new Intent(this, JavaTwoPointTwo.class);
-            startActivity(intent);
-        }
+
+        Intent intent = new Intent(this, JavaTwoPointTwo.class);
+        startActivity(intent);
     }
 }

@@ -24,7 +24,7 @@
             android:id="@+id/quiz_input"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:width="100dp"
+            android:width="120dp"
             android:maxLength="12"
             android:layout_below="@id/java_quiz"
             android:layout_centerHorizontal="true"

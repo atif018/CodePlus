@@ -17,24 +17,24 @@ public class JavaOneSR3 extends AppCompatActivity {
     public void javaOnePointFourA(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR3", 11);
-        editor.commit();
+        editor.putInt("SR25", 12);
+        editor.apply();
         setTopic1Status();
     }
 
     public void javaOnePointFourB(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR3", 7);
-        editor.commit();
+        editor.putInt("SR25", 8);
+        editor.apply();
         setTopic1Status();
     }
 
     public void javaOnePointFourC(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR3", 3);
-        editor.commit();
+        editor.putInt("SR25", 3);
+        editor.apply();
         setTopic1Status();
     }
 
@@ -42,19 +42,20 @@ public class JavaOneSR3 extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveOne", "JavaOnePointFour");
-        editor.commit();
+        editor.apply();
 
-        int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
+        for (int i = 27; i > 25; i--)
+        {
 
-        if (getSRTopicNumber == 1) {
-            editor.putInt("endOfTopic", 0);
-            editor.commit();
-            Intent intent2 = new Intent(this, JavaSRTopics.class);
-            startActivity(intent2);
+            String srCurrent = "SR" + (i);
+            int srI = sharedPref.getInt(srCurrent, -1);
+            srI = srI - 1;
+            editor.putInt(srCurrent, srI);
+            editor.apply();
+
         }
-        else {
-            Intent intent = new Intent(this, JavaOnePointFour.class);
-            startActivity(intent);
-        }
+
+        Intent intent = new Intent(this, JavaOnePointFour.class);
+        startActivity(intent);
     }
 }

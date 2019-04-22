@@ -19,6 +19,16 @@ public class JavaSRQuestion extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("JavaSRActivate", 1);
         editor.commit();
+
+        for (int i = 1; i < 28; i++)
+        {
+
+            String srCurrent = "SR" + i;
+            editor.putInt(srCurrent, 1);
+            editor.apply();
+
+        }
+
         startJavaOnePointOne();
     }
 

@@ -21,16 +21,6 @@ public class StartApp extends AppCompatActivity {
 
     public void startJavaActivity(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
-        SharedPreferences.Editor editor = sharedPref.edit();
-
-        for (int i = 1; i < 28; i++)
-        {
-
-            String srCurrent = "SR" + i;
-            editor.putInt(srCurrent, 1);
-            editor.apply();
-
-        }
 
         String topicSave = sharedPref.getString("javaTopicSave", null);
         if (topicSave != null) {

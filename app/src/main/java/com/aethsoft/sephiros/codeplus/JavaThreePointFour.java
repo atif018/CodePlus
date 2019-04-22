@@ -21,17 +21,6 @@ public class JavaThreePointFour extends AppCompatActivity {
         editor.putString("javaSaveThree", "JavaProgramQuiz16");
         editor.commit();
 
-        for (int i = 1; i < 11; i++)
-        {
-
-            String srCurrent = "SR" + (i);
-            int srI = sharedPref.getInt(srCurrent, -1);
-            srI = srI - 1;
-            editor.putInt(srCurrent, srI);
-            editor.commit();
-
-        }
-
         Intent intent = new Intent(this, JavaProgramQuiz16.class);
         startActivity(intent);
     }

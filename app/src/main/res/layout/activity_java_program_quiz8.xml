@@ -27,8 +27,8 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/java_quiz_8"
             android:textSize="20sp"
-            android:width="60dp"
-            android:maxLength="15"
+            android:width="100dp"
+            android:maxLength="10"
             android:inputType="text"
             android:singleLine="true"
             android:imeOptions="actionDone"/>

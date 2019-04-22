@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class JavaProgramQuiz13 extends AppCompatActivity {
 
-    private String answer = "no";
+    private String answer = "yes";
     private Intent intent;
 
     @Override
@@ -43,14 +43,21 @@ public class JavaProgramQuiz13 extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPref.edit();
         int srStatus = sharedPref.getInt("JavaSRActivate", -1);
 
-        if (srStatus == 1) {
+        int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
+
+        if (getSRTopicNumber == 1) {
+            editor.putInt("endOfTopic", 0);
+            editor.apply();
+            intent = new Intent(this, JavaSRTopics.class);
+        }
+        else if (srStatus == 1) {
             intent = new Intent(this, JavaThreeSR1.class);
             editor.putString("javaSaveThree", "JavaThreeSR1");
-            editor.commit();
+            editor.apply();
         } else {
             intent = new Intent(this, JavaThreePointTwo.class);
             editor.putString("javaSaveThree", "JavaThreePointTwo");
-            editor.commit();
+            editor.apply();
         }
         startActivity(intent);
     }

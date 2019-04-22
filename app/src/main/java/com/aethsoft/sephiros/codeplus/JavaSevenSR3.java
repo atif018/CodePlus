@@ -17,7 +17,7 @@ public class JavaSevenSR3 extends AppCompatActivity {
     public void javaCompleteA(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR27", 11);
+        editor.putInt("SR1", 9);
         editor.commit();
         setTopic7Status();
     }
@@ -25,7 +25,7 @@ public class JavaSevenSR3 extends AppCompatActivity {
     public void javaCompleteB(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR27", 7);
+        editor.putInt("SR1", 6);
         editor.commit();
         setTopic7Status();
     }
@@ -33,7 +33,7 @@ public class JavaSevenSR3 extends AppCompatActivity {
     public void javaCompleteC(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR27", 3);
+        editor.putInt("SR1", 3);
         editor.commit();
         setTopic7Status();
     }
@@ -43,6 +43,17 @@ public class JavaSevenSR3 extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveSeven", "JavaComplete");
         editor.commit();
+
+        for (int i = 27; i > 0; i--)
+        {
+
+            String srCurrent = "SR" + (i);
+            int srI = sharedPref.getInt(srCurrent, -1);
+            srI = srI - 1;
+            editor.putInt(srCurrent, srI);
+            editor.commit();
+
+        }
 
         Intent intent = new Intent(this, JavaSRTopics.class);
         startActivity(intent);

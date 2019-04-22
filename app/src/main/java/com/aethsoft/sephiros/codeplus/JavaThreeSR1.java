@@ -17,7 +17,7 @@ public class JavaThreeSR1 extends AppCompatActivity {
     public void javaThreePointTwoA(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR8", 11);
+        editor.putInt("SR20", 12);
         editor.commit();
         setTopic3Status();
     }
@@ -25,7 +25,7 @@ public class JavaThreeSR1 extends AppCompatActivity {
     public void javaThreePointTwoB(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR8", 7);
+        editor.putInt("SR20", 8);
         editor.commit();
         setTopic3Status();
     }
@@ -33,7 +33,7 @@ public class JavaThreeSR1 extends AppCompatActivity {
     public void javaThreePointTwoC(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR8", 3);
+        editor.putInt("SR20", 3);
         editor.commit();
         setTopic3Status();
     }
@@ -44,17 +44,18 @@ public class JavaThreeSR1 extends AppCompatActivity {
         editor.putString("javaSaveThree", "JavaThreePointTwo");
         editor.commit();
 
-        int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
+        for (int i = 27; i > 20; i--)
+        {
 
-        if (getSRTopicNumber == 1) {
-            editor.putInt("endOfTopic", 0);
+            String srCurrent = "SR" + (i);
+            int srI = sharedPref.getInt(srCurrent, -1);
+            srI = srI - 1;
+            editor.putInt(srCurrent, srI);
             editor.commit();
-            Intent intent2 = new Intent(this, JavaSRTopics.class);
-            startActivity(intent2);
+
         }
-        else {
-            Intent intent = new Intent(this, JavaThreePointTwo.class);
-            startActivity(intent);
-        }
+
+        Intent intent = new Intent(this, JavaThreePointTwo.class);
+        startActivity(intent);
     }
 }

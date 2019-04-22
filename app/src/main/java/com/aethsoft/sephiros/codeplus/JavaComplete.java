@@ -18,7 +18,7 @@ public class JavaComplete extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveSeven", null);
-        editor.commit();
+        editor.apply();
 
         Intent intent = new Intent(this, StartApp.class);
         startActivity(intent);

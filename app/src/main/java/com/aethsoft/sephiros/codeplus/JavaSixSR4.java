@@ -17,7 +17,7 @@ public class JavaSixSR4 extends AppCompatActivity {
     public void javaSixPointFiveA(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR23", 11);
+        editor.putInt("SR5", 9);
         editor.commit();
         setTopic6Status();
     }
@@ -25,7 +25,7 @@ public class JavaSixSR4 extends AppCompatActivity {
     public void javaSixPointFiveB(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR23", 7);
+        editor.putInt("SR5", 6);
         editor.commit();
         setTopic6Status();
     }
@@ -33,7 +33,7 @@ public class JavaSixSR4 extends AppCompatActivity {
     public void javaSixPointFiveC(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR23", 3);
+        editor.putInt("SR5", 3);
         editor.commit();
         setTopic6Status();
     }
@@ -44,17 +44,18 @@ public class JavaSixSR4 extends AppCompatActivity {
         editor.putString("javaSaveSix", "JavaSixPointFive");
         editor.commit();
 
-        int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
+        for (int i = 27; i > 5; i--)
+        {
 
-        if (getSRTopicNumber == 1) {
-            editor.putInt("endOfTopic", 0);
+            String srCurrent = "SR" + (i);
+            int srI = sharedPref.getInt(srCurrent, -1);
+            srI = srI - 1;
+            editor.putInt(srCurrent, srI);
             editor.commit();
-            Intent intent2 = new Intent(this, JavaSRTopics.class);
-            startActivity(intent2);
+
         }
-        else {
-            Intent intent = new Intent(this, JavaSixPointFive.class);
-            startActivity(intent);
-        }
+
+        Intent intent = new Intent(this, JavaSixPointFive.class);
+        startActivity(intent);
     }
 }

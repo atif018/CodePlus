@@ -43,14 +43,21 @@ public class JavaProgramQuiz22 extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPref.edit();
         int srStatus = sharedPref.getInt("JavaSRActivate", -1);
 
-        if (srStatus == 1) {
+        int getSRTopicNumber = sharedPref.getInt("endOfTopic", -1);
+
+        if (getSRTopicNumber == 1) {
+            editor.putInt("endOfTopic", 0);
+            editor.apply();
+            intent = new Intent(this, JavaSRTopics.class);
+        }
+        else if (srStatus == 1) {
             intent = new Intent(this, JavaFourSR4.class);
             editor.putString("javaSaveFour", "JavaFourSR4");
-            editor.commit();
+            editor.apply();
         } else {
             intent = new Intent(this, StartJava5.class);
             editor.putString("javaSaveFour", null);
-            editor.commit();
+            editor.apply();
         }
         startActivity(intent);
     }
