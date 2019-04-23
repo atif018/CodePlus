@@ -17,24 +17,24 @@ public class JavaSevenSR1 extends AppCompatActivity {
     public void javaSevenPointTwoA(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR3", 9);
-        editor.commit();
+        editor.putInt("SR25", 9);
+        editor.apply();
         setTopic7Status();
     }
 
     public void javaSevenPointTwoB(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR3", 6);
-        editor.commit();
+        editor.putInt("SR25", 6);
+        editor.apply();
         setTopic7Status();
     }
 
     public void javaSevenPointTwoC(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR3", 3);
-        editor.commit();
+        editor.putInt("SR25", 3);
+        editor.apply();
         setTopic7Status();
     }
 
@@ -42,16 +42,16 @@ public class JavaSevenSR1 extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveSeven", "JavaSevenPointTwo");
-        editor.commit();
+        editor.apply();
 
-        for (int i = 27; i > 3; i--)
+        for (int i = 1; i < 25; i++)
         {
 
             String srCurrent = "SR" + (i);
             int srI = sharedPref.getInt(srCurrent, -1);
             srI = srI - 1;
             editor.putInt(srCurrent, srI);
-            editor.commit();
+            editor.apply();
 
         }
 

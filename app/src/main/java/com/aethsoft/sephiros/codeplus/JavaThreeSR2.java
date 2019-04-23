@@ -17,24 +17,24 @@ public class JavaThreeSR2 extends AppCompatActivity {
     public void javaThreePointThreeA(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR19", 12);
-        editor.commit();
+        editor.putInt("SR9", 12);
+        editor.apply();
         setTopic3Status();
     }
 
     public void javaThreePointThreeB(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR19", 8);
-        editor.commit();
+        editor.putInt("SR9", 8);
+        editor.apply();
         setTopic3Status();
     }
 
     public void javaThreePointThreeC(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR19", 3);
-        editor.commit();
+        editor.putInt("SR9", 3);
+        editor.apply();
         setTopic3Status();
     }
 
@@ -42,16 +42,16 @@ public class JavaThreeSR2 extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveThree", "JavaThreePointThree");
-        editor.commit();
+        editor.apply();
 
-        for (int i = 27; i > 19; i--)
+        for (int i = 1; i < 9; i++)
         {
 
             String srCurrent = "SR" + (i);
             int srI = sharedPref.getInt(srCurrent, -1);
             srI = srI - 1;
             editor.putInt(srCurrent, srI);
-            editor.commit();
+            editor.apply();
 
         }
 

@@ -17,7 +17,7 @@ public class JavaFourSR4 extends AppCompatActivity {
     public void javaStartJava5A(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR13", 12);
+        editor.putInt("SR15", 12);
         editor.apply();
         setTopic4Status();
     }
@@ -25,7 +25,7 @@ public class JavaFourSR4 extends AppCompatActivity {
     public void javaStartJava5B(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR13", 8);
+        editor.putInt("SR15", 8);
         editor.apply();
         setTopic4Status();
     }
@@ -33,7 +33,7 @@ public class JavaFourSR4 extends AppCompatActivity {
     public void javaStartJava5C(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR13", 3);
+        editor.putInt("SR15", 3);
         editor.apply();
         setTopic4Status();
     }
@@ -44,7 +44,7 @@ public class JavaFourSR4 extends AppCompatActivity {
         editor.putString("javaSaveFour", null);
         editor.apply();
 
-        for (int i = 27; i > 13; i--)
+        for (int i = 1; i < 15; i++)
         {
 
             String srCurrent = "SR" + (i);

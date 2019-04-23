@@ -42,7 +42,7 @@
             android:layout_below="@id/boolean2_quiz"
             android:textSize="20sp"
             android:width="60dp"
-            android:maxLength="7"
+            android:maxLength="6"
             android:inputType="text"
             android:singleLine="true"
             android:imeOptions="actionDone"/>

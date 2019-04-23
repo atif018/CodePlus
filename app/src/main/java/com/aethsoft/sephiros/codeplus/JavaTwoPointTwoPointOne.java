@@ -19,7 +19,7 @@ public class JavaTwoPointTwoPointOne extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveTwo", "JavaProgramQuiz8");
-        editor.commit();
+        editor.apply();
 
         Intent intent = new Intent(this, JavaProgramQuiz8.class);
         startActivity(intent);

@@ -18,7 +18,7 @@ public class JavaSRQuestion extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("JavaSRActivate", 1);
-        editor.commit();
+        editor.apply();
 
         for (int i = 1; i < 28; i++)
         {
@@ -36,7 +36,7 @@ public class JavaSRQuestion extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt("JavaSRActivate", 0);
-        editor.commit();
+        editor.apply();
         startJavaOnePointOne();
     }
 
@@ -44,7 +44,7 @@ public class JavaSRQuestion extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveOne", "JavaOnePointOne");
-        editor.commit();
+        editor.apply();
         Intent intent = new Intent(this, JavaOnePointOne.class);
         startActivity(intent);
     }

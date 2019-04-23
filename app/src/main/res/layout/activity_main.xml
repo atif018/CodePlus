@@ -1,36 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<!-- "ScrollView" allows you to make a page "scrollable". I used
+https://stackoverflow.com/questions/18375795/use-scroll-view-in-android as a reference. Width and Height
+is set to "match_parent" because I wanted it to take up the whole screen even when scrolling is needed.
+
+"fillViewport" is needed so that you're able to scroll properly. I used Sam Dozor's comment in
+    https://stackoverflow.com/questions/10211338/view-inside-scrollview-doesnt-take-all-place as a reference. -->
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:background="@color/white">
+    android:fillViewport="true">
 
-    <ImageView
-        android:src="@drawable/codepluslogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@id/intro_imageview"
-        android:layout_marginTop="8dp" />
+    <!-- Using vertical orientation in conjunction with the ability to scroll. Background is set to "white"
+     to simplify the app colour scheme.
+     https://developer.android.com/guide/topics/ui/layout/relative,
+     https://developer.android.com/reference/android/widget/RelativeLayout.html &
+     https://www.tutorialspoint.com/android/android_relative_layout.htm were used as references. -->
 
-    <ImageView
-        android:src="@drawable/taglogo"
-        android:id="@+id/intro_imageview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:background="@color/white">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
-        android:text="@string/start_app"
-        android:layout_margin="32dp"
-        android:onClick="startSignIn"/>
+        <!-- ImageView allows you to place an image in the activity.  -->
 
-</RelativeLayout>
+        <ImageView
+            android:src="@drawable/codepluslogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/intro_imageview"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:src="@drawable/taglogo"
+            android:id="@+id/intro_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/start_app"
+            android:layout_margin="32dp"
+            android:onClick="startSignIn"/>
+
+    </RelativeLayout>
+
+</ScrollView>

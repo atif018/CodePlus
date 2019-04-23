@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class JavaProgramQuiz29 extends AppCompatActivity {
 
-    private String answer = "read";
+    private String answer = "read only";
     private Intent intent;
 
     @Override

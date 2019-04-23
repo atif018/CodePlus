@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class JavaProgramQuiz27 extends AppCompatActivity {
 
-    private String answer = "3";
+    private String answer = "1";
     private Intent intent;
 
     @Override

@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -53,7 +59,8 @@
             android:textSize="20sp"
             android:layout_below="@id/possible_answers"
             android:layout_marginRight="32dp"
-            android:layout_toLeftOf="@id/java_answer_2"/>
+            android:layout_toLeftOf="@id/java_answer_2"
+            android:layout_marginBottom="64dp"/>
 
         <TextView
             android:id="@+id/java_answer_2"
@@ -62,7 +69,8 @@
             android:text="@string/java_quiz_9_answer2"
             android:textSize="20sp"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/possible_answers"/>
+            android:layout_below="@id/possible_answers"
+            android:layout_marginBottom="64dp"/>
 
         <TextView
             android:id="@+id/java_answer_3"
@@ -72,6 +80,8 @@
             android:textSize="20sp"
             android:layout_marginLeft="32dp"
             android:layout_toRightOf="@id/java_answer_2"
-            android:layout_below="@id/possible_answers"/>
+            android:layout_below="@id/possible_answers"
+            android:layout_marginBottom="64dp"/>
 
     </RelativeLayout>
+</ScrollView>

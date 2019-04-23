@@ -33,89 +33,116 @@ public class JavaSRTopics extends AppCompatActivity {
                 editor.putInt(srCurrent, 10000);
                 editor.apply();
                 switch (srCurrent) {
-                    case "SR27":
+                    case "SR1":
                         intent = new Intent(this, JavaOnePointOne.class);
+                        startActivity(intent);
                         break;
-                    case "SR26":
+                    case "SR2":
                         intent = new Intent(this, JavaOnePointTwo.class);
+                        startActivity(intent);
                         break;
-                    case "SR25":
+                    case "SR3":
                         intent = new Intent(this, JavaOnePointThree.class);
+                        startActivity(intent);
                         break;
-                    case "SR24":
+                    case "SR4":
                         intent = new Intent(this, JavaOnePointFour.class);
+                        startActivity(intent);
                         break;
-                    case "SR23":
+                    case "SR5":
                         intent = new Intent(this, JavaTwoPointOne.class);
+                        startActivity(intent);
                         break;
-                    case "SR22":
+                    case "SR6":
                         intent = new Intent(this, JavaTwoPointTwo.class);
+                        startActivity(intent);
                         break;
-                    case "SR21":
+                    case "SR7":
                         intent = new Intent(this, JavaTwoPointThree.class);
+                        startActivity(intent);
                         break;
-                    case "SR20":
+                    case "SR8":
                         intent = new Intent(this, JavaThreePointOne.class);
+                        startActivity(intent);
                         break;
-                    case "SR19":
+                    case "SR9":
                         intent = new Intent(this, JavaThreePointTwo.class);
+                        startActivity(intent);
                         break;
-                    case "SR18":
+                    case "SR10":
                         intent = new Intent(this, JavaThreePointThree.class);
+                        startActivity(intent);
                         break;
-                    case "SR17":
+                    case "SR11":
                         intent = new Intent(this, JavaThreePointFour.class);
+                        startActivity(intent);
                         break;
-                    case "SR16":
+                    case "SR12":
                         intent = new Intent(this, JavaFourPointOne.class);
+                        startActivity(intent);
                         break;
-                    case "SR15":
+                    case "SR13":
                         intent = new Intent(this, JavaFourPointTwo.class);
+                        startActivity(intent);
                         break;
                     case "SR14":
                         intent = new Intent(this, JavaFourPointThree.class);
+                        startActivity(intent);
                         break;
-                    case "SR13":
+                    case "SR15":
                         intent = new Intent(this, JavaFourPointFour.class);
+                        startActivity(intent);
                         break;
-                    case "SR12":
+                    case "SR16":
                         intent = new Intent(this, JavaFivePointOne.class);
+                        startActivity(intent);
                         break;
-                    case "SR11":
+                    case "SR17":
                         intent = new Intent(this, JavaFivePointTwo.class);
+                        startActivity(intent);
                         break;
-                    case "SR10":
+                    case "SR18":
                         intent = new Intent(this, JavaFourPointThree.class);
+                        startActivity(intent);
                         break;
-                    case "SR9":
+                    case "SR19":
                         intent = new Intent(this, JavaFivePointFour.class);
+                        startActivity(intent);
                         break;
-                    case "SR8":
+                    case "SR20":
                         intent = new Intent(this, JavaSixPointOne.class);
+                        startActivity(intent);
                         break;
-                    case "SR7":
+                    case "SR21":
                         intent = new Intent(this, JavaSixPointTwo.class);
+                        startActivity(intent);
                         break;
-                    case "SR6":
+                    case "SR22":
                         intent = new Intent(this, JavaSixPointThree.class);
+                        startActivity(intent);
                         break;
-                    case "SR5":
+                    case "SR23":
                         intent = new Intent(this, JavaSixPointFour.class);
+                        startActivity(intent);
                         break;
-                    case "SR4":
+                    case "SR24":
                         intent = new Intent(this, JavaSixPointFive.class);
+                        startActivity(intent);
                         break;
-                    case "SR3":
+                    case "SR25":
                         intent = new Intent(this, JavaSevenPointOne.class);
+                        startActivity(intent);
                         break;
-                    case "SR2":
+                    case "SR26":
                         intent = new Intent(this, JavaSevenPointTwo.class);
+                        startActivity(intent);
                         break;
-                    case "SR1":
+                    case "SR27":
                         intent = new Intent(this, JavaSevenPointThree.class);
+                        startActivity(intent);
                         break;
                 }
-                startActivity(intent);
+                break;
             }
         }
     }

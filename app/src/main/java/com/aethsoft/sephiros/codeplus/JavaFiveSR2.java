@@ -17,7 +17,7 @@ public class JavaFiveSR2 extends AppCompatActivity {
     public void javaFivePointThreeA(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR11", 11);
+        editor.putInt("SR17", 11);
         editor.apply();
         setTopic5Status();
     }
@@ -25,7 +25,7 @@ public class JavaFiveSR2 extends AppCompatActivity {
     public void javaFivePointThreeB(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR11", 7);
+        editor.putInt("SR17", 7);
         editor.apply();
         setTopic5Status();
     }
@@ -33,7 +33,7 @@ public class JavaFiveSR2 extends AppCompatActivity {
     public void javaFivePointThreeC(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR11", 3);
+        editor.putInt("SR17", 3);
         editor.apply();
         setTopic5Status();
     }
@@ -44,7 +44,7 @@ public class JavaFiveSR2 extends AppCompatActivity {
         editor.putString("javaSaveFive", "JavaFivePointThree");
         editor.apply();
 
-        for (int i = 27; i > 11; i--)
+        for (int i = 1; i < 17; i++)
         {
 
             String srCurrent = "SR" + (i);

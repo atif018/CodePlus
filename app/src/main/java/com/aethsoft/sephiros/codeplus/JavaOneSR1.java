@@ -17,7 +17,7 @@ public class JavaOneSR1 extends AppCompatActivity {
     public void javaOnePointTwoA(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR27", 12);
+        editor.putInt("SR1", 12);
         editor.apply();
         setTopicOneStatus();
     }
@@ -25,7 +25,7 @@ public class JavaOneSR1 extends AppCompatActivity {
     public void javaOnePointTwoB(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR27", 8);
+        editor.putInt("SR1", 8);
         editor.apply();
         setTopicOneStatus();
     }
@@ -33,7 +33,7 @@ public class JavaOneSR1 extends AppCompatActivity {
     public void javaOnePointTwoC(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR27", 2);
+        editor.putInt("SR1", 2);
         editor.apply();
         setTopicOneStatus();
     }

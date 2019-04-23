@@ -411,8 +411,8 @@
         with brackets and a semi-colon. But there\'s a problem in that you need to provide inputs for the method.
         Let\'s say you wanted to multiply \"4\" with itself and output (return) the result. To call the method,
         you would do the following:\n\nsumOfSquares(4);\n\nBut now, there\'s another thing we still have to do.
-        We need some place to store the result. That can easily be done by initialising a variable as so:\n\n
-        int result = sumOfSquares(4);\n\nThis is the code you would use to call a method. \"int\" is used here
+        We need some place to store the result. That can easily be done by initialising a variable as
+        so:\n\nint result = sumOfSquares(4);\n\nThis is the code you would use to call a method. \"int\" is used here
         because that\'s the return type for the method. They must always match. Another thing that must match
         is the input/variable type that you are sending to the method and they must match the input type found between
         the brackets in the method header.\n\nFinally, methods can be coded to allow more than one input type/
@@ -427,8 +427,8 @@
         have been done by the method and to send the result back to the caller. Using the previous example:</string>
     <string name="return_body1">The method receives values/inputs/arguments from the method caller. It uses these
         same arguments in the body of the method to calculate, in this case, the square of the number that was
-        sent to it. After doing that, the return statement is used to send the result back to the caller.\n\n
-        You can use multiple return statements but the method will end when it reaches the very first
+        sent to it. After doing that, the return statement is used to send the result back to the
+        caller.\n\nYou can use multiple return statements but the method will end when it reaches the very first
         return statement:</string>
     <string name="return_body2">In this example, there are two return statements. The way the method works
         is that the method is called and inputs/parameters are sent to the method. With the method itself,
@@ -457,8 +457,8 @@
     <string name="java_quiz_26_answer3">15</string>
     <string name="java_quiz_27">Assume that you had a method named \"getNames\" and it took a single String as
     input. Assume that you also had a String variable already initialised outside the method as follows:\n\nString name = \"Mike\";
-    \n\nHow would you correctly call this method from the choices below?\n\n1. getNames(Mike);\n\n2. getNames();
-    \n\n3. getNames(\"Mike\");</string>
+    \n\nHow would you correctly call this method from the choices below?\n\n1. getNames(name);\n\n2. getNames();
+    \n\n3. getNames(\"name\");</string>
     <string name="java_quiz_27_answer1">1</string>
     <string name="java_quiz_27_answer2">2</string>
     <string name="java_quiz_27_answer3">3</string>
@@ -470,8 +470,8 @@
         variables and then you can start using it. The example above is an array of length 4 (4 elements can be
         stored in it). Each value stored in it is called an \"element\" and its \"index\" is the number above
         the boxes in the above example. The first element always starts with 0 and so its index is 0. Suppose that
-        you want to declare an array as above and want to name it \"numbers\":\n\nint[] numbers = new int[4];\n\n
-        Read from left to right, you\'re saying that you want to declare a new \"int\" array which will hold
+        you want to declare an array as above and want to name it \"numbers\":\n\nint[] numbers = new
+        int[4];\n\nRead from left to right, you\'re saying that you want to declare a new \"int\" array which will hold
         integers and the arrays name will be \"numbers\". Then, the new arrays length will be \"4\". You don\'t
         have to use int and can use any other variable type like double or String as well.\n\nFinally, arrays
         are of a fixed size so if an array of length 10 is declared, it cannot be changed so that it\'s bigger
@@ -479,8 +479,8 @@
         eg:\nnumbers.length();\n\n\n</string>
     <string name="arrays2_text">6.1.1 How to use Arrays</string>
     <string name="arrays2_body">In the previous section, we saw how to declare arrays. To declare a array with
-    the name \"typesOfVans\" that will store strings and will be of length 10, you\'d use the following code:\n\n
-    String[] typesOfVans = new String[10];\n\nWhen a new array is declared, it is empty but if you have values that
+    the name \"typesOfVans\" that will store strings and will be of length 10, you\'d use the following
+        code:\n\nString[] typesOfVans = new String[10];\n\nWhen a new array is declared, it is empty but if you have values that
         you want to add to the array at the same time as declaring, you would do the following:\n\nString[] typesOfCars
         = {\"Ford\", \"Honda\", \"Hyundai\", \"Audi\", \"BMW\", \"Mercedes\"};\n\nGoing back to the original empty
         array, you can add values to the array by typing the following:\n\ntypesOfVans[3] = \"Ford\";\n\nThe \"3\"
@@ -556,8 +556,8 @@
         the list (In this case, with the empty list, the position will be 0). To add a value at a certain position, you\'d
         use:\n\nvalues.add(4, 57);\n\nWhich would add \"57\" at index 4. If a value already exists at that position, it
         would be pushed to position 5, with the value at position 5 being pushed to position 6 etc.\n\nTo get a value at a certain
-        position, use:\n\nvalues.get(4);\n\nWhich returns the value at position 4. To overwrite a value at a certain position, use:\n\n
-        values.set(2, 32);\n\nWhich, in this case, overwrites position 2 with the value \"32\".\n\nFinally, to remove values,
+        position, use:\n\nvalues.get(4);\n\nWhich returns the value at position 4. To overwrite a value at a certain position,
+        use:\n\nvalues.set(2, 32);\n\nWhich, in this case, overwrites position 2 with the value \"32\".\n\nFinally, to remove values,
         use:\n\nvalues.remove(3);\n\nWhich removes the value stored at position 3. When removing, all values stored after
         that position automatically move up one position, eg. from position 5 to position 4.\n\nFinally, wth arrays, you can
         find the length of the array by using .length(). With ArrayLists, you can find the length by using .size().\n\n\n</string>
@@ -634,13 +634,13 @@
     class that was shown in the previous section:\n\nPerson mike = new Person();\n\nThe above statement is
         saying that, using the Person class, we want to create a new person named \"mike\". Now that \"mike\"
     has been constructed as an object, we can change mike and his behaviour by accessing any methods that
-    mike has. For example, if we wanted to say that mike is 36 years old, we\'d do the following:\n\nmike.
-    addAge(36);\n\nWhat we are saying is that we want to access the \"addAge\" method in the mike object and
+    mike has. For example, if we wanted to say that mike is 36 years old, we\'d do the
+        following:\n\nmike.addAge(36);\n\nWhat we are saying is that we want to access the \"addAge\" method in the mike object and
     sending \"36\" as the parameter to it. The method would alter the objects \"age\" instance variable to 36.\n\n\n</string>
     <string name="objects1_text">7.2.1 Declaring Objects (Continued)</string>
     <string name="objects1_body">
-        You must ensure that what you are sending to a method matches the type of parameters that it accepts.\n\n
-    You can have all kinds of methods within a class. Some methods will return the instance variable back to their
+        You must ensure that what you are sending to a method matches the type of parameters that it
+        accepts.\n\nYou can have all kinds of methods within a class. Some methods will return the instance variable back to their
     original values, some will keep a running total and some will return a value back to the method caller. Suppose
     we had a method that started something like this:\n\npublic int getAge() {\n return age;\n}\n\nAnd used the following
     method caller:\n\nint myAge = mike.getAge();\n\nThe statement is saying that you want to access the mike object,
@@ -661,7 +661,7 @@
     <string name="java_complete_body">We hope that this course successfully taught you the fundamentals
     of Java and also ignited a desire in you to learn more about this popular language. If you haven\'t
     already done so, we encourage you to take the other courses available through this app to learn more
-    languages.\n\nIn the meantime, we thank you for choosing to learn how to program with Code+.\n\n\n</string>
+    languages.\n\nIn the meantime, we thank you for choosing to learn to program with Code+.\n\n\n</string>
     <string name="SR_next_topic">This is the Spaced Repetition section where you\'ll have the opportunity
     to repeat subtopics based on your responses to how confident you felt learning about any section. Please
     press \"Continue\" below and a relevant subtopic will appear. If no topics appear, then please press the

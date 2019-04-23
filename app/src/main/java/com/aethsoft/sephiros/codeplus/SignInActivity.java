@@ -47,7 +47,7 @@ public class SignInActivity extends AppCompatActivity {
             sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
             SharedPreferences.Editor editor = sharedPref.edit();
             editor.putString("name", firstName);
-            editor.commit();
+            editor.apply();
 
             Toast.makeText(getApplicationContext(), "Welcome to Code+, " + firstName + "!", Toast.LENGTH_LONG).show();
             startCodeApp();
@@ -101,7 +101,7 @@ public class SignInActivity extends AppCompatActivity {
         sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("name", nameOfUser);
-        editor.commit();
+        editor.apply();
 
         Intent intent = new Intent(this, StartApp.class);
         startActivity(intent);

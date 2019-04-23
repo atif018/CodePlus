@@ -39,8 +39,8 @@
 
         <ImageView
             android:id="@+id/declare_constructor_example"
-            android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
             android:layout_below="@id/main_body"
             android:layout_centerHorizontal="true"
             android:layout_margin="16dp"

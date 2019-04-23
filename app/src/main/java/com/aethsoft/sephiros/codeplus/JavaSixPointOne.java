@@ -19,7 +19,7 @@ public class JavaSixPointOne extends AppCompatActivity {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putString("javaSaveSix", "JavaSixPointOnePointOne");
-        editor.commit();
+        editor.apply();
 
         Intent intent = new Intent(this, JavaSixPointOnePointOne.class);
         startActivity(intent);
