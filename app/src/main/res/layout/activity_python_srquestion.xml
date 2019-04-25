@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PythonSRQuestion"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/python_sr_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/python_sr_title"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/python_sr_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/python_sr_text"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@id/python_sr_question"/>
+
+        <TextView
+            android:id="@+id/python_sr_activate_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/python_sr_option"
+            android:layout_marginBottom="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_below="@id/python_sr_body"/>
+
+        <Button
+            android:id="@+id/python_activate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/python_activate_button"
+            android:layout_centerInParent="true"
+            android:layout_margin="16dp"
+            android:onClick="pythonOnePointOneA"
+            android:layout_below="@id/python_sr_activate_question"/>
+
+        <Button
+            android:id="@+id/python_dont_activate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/python_dont_activate_button"
+            android:layout_margin="16dp"
+            android:layout_below="@id/python_activate"
+            android:onClick="pythonOnePointOneB"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+</ScrollView>

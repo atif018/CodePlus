@@ -33,7 +33,7 @@ public class JavaOneSR1 extends AppCompatActivity {
     public void javaOnePointTwoC(View view) {
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("SR1", 2);
+        editor.putInt("SR1", 3);
         editor.apply();
         setTopicOneStatus();
     }

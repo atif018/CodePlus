@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class JavaProgramQuiz8 extends AppCompatActivity {
 
     private String answer = "increment";
-    Intent intent;
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -16,6 +16,14 @@
         programmers make many kinds of programs, how safe it is to use, how portable it
     is (Can run the same program on different Operating Systems) and how much simpler it is to use
         over another popular language - C++.\n\n\n</string>
+    <string name="what_is_python_text">1.1 What is Python?</string>
+    <string name="what_is_python_body">Python officially appeared in the 90s and, since then,
+        has been widely adopted by programmers the world over. Python is one of the most widely
+        used programming languages and is used in everything from building Web Applications to
+        developing Android Apps and many things in-between!\n\nPython has several important
+    features that helped it explode in popularity including how portable it
+    is (Can run the same program on different Operating Systems) and how much simpler it is to use and learn
+        over other popular languages like Java and C++.\n\n\n</string>
     <string name="intro_to_java_programs">1.2 Introduction to Java Programs</string>
     <string name="intro_to_java_programs_body1">The following is the structure of a basic Java
         program:</string>
@@ -57,6 +65,19 @@
         this case, the argument \"Hello, World\" is sent to the System.out.println method and asks it
         to print it out on-screen.\n\nFinally, anything in quotation marks, like \"Hello, World!\" is
     called a String. We\'ll learn more about Strings later.\n\n\n</string>
+    <string name="intro_to_python_programs">1.2 Introduction to Python Programs</string>
+    <string name="intro_to_python_programs_body1">The following is the structure of a basic Python
+        program:</string>
+    <string name="intro_to_python_programs_body2">And this line of code prints \"Hello, world!\".
+        You may be wondering why it looks so simple? That\'s because it is! So how does this line of
+        code work? It\'s easy.\n\nBasically, you\'re calling a \"function\" called \"print\" to actually
+        print whatever is in the brackets. A function is a construct that you can call to do
+        something. In this example, you call a function to print something. You can see that
+        \"Hello, World!\" has been placed between the brackets. Anything placed in-between the brackets
+        after calling a function is called an \"argument\". The argument is sent to the function and the
+        function uses it to do something. In this case, the argument \"Hello, World\" is sent to the \"print\"
+        function and asks it to print it out on-screen.\n\nFinally, anything in quotation marks, like \"Hello, World!\" is
+    called a String. We\'ll learn more about Strings later. \n\n\n</string>
     <string name="go_to_next">Continue</string>
     <string name="go_to_quiz">Quiz!</string>
     <string name="go_to_finish">Finished</string>
@@ -67,6 +88,10 @@
     <string name="java_quiz_1_answer1">One</string>
     <string name="java_quiz_1_answer2">Two</string>
     <string name="java_quiz_1_answer3">Three</string>
+    <string name="python_quiz_1">What would the following line of code print?\n\nprint(\"Python!\")</string>
+    <string name="python_quiz_1_answer1">Python</string>
+    <string name="python_quiz_1_answer2">Python!</string>
+    <string name="python_quiz_1_answer3">\"Python!\"</string>
     <string name="java_quiz_2">Please complete the following:</string>
     <string name="java_quiz_2_answer1">String</string>
     <string name="java_quiz_2_answer2">Main</string>
