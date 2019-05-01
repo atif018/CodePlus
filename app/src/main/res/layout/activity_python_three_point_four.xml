@@ -11,7 +11,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".JavaThreePointFour"
+        tools:context=".PythonThreePointFour"
         android:background="@color/white">
 
         <TextView
@@ -22,7 +22,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="24dp"
-            android:text="@string/boolean_text"
+            android:text="@string/python_boolean_text"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/boolean_body"
+            android:text="@string/python_boolean_body"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"

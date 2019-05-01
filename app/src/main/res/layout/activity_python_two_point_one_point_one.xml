@@ -11,59 +11,50 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".PythonThreePointThree"
+        tools:context=".PythonTwoPointOnePointOne"
         android:background="@color/white">
 
         <TextView
-            android:id="@+id/operators_title"
+            android:id="@+id/initialise_variable_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="24dp"
-            android:text="@string/python_operators_text"
+            android:text="@string/python_initialise_variable_title"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/operators_body"
+            android:id="@+id/initialise_body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/python_operators_body"
+            android:text="@string/python_how_to_initialise_body"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_below="@id/operators_title"/>
-
-        <ImageView
-            android:id="@+id/operators_example"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/operators_body"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="8dp"
-            android:src="@drawable/operators_example" />
+            android:layout_below="@id/initialise_variable_top"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/python_operators_body1"
+            android:text="@string/python_how_to_initialise_body1"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_below="@id/operators_example"/>
+            android:layout_below="@id/initialise_body"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            android:text="@string/go_to_quiz"
+            android:layout_centerHorizontal="true"
+            android:text="@string/go_to_next"
             android:layout_margin="32dp"
-            android:onClick="pythonProgramQuiz15"/>
+            android:onClick="pythonTwoPointOnePointTwo"/>
 
     </RelativeLayout>
 </ScrollView>

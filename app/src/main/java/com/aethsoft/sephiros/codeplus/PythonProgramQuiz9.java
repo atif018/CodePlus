@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class PythonProgramQuiz9 extends AppCompatActivity {
 
-    private String answer = "i";
+    private String answer = "7";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

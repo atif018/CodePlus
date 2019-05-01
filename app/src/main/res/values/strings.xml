@@ -65,11 +65,10 @@
         this case, the argument \"Hello, World\" is sent to the System.out.println method and asks it
         to print it out on-screen.\n\nFinally, anything in quotation marks, like \"Hello, World!\" is
     called a String. We\'ll learn more about Strings later.\n\n\n</string>
-    <string name="intro_to_python_programs">1.2 Introduction to Python Programs</string>
-    <string name="intro_to_python_programs_body1">The following is the structure of a basic Python
-        program:</string>
-    <string name="intro_to_python_programs_body2">And this line of code prints \"Hello, world!\".
-        You may be wondering why it looks so simple? That\'s because it is! So how does this line of
+    <string name="python_statements">1.2 Introduction to Python Programs</string>
+    <string name="python_statements_body">The example above is an example of the structure of a basic Python
+        program. The line of code prints \"Hello,
+        world!\".\n\nYou may be wondering why it looks so simple? That\'s because it is! So how does this line of
         code work? It\'s easy.\n\nBasically, you\'re calling a \"function\" called \"print\" to actually
         print whatever is in the brackets. A function is a construct that you can call to do
         something. In this example, you call a function to print something. You can see that
@@ -83,6 +82,7 @@
     <string name="go_to_finish">Finished</string>
     <string name="text_public">public</string>
     <string name="text_helloworld">HelloWorld</string>
+    <string name="python_helloworld">(\"HelloWorld\")</string>
     <string name="possible_answers">Possible answers: </string>
     <string name="java_quiz_1">How many public classes can a Java Source File have?</string>
     <string name="java_quiz_1_answer1">One</string>
@@ -96,22 +96,42 @@
     <string name="java_quiz_2_answer1">String</string>
     <string name="java_quiz_2_answer2">Main</string>
     <string name="java_quiz_2_answer3">Class</string>
+    <string name="python_quiz_2">Please complete the following:</string>
+    <string name="python_quiz_2_answer1">print</string>
+    <string name="python_quiz_2_answer2">systemprint</string>
+    <string name="python_quiz_2_answer3">printthis</string>
     <string name="java_quiz_3">What kind of Method must every Java program have?</string>
     <string name="java_quiz_3_answer1">Class</string>
     <string name="java_quiz_3_answer2">Println</string>
     <string name="java_quiz_3_answer3">Main</string>
+    <string name="python_quiz_3">What do you call anything put in-between the brackets when calling a function?</string>
+    <string name="python_quiz_3_answer1">string</string>
+    <string name="python_quiz_3_answer2">argument</string>
+    <string name="python_quiz_3_answer3">print</string>
     <string name="java_quiz_4">What should you design prior to starting any programming?</string>
     <string name="java_quiz_4_answer1">Class</string>
     <string name="java_quiz_4_answer2">Algorithm</string>
     <string name="java_quiz_4_answer3">Method</string>
+    <string name="python_quiz_4">What should you design prior to starting any programming?</string>
+    <string name="python_quiz_4_answer1">Class</string>
+    <string name="python_quiz_4_answer2">Algorithm</string>
+    <string name="python_quiz_4_answer3">Function</string>
     <string name="java_quiz_5">What should you always place after any declaration of a Class or Method?</string>
     <string name="java_quiz_5_answer1">Brackets</string>
     <string name="java_quiz_5_answer2">Braces</string>
     <string name="java_quiz_5_answer3">Parentheses</string>
+    <string name="python_quiz_5">What should you always place after any declaration of a Class or Method?</string>
+    <string name="python_quiz_5_answer1">Brackets</string>
+    <string name="python_quiz_5_answer2">Braces</string>
+    <string name="python_quiz_5_answer3">Parentheses</string>
     <string name="java_quiz_6">Please complete the following:</string>
     <string name="java_quiz_6_answer1">Println</string>
     <string name="java_quiz_6_answer2">Class</string>
     <string name="java_quiz_6_answer3">Object</string>
+    <string name="python_quiz_6">Please complete the following:</string>
+    <string name="python_quiz_6_answer1">Println</string>
+    <string name="python_quiz_6_answer2">Class</string>
+    <string name="python_quiz_6_answer3">Object</string>
     <string name="java_quiz_7">Please complete the following:</string>
     <string name="java_quiz_7_answer1">Double</string>
     <string name="java_quiz_7_answer2">String</string>
@@ -137,6 +157,31 @@
     <string name="java_quiz_12_answer1">Camelcase</string>
     <string name="java_quiz_12_answer2">Reserved</string>
     <string name="java_quiz_12_answer3">Objects</string>
+    <string name="python_quiz_7">What type of variable is stored in sumOfFractions?</string>
+    <string name="python_quiz_7_answer1">Double</string>
+    <string name="python_quiz_7_answer2">String</string>
+    <string name="python_quiz_7_answer3">double</string>
+    <string name="python_quiz_8">If you saw \"x = x + 1\" in some Python code, what does it mean?</string>
+    <string name="python_quiz_8_answer1">Add twice</string>
+    <string name="python_quiz_8_answer2">Increment</string>
+    <string name="python_quiz_8_answer3">Decrement</string>
+    <string name="python_quiz_9">When using the \"len\" function, what does it return for the String \"Jasmine\"?</string>
+    <string name="python_quiz_9_answer1">7</string>
+    <string name="python_quiz_9_answer2">6</string>
+    <string name="python_quiz_9_answer3">8</string>
+    <string name="python_quiz_10">What number type is the number \"43.564\"?</string>
+    <string name="python_quiz_10_answer1">int</string>
+    <string name="python_quiz_10_answer2">double</string>
+    <string name="python_quiz_10_answer3">short</string>
+    <string name="python_quiz_11">What type of variable is stored in bestFriendsName?</string>
+    <string name="python_quiz_11_answer1">double</string>
+    <string name="python_quiz_11_answer2">Integer</string>
+    <string name="python_quiz_11_answer3">String</string>
+    <string name="python_quiz_12">What is the term used to describe variable names that start with a
+    lower-case letter or underscore and capitalise every subsequent word, eg. \"numberOfCars\"?</string>
+    <string name="python_quiz_12_answer1">Camelcase</string>
+    <string name="python_quiz_12_answer2">Reserved</string>
+    <string name="python_quiz_12_answer3">Objects</string>
     <string name="java_pseudocode">1.3 The importance of Pseudocode and Algorithms</string>
     <string name="java_pseudocode_body">Before beginning any programming, it is good practice to break
     a problem down into a series of steps using simple language. For example, let\'s assume that you
@@ -159,7 +204,33 @@
     it comes down to is practice! Practice, practice and practice more building Java programs since that
     really is the quickest way to learn how things come together and work, whether you\'re building small
     programs or larger, more complicated ones. At this stage, your Java knowledge will be limited but, as
-        you learn more, the importance the practicing to program cannot be understated.\n\nWhat programs can
+        you learn more, the importance of practicing to program cannot be understated.\n\nWhat programs can
+        be used for a programmer just starting out? One particular one that\'s highly recommended is \"BlueJ\"
+        but there are others that those new to programming can use including \"Alice\" and another called
+        \"Scratch\".\n\n\n</string>
+    <string name="python_pseudocode">1.3 The importance of Pseudocode and Algorithms</string>
+    <string name="python_pseudocode_body">Before beginning any programming, it is good practice to break
+    a problem down into a series of steps using simple language. For example, let\'s assume that you
+        wanted to add every number from 1 to 100 and then show the total after adding all the numbers.
+        You would start with 1, add 2, then add 3 and continue until you add 100 after which
+        you\'d show the total.\n\nFirst, the number that needs to be added could be stored under
+        \"Current Number\" which would increment by 1 after any addition done. You\'d also need a
+        running total so that could be stored under \"Total\".
+    The steps that you take could be as follows:\n\n1. Set Total to 0.\n2. Set Current Number to 1.\n3.
+        Add Total and Current Number.\n4. Store result in Total.\n5. Increase Current Number by 1.\n6.
+    Add Total and Current Number.\n..\nAnd keep repeating until Current Number is 100 before showing the
+        total.\n\nWhat we did above was break down a goal into a series of steps that tell you clearly
+    and exactly how to achieve that goal. This process can be called \"Pseudocode\" or, as it\'s more
+    commonly known, an \"Algorithm\". An Algorithm needs to be easy to understand and you should be
+    able to program it into a computer.\n\n\n</string>
+    <string name="python_structure">1.4 The importance of practicing your programming skills</string>
+    <string name="python_structure_body">Python programs typically consist of classes, functions,
+    objects, lists, variables and many other components including a rich library. So how would
+    you know when and where to use these components? And how can you become a good programmer?\n\nWhat
+    it comes down to is practice! Practice, practice and practice more building Python programs since that
+    really is the quickest way to learn how things come together and work, whether you\'re building small
+    programs or larger, more complicated ones. At this stage, your Python knowledge will be limited but, as
+        you learn more, the importance of practicing to program cannot be understated.\n\nWhat programs can
         be used for a programmer just starting out? One particular one that\'s highly recommended is \"BlueJ\"
         but there are others that those new to programming can use including \"Alice\" and another called
         \"Scratch\".\n\n\n</string>
@@ -178,6 +249,17 @@
     <string name="java_sr_option">Would you like to activate this feature?</string>
     <string name="java_activate_button">Activate</string>
     <string name="java_dont_activate_button">Don\'t activate</string>
+    <string name="python_sr_title">About this App</string>
+    <string name="python_sr_text">This app has a special feature that incorporates a learning
+    technique called \"Spaced Repetition\". The technique involves the regular repeating of material
+    that you want to learn or have learned so that your brain better retains the knowledge
+        learned.\n\nIf you activate this feature then, at the end of each subtopic, you will be asked how confident
+        you are with what you have learned. Depending on what is chosen, the same subtopic will be shown to
+    you to go over however many times you want until you are confident with the material shown. This
+    repetition of subtopics will only be done at the end of every topic.\n\n\n</string>
+    <string name="python_sr_option">Would you like to activate this feature?</string>
+    <string name="python_activate_button">Activate</string>
+    <string name="python_dont_activate_button">Don\'t activate</string>
     <string name="what_is_data_text">2.1 Storing values as Variables</string>
     <string name="what_is_data_body">Imagine that you have an empty box in front of you. You open the lid
     and place the number \"5\" in there and then close the lid. This box is then used in useful ways for
@@ -223,7 +305,51 @@
     a variable. The way to do that is as follows:\n\nfinal int NUMBER_OF_APPLES = 4;\n\nUsing \"final\" keeps the value
     at 4 for this variable. You must use the keyword before declaring and initialising any variables, just like in the
         example above.\n\nFinally, the variable name should be in caps to make it easier when reading code.\n\n\n</string>
+    <string name="python_what_is_data_text">2.1 Storing values as Variables</string>
+    <string name="python_what_is_data_body">Imagine that you have an empty box in front of you. You open the lid
+    and place the number \"5\" in there and then close the lid. This box is then used in useful ways for
+    other things, as shown in the following example.</string>
+    <string name="python_what_is_data_body1">The box is considered a variable. When we assign a value to that variable,
+    the variable stores that value. In the example above, "5" gets stored in the box. If we wanted to store
+    a new value in the box, that can also be done by overwriting the value stored in the box.\n\n\n</string>
+    <string name="python_initialise_variable_title">2.1.1 How to declare variables/</string>
+    <string name="python_how_to_initialise_body">In the previous section, you saw how to place and store a
+    value in a box. Now, you will be shown how to do it in a Python program!\n</string>
+    <string name="python_how_to_initialise_body1">Say that we want to count the number of Apples we have and store
+    the value. First, you must always declare a variable before using it. Declaring a variable is simple.
+        Assume that you counted 4 apples. If you wanted to store this as a variable, you\'d simply type:\n\nnumberOfApples
+        = 4\n\nIn this case, the variable name is \"numberOfApples\" and the value stored in it is \"4\".\n\nIn Python,
+        variables can store any type of value including, but not limited to, integers (whole numbers), double (fractional numbers like 3.142396539)
+        and Strings (For example, words). The same variable can hold different types of values at any time and you can overwrite
+        the value stored in a variable by simply assigning a new one. For example, if it currently holds
+        a \"double\" value, you can then store a String value later by overwriting it:\n\nnumberOfApples = \"eight\"\n\nAlways
+        make sure to spell the variable correctly and capitalise the correct parts since variable names are case-sensitive
+        so \"numberOfApples\" is not the same as \"NumberOfApples\" and remember what type of variable it is holding. A
+        way to do that is by using descriptive names that make it obvious what type of variable the variable is holding.\n\n\n</string>
+    <string name="python_types_variable_title">2.1.2 Types of Variables</string>
+    <string name="python_types_variable_body">There are different types of variables that you can use.
+        The most popular are:\n\n\"int\" -
+    an Integer which is any whole number, for example \"1\", \"1345\" or \"4293\".\n\n\"double\" - Double values are
+        numbers which are fractional such as \"3.55\", \"4293.493762\" or 
+        \"3048723.736254224\".\n\n"String\" - Any row of characters like, for example, words.\n</string>
+    <string name="python_types_variable_body1">Let\'s say that you wanted to store \"4\" in \"numberOfApples\",
+    then you would initialise the variable with \"4\". If you wanted to store \"Hello\" in a variable called
+    \"greeting\", then you would initialise the \"greeting\" variable with \"Hello\". It is good practice to use the same types
+    of variables when initialising, storing and overwriting otherwise you will get an error if you use the variable in, for example, a function
+        expecting one type of variable but get another.\n\nFor example, if a variable has a String type stored, you should always
+        store a String value in that variable to avoid errors.\n\nWhen naming variables, you should
+    use \"camel-case\". Camel-case naming is where the first word is lowercase and any following words capitalise
+    the first letter. For example, \"heightOfPlant\" or \"totalSize\" would be appropriate names to use.\n\nYou should
+    always start the variable name with either an underscore or a lowercase letter. The rest of the name can consist
+    of underscores, letters or numbers. You only need to initialise a variable once. After that, you can add new values
+    to the variable by simply typing, using the example in the previous example:\n\nnumberOfApples = 6;\n\nif you want
+    to change the value stored. The new value overwrites the old one.\n\n\n</string>
+    <string name="python_final_variable_title">2.1.3 Variable constants</string>
+    <string name="python_final_variable_body">You can stop any attempt to change the value of
+    a variable. The way to do that is as follows:\n\nNUMBER_OF_APPLES = 4\n\nUsing capitals tells everyone that
+        this variables' value should not be changed. In other words, this value becomes a constant.\n\n\n</string>
     <string name="text_initialise">sumOfFractions = 3.14159265;</string>
+    <string name="python_text_initialise">sumOfFractions = 3.14159265</string>
     <string name="java_arithmetic">2.2 Arithmetic with variables</string>
     <string name="java_arithmetic_body">You can use arithmetic with different variables. Suppose we have
     the following variables:\n\nnumberOfApples = 4;\nnumberOfBananas = 5;\n\nTo find the number of apples and
@@ -245,6 +371,24 @@
         of an equation is calculated first before storing the value in the variable on the left-side.
         numberOfApples is already set to 4 as was shown in the previous section. Java takes that value, adds
     2 to it and then stores it in the same variable.\n\n\n</string>
+    <string name="python_arithmetic">2.2 Arithmetic with variables</string>
+    <string name="python_arithmetic_body">You can use arithmetic with different variables. Suppose we have
+    the following variables:\n\nnumberOfApples = 4\nnumberOfBananas = 5\n\nTo find the number of apples and
+    bananas we have, we can type the following in Python:\n\nnumberOfApples * numberOfBananas\n\nSo what\'s
+    happening here? We\'re asking Python to take whatever is stored in numberOfApples and multiply it with the
+    value in numberOfBananas. But there\'s a problem here, namely where do we store the result? We declare a new
+        variable!\n\ntotalNumberOfFruit = numberOfApples * numberOfBananas\n\nFor arithmetic
+    in Python, we use the same symbols as we would using mathematics. The symbols used are \"+\" for addition, \"-\" for
+    subtraction, \"*\" for multiplication and \"/\" for division. There is a special symbol that can be used - \"%\"
+    which is called the modulus. The modulus returns the remainder of an equation. An example is as follows:\n\nsum
+    = 5 % 2;\n\nThe answer is 1 because 2 goes twice into 5 and leaves a remainder of 1.\n\nYou can also use
+    other mathematical terms such as brackets and methods like calculating the square root.\n\n\n</string>
+    <string name="python_arithmetic2">2.2.1 Arithmetic with variables 2</string>
+    <string name="python_arithmetic2_body">If you just want to add or subtract 1 to a variable, then you can use:\n\nTo
+        increase by 1: \nnumberOfApples = numberOfApples + 1;\n\nTo decrease by 1: \nnumberOfApples = numberOfApples - 1;\n\nIt
+        is allowed to use the same variable and add something to it then store the new value in the old variable since all
+        statements are read right to left. That means that the right-side
+        of an equation is calculated first before storing the value in the variable on the left-side.\n\n\n</string>
     <string name="java_strings">2.3 Using Strings</string>
     <string name="java_strings_body">You may be asking \"What are Strings\"? Strings are basically anything
     encapsulated by a pair of quotation marks like \"red\" or \"banana\". Anything within those quotation marks
@@ -267,7 +411,25 @@
     that you have put in-between the brackets (In this case, \"1\") and store the result in \"singleLetter\".
     \"charAt\" is a method and, when using methods, you place the value you want the method to resolve in the
     brackets after the method.\n\n\n</string>
+    <string name="python_strings">2.3 Using Strings</string>
+    <string name="python_strings_body">You may be asking \"What are Strings\"? Strings are basically anything
+    encapsulated by a pair of single or double quotation marks like \'red\' or \"banana\". Anything within those quotation marks
+    can be used as a value and/or stored in a String variable. An example is as follows where a String variable
+    has the word \"red\" stored within it.\n\ncolour = \"red\"\n\nYou can find the length of the colour variable by doing the
+        following:\n\ncolourWordLength = len(colour)\n\n"len\" is a \"function\" that allows you to find the length of the String.\n\n\n</string>
+    <string name="python_strings2">2.3.1 Using Strings 2</string>
+    <string name="python_strings2_body">Strings can be something called \"concatenated\". This involves taking
+    some Strings and turning them into one longer one. An example is as follows:\n\nfirstWord = \"My\"
+    \n\nsecondWord = \"name\"\n\nthirdWord = \"is\"\n\nfourthWord = \"Mike\"\n\nYou now
+    have four Strings. If you wanted to concatenate them, you\'d do the following:\n\nmessage =
+    firstWord + \" \" + secondWord + \" \" + thirdWord + \" \" + fourthWord\n\nThe result of that concatenation would be \"My name
+    is Mike\".\n\nTo obtain a single character in a String, you would do the following:\n\ncolour = \"red\"
+    \nsingleLetter = colour(1)\n\nThe variable \"singleLetter\" would be set to \"e\". You may be asking
+    why and how it works? All characters in a String start at position 0. So, in the String \"red\", \"r\" is at
+    position 0 and \"d\" is at position 2. What \"colour(1)\" does is look for the character at the position number in
+        the variable \"colour\" and store the result in \"singleLetter\".\n\n\n</string>
     <string name="string_question">bestFriendsName = \"Jamilla\";</string>
+    <string name="python_string_question">bestFriendsName = \"Jamilla\"</string>
     <string name="what_is_decisions_text">3.1 Making decisions in Java</string>
     <string name="what_is_decisions_body">Suppose that you wanted to do an action after checking something first.
         An example could be that you wanted to check if \'x\' equals a certain value before adding a value to a
@@ -279,10 +441,25 @@
         continues reading any code after the braces. As example is below:</string>
     <string name="what_is_decisions_body2">In the example above, the \'if\' statement first checks whether \'x\'
         is equal to 1. If it is, then \'1\' is added to the \'total\' and stored in the variable \'total\'.\n\n\n</string>
+    <string name="python_what_is_decisions_text">3.1 Making decisions in Python</string>
+    <string name="python_what_is_decisions_body">Suppose that you wanted to do an action after checking something first.
+        An example could be that you wanted to check if \'x\' equals a certain value before adding a value to a
+        total, as follows:</string>
+    <string name="python_what_is_decisions_body1">Python allows you to make decisions using the \"if\" keyword. First,
+        the keyword \"if\" is inserted as above and then you write the condition that you want to check followed by a colon.
+        If that condition is true, then the block of code that has been written immediately afterwards is
+        executed. If the condition isn\'t true, then the block of code is ignored and the program
+        continues reading any code after any block of code. As example is below:</string>
+    <string name="python_what_is_decisions_body2">In the example above, the \'if\' statement first checks whether \'x\'
+        is equal to 1. If it is, then \'1\' is added to the \'total\' and stored in the variable \'total\'.\n\n\n</string>
     <string name="java_quiz_13">Would the code within the braces execute in the following example?</string>
     <string name="java_quiz_13_answer1">Yes</string>
     <string name="java_quiz_13_answer2">No</string>
     <string name="java_quiz_13_answer3">Maybe</string>
+    <string name="python_quiz_13">Would the block of code for the \'if\' statement execute in the following example?</string>
+    <string name="python_quiz_13_answer1">Yes</string>
+    <string name="python_quiz_13_answer2">No</string>
+    <string name="python_quiz_13_answer3">Maybe</string>
     <string name="what_is_elseif_text">3.2 Else-If</string>
     <string name="what_is_elseif_body">There are scenarios when you may want to check multiple conditions
     and then execute different statements or code depending on the value of one or more variables:</string>
@@ -299,6 +476,22 @@
     <string name="java_quiz_14_answer1">1</string>
     <string name="java_quiz_14_answer2">2</string>
     <string name="java_quiz_14_answer3">3</string>
+    <string name="python_what_is_elif_text">3.2 Elif</string>
+    <string name="python_what_is_elif_body">There are scenarios when you may want to check multiple conditions
+    and then execute different statements or code depending on the value of one or more variables:</string>
+    <string name="python_what_is_elif_body1">The \"elif\" keyword allows you to do just that. Going through the code -
+        Initially the condition for the first \"if\" is checked. If that\'s not true, then any \"elif\" parts
+        are checked in order. If the condition of any \"elif\" part is correct, then the block of code after 
+        that \"elif\" part is executed.\n\nIf, after checking the \"elif\" parts, none of them are true either, then
+        the \"else\" part at the end is executed.\n\nWhen using an \"if\" statement, the \"elif\" and \"else\" parts
+    are optional. It is also important to remember that once any part of this statement is executed, whether the
+    \"if\" part, the \"elif\" part or the \"else\" part, the program executes whatever is in the block of code for that
+    part then skips any other parts.\n\n\n</string>
+    <string name="python_quiz_14">The \"elif\" part of the following code is executed because x = 7. What
+    part of the code is executed immediately afterwards? The code starting with number..</string>
+    <string name="python_quiz_14_answer1">1</string>
+    <string name="python_quiz_14_answer2">2</string>
+    <string name="python_quiz_14_answer3">3</string>
     <string name="operators_text">3.3 Relational Operators</string>
     <string name="operators_body">When using \"if\" statements or anything else that requires you to compare
     values, there are a range of functions that can be used for this purpose:</string>
@@ -309,12 +502,28 @@
     to read out the explanation as you type the code. For example, using the earlier statement example and the guide
         above, the statement can be read as \"If x is less than y, then.. \".\n\nThese operators are an important
     aspect of Java and are used in many things from \"if\" statements to loops (While, Do-While and For loops that
-    you will learn about later) to many other things.\n\n\n</string>
+    you will learn about later) to many other things.\n\nTo compare two Strings, you simply use \"==\" to compare them.\n\n\n</string>
     <string name="java_quiz_15">Some sample code is printed below. Once all the code has been executed,
     the program will print the total. What value will be printed for the total?</string>
     <string name="java_quiz_15_answer1">0</string>
     <string name="java_quiz_15_answer2">5</string>
     <string name="java_quiz_15_answer3">11</string>
+    <string name="python_operators_text">3.3 Relational Operators</string>
+    <string name="python_operators_body">When using \"if\" statements or anything else that requires you to compare
+    values, there are a range of functions that can be used for this purpose:</string>
+    <string name="python_operators_body1">So how would you use these operators and when would you want to use them?
+    Let\'s say that x = 5 and y = 7. You want to check using an \"if\" statement whether x is less than y.
+    What you would type is as follows:\n\nif x &lt; y :\n&#8230;Some code..\n\nIf the condition is correct and x is indeed
+        less than y, then the block of code afterwards is executed. The best way to understand these operators is
+    to read out the explanation as you type the code. For example, using the earlier statement example and the guide
+        above, the statement can be read as \"If x is less than y, then.. \".\n\nThese operators are an important
+    aspect of Python and are used in many things from \"if\" statements to loops (While and For loops that
+    you will learn about later) to many other things.\n\nTo compare two Strings, you simply use \"==\" to compare them.\n\n\n</string>
+    <string name="python_quiz_15">Some sample code is printed below. Once all the code has been executed,
+    the program will print the total. What value will be printed for the total?</string>
+    <string name="python_quiz_15_answer1">0</string>
+    <string name="python_quiz_15_answer2">5</string>
+    <string name="python_quiz_15_answer3">11</string>
     <string name="boolean_text">3.4 Boolean Operators and Variables</string>
     <string name="boolean_body">When using the \"if\" statement, you may have noticed that the condition that
     you\'re trying to test is either true or false. For example:\n\nif (4 &lt;= 5) {&#8230;}\n\nevaluates to true
@@ -335,25 +544,64 @@
         evaluate to?</string>
     <string name="java_quiz_17_answer1">True</string>
     <string name="java_quiz_17_answer2">False</string>
+    <string name="python_boolean_text">3.4 Boolean Operators and Variables</string>
+    <string name="python_boolean_body">When using the \"if\" statement, you may have noticed that the condition that
+    you\'re trying to test is either true or false. For example:\n\nif 4 &lt;= 5 :\n &#8230;\n\nevaluates to true
+    because 4 satisfies the \"less than\" part of the condition so the whole condition becomes true. Evaluating
+        anything in this way means that you\'re evaluating \"Boolean\" values. Boolean values are only ever true or
+        false. You can initialise and declare boolean values as follows:\n\ncheckCondition = false\n\nAnd
+        then use this variable in \"if\" statements, loops and other places.\n\nUsing boolean features allows you to
+    use boolean operators like \'and\', \'or\' and \'not\':\n\n\'and\' evaluates to true only if both
+        sides of the condition are true\n\'or\' evaluates to true if either side of the condition are
+        true\n\'not\' reverses the boolean value, eg. if the boolean variable is true, then \'not\' makes
+        it false.\n\nThese boolean operators allow you to make more complex conditions that can be tested:\n\nif
+    4 &lt; 5 and 7 > 6 : \n&#8230;\n\nEvaluates to true because both sides of the \'and\' operator are true.\n\n\n</string>
+    <string name="python_quiz_16">Please evaluate the following statement - What does the conditional If statement
+        evaluate to?</string>
+    <string name="python_quiz_16_answer1">True</string>
+    <string name="python_quiz_16_answer2">False</string>
+    <string name="python_quiz_17">Please evaluate the following statement - What does the conditional If statement
+        evaluate to?</string>
+    <string name="python_quiz_17_answer1">True</string>
+    <string name="python_quiz_17_answer2">False</string>
     <string name="while_text">4.1 The While loop</string>
     <string name="while_body">Java has features that can be used called \"loops\". Different loops allow you to
-        do different things depending on what you want done. There are \"while\" loops, \"do-while\" loops
+        do different things depending on what you want done. There are \"while\" loops, \"do-while\" loops 
         and \"for\" loops. This section will teach you about \"while\" loops:</string>
     <string name="while_body1">You\'ve already encountered \"if\" statements. Now, we have \"while\" loops.
         Looking at the example above, while loops also use a condition which it checks before executing
-        the code within the braces as long as that condition evaluates to true.\n\nHowever, the key difference
-        over an \"if\" statement is that while loops keep continuing to execute the code within the braces
+        the code between the braces as long as that condition evaluates to true.\n\nHowever, the key difference
+        over an \"if\" statement is that while loops keep continuing to execute the code between the braces 
         until the condition attached to the while loop becomes false. Once the condition does\'t evaluate to
-        true anymore, the code within the braces isn\'t evaluated and the program continues with any
+        true anymore, the code isn\'t executed anymore and the program continues with any
         code after the loop.\n\nSomething important to remember about variables is that any variables
-    declared within the braces are destroyed every time the loop iterates. This also applies to the \"if\"
+    declared within the block of code are destroyed every time the loop iterates. This also applies to the \"if\"
         statement. If you want to use variables that will be updated by any actions within the loop,
-        you should declare them before the loop starts, as with \"int x = 10;\" above.\n\n\n</string>
+        you should declare them before the loop starts, as with \"int x = 10\" above.\n\n\n</string>
     <string name="java_quiz_18">How many iterations will the while loop below go through before exiting the
     loop because the condition became false?</string>
     <string name="java_quiz_18_answer1">1</string>
     <string name="java_quiz_18_answer2">7</string>
     <string name="java_quiz_18_answer3">8</string>
+    <string name="python_while_text">4.1 The While loop</string>
+    <string name="python_while_body">Python has features that can be used called \"loops\". Different loops allow you to
+        do different things depending on what you want done. There are \"while\" loops
+        and \"for\" loops. This section will teach you about \"while\" loops:</string>
+    <string name="python_while_body1">You\'ve already encountered \"if\" statements. Now, we have \"while\" loops.
+        Looking at the example above, while loops also use a condition which it checks before executing
+        the block of code below it as long as that condition evaluates to true.\n\nHowever, the key difference
+        over an \"if\" statement is that while loops keep continuing to execute the block of code
+        until the condition attached to the while loop becomes false. Once the condition does\'t evaluate to
+        true anymore, the code isn\'t executed anymore and the program continues with any
+        code after the loop.\n\nSomething important to remember about variables is that any variables
+    declared within the block of code are destroyed every time the loop iterates. This also applies to the \"if\"
+        statement. If you want to use variables that will be updated by any actions within the loop,
+        you should declare them before the loop starts, as with \"x = 10\" above.\n\n\n</string>
+    <string name="python_quiz_18">How many iterations will the while loop below go through before exiting the
+    loop because the condition became false?</string>
+    <string name="python_quiz_18_answer1">1</string>
+    <string name="python_quiz_18_answer2">7</string>
+    <string name="python_quiz_18_answer3">8</string>
     <string name="do_text">4.2 The Do-While loop</string>
     <string name="do_body">A \"do-while\" loop is slightly different from a \"while\" loop. Whereas a
     while loop checks the condition before executing any code and keeps doing it until the condition
@@ -385,6 +633,27 @@
     <string name="java_quiz_20_answer1">1</string>
     <string name="java_quiz_20_answer2">10</string>
     <string name="java_quiz_20_answer3">6</string>
+    <string name="python_for_text">4.2 The For loop</string>
+    <string name="python_for_body">A \"for\" loop allows you to give a starting point and an end point:</string>
+    <string name="python_for_body1">In a \"for\" loop, there are at least two but there can be three arguments.
+        If there is just one number/argument in the \"range\" part, \"i\" initialises at 0. The For loop keeps repeating 
+        with the block of code being executed each time and \"i\" keeps incrementing by 1 until the number before the one 
+        stated in the range.\n\nIf there are two arguments 
+        in the range, the first argument is the number that i is initialised with and the second number is the number before 
+        which the loop ends at. If there are three arguments, the first argument is the number that i is initialised with, the 
+        second argument is the number before which the loop ends at and the third argument is the number by which i increments 
+        at the end of each loop.\n\nFor example, in the last example in the image above, the \"for\" loop initialises \"i\" to 0. 
+        The second argument checks if i is less than the second argument. If it is, the block of code below 
+        it is executed. At the end of that loop, i is incremented by 2 so i becomes 2 (0 + 2). Then, the second 
+        argument checks i again to see if it is lower than the second argument. If it is, the block of code 
+        is executed again. And so on until i is not lower than the second argument. At that point, the loop is broken, 
+        the block of code below isn\'t executed and the program continues reading any code after the block of code 
+        below.\n\n\n</string>
+    <string name="python_quiz_20">How many iterations will the For loop below go through before exiting the
+    loop because the condition became false?</string>
+    <string name="python_quiz_20_answer1">1</string>
+    <string name="python_quiz_20_answer2">10</string>
+    <string name="python_quiz_20_answer3">6</string>
     <string name="nested_for_text">4.4 Nested For loops</string>
     <string name="nested_for_body">For loops can be nested within one another:</string>
     <string name="nested_for_body1">Initially, \"i\" is set to 0, the condition is checked and then
@@ -402,11 +671,32 @@
     <string name="java_quiz_21_answer1">While</string>
     <string name="java_quiz_21_answer2">For</string>
     <string name="java_quiz_21_answer3">Do-While</string>
+    <string name="python_nested_for_text">4.3 Nested For loops</string>
+    <string name="python_nested_for_body">For loops can be nested within one another:</string>
+    <string name="python_nested_for_body1">Initially, \"i\" is set to 0, the second argument is checked and then
+        you reach the second For loop. For this loop, the same process happens where \"j\" is initialised
+        to 0, the second argument is checked and then the block of code is executed.\n\nThe way to think
+        of this second For loop (Or even more loops nested within one another) is to see them as independent
+        to the others and focus on what\'s happening in the current loop.\n\nSo, for the second For loop,
+        the current value for j will be printed each time the loop iterates. Once the loop ends with
+        j not being less than 10, the current value for \"i\" will be printed. The original For loop is updated
+        using the third argument, the second argument checked and then we arrive at the second For loop again which, once again,
+        prints all current j values. And the cycle repeats until the condition for the First For loop is false
+        and the program exits the entire loop.\n\n\n</string>
+    <string name="python_quiz_21">What is spelled out and stored in the variable \"name\" in the following nested loop?</string>
+    <string name="python_quiz_21_answer1"></string>
+    <string name="python_quiz_21_answer2"></string>
+    <string name="python_quiz_21_answer3"></string>
     <string name="java_quiz_22">What is the name of the loop you would use when you want to execute some
     code repeatedly just until the condition is satisfied?</string>
     <string name="java_quiz_22_answer1">While</string>
     <string name="java_quiz_22_answer2">For</string>
     <string name="java_quiz_22_answer3">Do-While</string>
+    <string name="python_quiz_22">What is the name of the loop you would use when you want to execute some
+    code repeatedly just until the condition is satisfied?</string>
+    <string name="python_quiz_22_answer1">While</string>
+    <string name="python_quiz_22_answer2">For</string>
+    <string name="python_quiz_22_answer3">For-While</string>
     <string name="method_text">5.1 What are Methods?</string>
     <string name="method_body">Imagine, for a moment, that you have a calculator in front of you. You
     type in \"2 + 2\" and it returns \"4\". The \"2 + 2\" can be regarded as the input and the \"4\" can
@@ -431,7 +721,7 @@
     <string name="method_use_body">You can \"call\" methods from within your Java program to get something
     done. First, let\'s bring back the example from the previous section:</string>
     <string name="method_use_body1">Let\'s say that, from within your program, you wanted to call this method
-        because you want to multiply it by itself and then output the result back to you. To call the method above,
+        because you want to multiply the value with itself and then output the result back to you. To call the method above,
         you would use the following code:\n\nsumOfSquares();\n\nYou simply use the method name and end the call
         with brackets and a semi-colon. But there\'s a problem in that you need to provide inputs for the method.
         Let\'s say you wanted to multiply \"4\" with itself and output (return) the result. To call the method,
@@ -441,7 +731,7 @@
         because that\'s the return type for the method. They must always match. Another thing that must match
         is the input/variable type that you are sending to the method and they must match the input type found between
         the brackets in the method header.\n\nFinally, methods can be coded to allow more than one input type/
-        variable at one time, for example:\n\npublic static int sumOfNumbers(int number, int number1.. )\n{..etc}\n\n\n</string>
+        variable at one time, for example:\n\npublic static int sumOfSquares(int number, int number1.. )\n{..etc}\n\n\n</string>
     <string name="java_quiz_24">What will be returned by the following method to its caller if the number
     \"0\" is passed as input to it?</string>
     <string name="java_quiz_24_answer1">Nothing</string>
@@ -456,7 +746,7 @@
         caller.\n\nYou can use multiple return statements but the method will end when it reaches the very first
         return statement:</string>
     <string name="return_body2">In this example, there are two return statements. The way the method works
-        is that the method is called and inputs/parameters are sent to the method. With the method itself,
+        is that the method is called and inputs/parameters are sent to the method. Within the method itself,
         there is an \"if\" statement. This checks the input sent to the method and, if it is equal to or less
         than zero, it exits the method and returns to the main program.\n\nTyping just \"return\" means that nothing
         is returned and the method exits. Upon checking, if the input is not less than or equal to zero, then the
@@ -692,4 +982,273 @@
     press \"Continue\" below and a relevant subtopic will appear. If no topics appear, then please press the
     \"Next Topic!\" button to continue onto the next section.</string>
     <string name="go_to_topic">Next Topic!</string>
+    <string name="python_functions_text">5.1 What are Functions?</string>
+    <string name="python_functions_body">Imagine, for a moment, that you have a calculator in front of you. You
+    type in \"2 + 2\" and it returns \"4\". The \"2 + 2\" can be regarded as the input and the \"4\" can
+    be regarded as the output. Do you need to know how the calculator does its job to get the output? No.
+    You simply provide inputs and the calculator calculates the answer.\n\nIn Python, there is something called
+    a \"function\". You don\'t have to know how a function does its job. All someone needs to do is provide
+    inputs to the function and it will provide an output. You can use functions that someone else has coded
+    in other programs or make your own. The way to declare a function is as follows:</string>
+    <string name="python_functions_body1">- The \"def\" part denotes that you\'re defining a function.\n-
+        For the function name, the same rules should be used as if you are
+        declaring a variable.\n- The input name is the name given to the input variable and will be used within
+        the function.\n- You need to end the function header with a colon\nThe code after the function header is
+        executed when the function is called\n\nReturn statements within the function
+        send the value of the named variable as output back to the program that made the request.\n\n\n</string>
+    <string name="python_quiz_23">What keyword must you use when defining a function?</string>
+    <string name="python_quiz_23_answer1">double</string>
+    <string name="python_quiz_23_answer2">def</string>
+    <string name="python_quiz_23_answer3">function</string>
+    <string name="functions_use_text">5.2 Using Functions</string>
+    <string name="functions_use_body">You can \"call\" functions from within your Python program to get something
+    done. First, let\'s bring back the example from the previous section:</string>
+    <string name="functions_use_body1">Let\'s say that, from within your program, you wanted to call this function
+        because you want to multiply the value with itself and then output the result back to you. To call the function above,
+        you would use the following code:\n\nsumOfSquares()\n\nYou simply use the function name and end the call
+        with brackets. But there\'s a problem in that you need to provide inputs for the function.
+        Let\'s say you wanted to multiply \"4\" with itself and output (return) the result. To call the function,
+        you would do the following:\n\nsumOfSquares(4)\n\nBut now, there\'s another thing we still have to do.
+        We need some place to store the result. That can easily be done by initialising a variable as
+        so:\n\nresult = sumOfSquares(4)\n\nThis is the code you would use to call a function. Functions can be coded to 
+        allow more than one input type/
+        variable at one time too, for example:\n\ndef sumOfSquares(number, number1.. )\n{..etc}\n\n\n</string>
+    <string name="python_quiz_24">What will be returned by the following function to its caller if the number
+    \"0\" is passed as input to it?</string>
+    <string name="python_quiz_24_answer1">Nothing</string>
+    <string name="python_quiz_24_answer2">0</string>
+    <string name="python_quiz_24_answer3">Return</string>
+    <string name="python_return_text">5.3 The Return statement</string>
+    <string name="python_return_body">The return statement is used to tell the function that all relevant actions
+        have been done by the function and to send the result back to the caller. Using the previous example:</string>
+    <string name="python_return_body1">The function receives values/inputs/arguments from the function caller. It uses these
+        same arguments in the body of the function to calculate, in this case, the square of the number that was
+        sent to it. After doing that, the return statement is used to send the result back to the
+        caller.\n\nYou can use multiple return statements but the function will end when it reaches the very first
+        return statement:</string>
+    <string name="python_return_body2">In this example, there are two return statements. The way the function works
+        is that the function is called and inputs/parameters are sent to the function. Within the function itself,
+        there is an \"if\" statement. This checks the input sent to the function and, if it is equal to or less
+        than zero, it exits the function and returns to the main program.\n\nTyping just \"return\" means that nothing
+        is returned and the function exits. Upon checking, if the input is not less than or equal to zero, then the
+        code in the \"if\" statement is not activated and the function continues reading any code after this statement.\n\n\n</string>
+    <string name="python_quiz_25">Will the \"total\" variable be available to use outside this function?</string>
+    <string name="python_quiz_25_answer1">Yes</string>
+    <string name="python_quiz_25_answer2">No</string>
+    <string name="python_quiz_25_answer3">Maybe</string>
+    <string name="python_variable_scope_text">5.4 The importance of Variable Scope</string>
+    <string name="python_variable_scope_body">It\'s important to learn about something called Variable Scopes.
+    Imagine writing the following code:</string>
+    <string name="python_variable_scope_body1">Do you notice anything wrong? Notice that \"x\" has been declared before
+        the while loop with the variable being used within the loop but it\'s again declared and initialised
+        within the loop.\n\nWith the total1 variable, which x should it choose to use in its calculations?
+        This is something called \"overlapping scopes\" and is not allowed in Python. You need to always be aware
+        of the scope of a variable and they must never overlap.\n\nIf you declare a variable outside any functions,
+        the value isn\'t available inside those functions unless you pass that variable to that function. Similarly,
+        any variables that you declare inside a function or loop isn\'t available anywhere outside that function or loop
+        and is destroyed once it exits. Variables declared inside functions or loops are called local variables.\n\n\n</string>
+    <string name="python_quiz_26">What is returned by the function below if number = 5?</string>
+    <string name="python_quiz_26_answer1">Nothing</string>
+    <string name="python_quiz_26_answer2">3</string>
+    <string name="python_quiz_26_answer3">15</string>
+    <string name="python_quiz_27">Assume that you had a function named \"getNames\" and it took a single value as
+    input. Assume that you also had a variable already initialised outside the function as follows:\n\nname = \"Mike\"
+    \n\nHow would you correctly call this function from the choices below?\n\n1. getNames(name)\n\n2. getNames()
+    \n\n3. getNames(\"name\")</string>
+    <string name="python_quiz_27_answer1">1</string>
+    <string name="python_quiz_27_answer2">2</string>
+    <string name="python_quiz_27_answer3">3</string>
+    <string name="lists_text">6.1 What are Lists?</string>
+    <string name="lists_body">We have already learned that values can be stored in variables. But, what if
+    you wanted to store multiple values in one place or as a collection of values under one heading? We would
+    use lists! An example of an list is as follows:</string>
+    <string name="lists_body1">Using lists is simple. You declare an empty list in a similar way to
+        variables and then you can start using it. The example above shows how to declare a list. Each value
+        stored in it is called an \"element\" and its \"index\" is the number above
+        the boxes in the above example. The first element always starts with 0 and so its index is 0.
+        You can find the length of an list and/or store it in a variable at any time using the \"len\" function,
+        eg:\nnumbers.length(). In the previous section, we saw how to declare lists. To declare a list with
+    the name \"typesOfVans\" that will store strings and will be of length 10, you\'d use the following
+        code:\n\nString[] typesOfVans = new String[10];\n\nWhen a new list is declared, it is empty but if you have values that
+        you want to add to the list at the same time as declaring, you would do the following:\n\nString[] typesOfCars
+        = {\"Ford\", \"Honda\", \"Hyundai\", \"Audi\", \"BMW\", \"Mercedes\"};\n\nGoing back to the original empty
+        list, you can add values to the list by typing the following:\n\ntypesOfVans[3] = \"Ford\";\n\nThe \"3\"
+    is the index of the list and you would be stating that you want to insert the value \"4\" into the list at
+    index 3.\n\nTo take a value stored in an list and store in a variable, you would do the following:\n\nString
+    name = typesOfCars[2];\n\nThis would store the value stored at index/position 2 in typesOfCars in the variable
+    \"name\".\n\n\n</string>
+    <string name="python_quiz_28">There are three different snippets of code below. Please type out the one
+    which declares an list with the name of \"sum\", is of length 20 and will store values of type double?\n\n1.
+    double[] sum = [20];\n2. double[] sum = new double[20];\n3. Double[] sum = new Double[20];</string>
+    <string name="python_quiz_28_answer1">1</string>
+    <string name="python_quiz_28_answer2">2</string>
+    <string name="python_quiz_28_answer3">3</string>
+    <string name="python_enhanced_text">6.2 The enhanced-for loop</string>
+    <string name="python_enhanced_body">Suppose that you had an list of Strings and wanted to go through the
+    list to perform some action using each element of the list. There is a loop for that called the
+    \"enhanced-for\" loop. This loop works for other data types as well including int and double.</string>
+    <string name="python_enhanced_body1">In the example above, there is an list called names which has 3 elements
+        stored in it. The enhanced-for loop works in a similar way to the traditional \"for\" loop however
+        you cannot modify any elements in an list using the enhanced-for loop. What the loop is basically
+        saying is that \"for each element of this type (In this case, for each String) in this named list,
+        do the following\". So, for the \"names\" list, print each element one by one. The data type for the list
+        and the one in the brackets for the enhanced-for loop must match.\n\nIn this example, we\'ve named each
+        element \"name\" but you can use anything you like and you would use this element name within the loop
+        to carry out any actions.\n\n\n</string>
+    <string name="python_quiz_29">What do enhanced-for loops allow you to do with elements in lists?</string>
+    <string name="python_quiz_29_answer1">Read only</string>
+    <string name="python_quiz_29_answer2">Read and modify</string>
+    <string name="python_quiz_29_answer3">modify</string>
+    <string name="list_function_text">6.3 Using functions with lists</string>
+    <string name="list_function_body">You can pass an list to a function when calling it in the following way.
+        Assume that the list is of type int and has the name \"Primes\". Also assume that the function
+        name is sumOfPrime. To send an list, use:\n\nsumOfPrime(Primes);\n\nWhen writing the function,
+    it should have the following as its parameters:\n\npublic static int sumofPrime(int[] Primes) {\n
+    &#8230;\n}\n\nThe function expects an list of type int to be sent to it. This list can then be used in the
+    body of the function. Now, let\'s say that you declare an list inside the function, populate it with values and
+        want to send it back to the caller. You would simply use the return statement along with the name
+        of the newly declared list.</string>
+    <string name="list_function_body1">The function return type must match the type of list being sent back to
+    the caller.\n\n\n</string>
+    <string name="python_quiz_30">What is the list return type for the following function?</string>
+    <string name="python_quiz_30_answer1">int[]</string>
+    <string name="python_quiz_30_answer2">double[]</string>
+    <string name="python_quiz_30_answer3">double</string>
+    <string name="python_two_dimensional_text">6.4 Two-dimensional lists</string>
+    <string name="python_two_dimensional_body">There is a way to declare two-dimensional lists, which has rows and
+    columns, over normal lists which are just a row of values. Consider a 2D list with the name \"bits\", is of
+        an int data type and has 5 rows and 2 columns. You would declare it as follows:\n\nint[][] bits =
+    new int[5][2];\n\nThis declares a 2D list of 5 rows and 2 columns. Just like with lists, you can declare an
+    list with values as well as follows:</string>
+    <string name="python_two_dimensional_body1">The above 2D list has 4 rows and 3 columns so declaring it without
+        inserting any values would\'ve been done by typing:\n\nint[][] bits = new int[4][3];\n\nTo access an element
+        in a 2D list, you would type:\n\nint numberOfBits = bits[2][3];\n\nBasically, you\'re saying that you
+        want to access the element in the 2D list named \"bits\" on row 2 and column 3 and you want to store that
+        value in the variable \"numberOfBits\".\n\n\n</string>
+    <string name="python_quiz_31">You\'ve declared the following list:\n\ndouble[][] supervisors = new
+    double[8][9];\n\nWhat would you type to access the element on the 4th row and the 7th column? Please choose one of the
+    following:\n\n1. supervisors[4][7];\n2. supervisors[3][6];\n3. supervisors[5][8];</string>
+    <string name="python_quiz_31_answer1">1</string>
+    <string name="python_quiz_31_answer2">2</string>
+    <string name="python_quiz_31_answer3">3</string>
+    <string name="python_listlist_text">6.5 Listlists</string>
+    <string name="python_listlist_body">When you declare an list of a certain length, the length will always remain the
+    same for that list and cannot be modified. But is there a type of list where the length can change? Yes, and
+    they\'re called ListLists.\n\nAn ListList is similar to an list but you can add/modify and delete values
+    whenever needed. When adding values, the length/list grows and, when deleting values, it gets smaller. As with lists,
+        the index also starts at 0. To declare an ListList, use the following code:</string>
+    <string name="python_listlist_body1">An ListList is empty when you first declare it. You may have also noticed
+        that the first letter of the \"double\" type is capitalised for ListLists. It\'s because something called \"wrappers\"
+        need to be used for ListLists. To summarise, for these data types, you need to capitalise the first letter of any
+        data type you want to use, eg. \"int\" would become \"Integer\", \"double\" becomes \"Double\", \"String\"
+        becomes \"String\" etc. To add values, use the following:\n\nvalues.add(14);\n\n\"14\" is then added at the bottom of
+        the list (In this case, with the empty list, the position will be 0). To add a value at a certain position, you\'d
+        use:\n\nvalues.add(4, 57);\n\nWhich would add \"57\" at index 4. If a value already exists at that position, it
+        would be pushed to position 5, with the value at position 5 being pushed to position 6 etc.\n\nTo get a value at a certain
+        position, use:\n\nvalues.get(4);\n\nWhich returns the value at position 4. To overwrite a value at a certain position,
+        use:\n\nvalues.set(2, 32);\n\nWhich, in this case, overwrites position 2 with the value \"32\".\n\nFinally, to remove values,
+        use:\n\nvalues.remove(3);\n\nWhich removes the value stored at position 3. When removing, all values stored after
+        that position automatically move up one position, eg. from position 5 to position 4.\n\nFinally, wth lists, you can
+        find the length of the list by using .length(). With ListLists, you can find the length by using .size().\n\n\n</string>
+    <string name="python_quiz_32">How would you declare an ListList of type String?\n\n1. ListList&lt;String&gt; cars =
+    new ListList&lt;String&gt;();\n2. ListList&lt;string&gt; cars = new ListList&lt;string&gt;();\n3. listlist&lt;String&gt;
+        cars = new listlist&lt;String&gt;();</string>
+    <string name="python_quiz_32_answer1">1</string>
+    <string name="python_quiz_32_answer2">2</string>
+    <string name="python_quiz_32_answer3">3</string>
+    <string name="python_quiz_33">What components make up a typical class?\n\n1. Instance variables, Constructors
+    and functions\n2. Instance variables and functions\n3. Constructors and functions</string>
+    <string name="python_quiz_33_answer1">1</string>
+    <string name="python_quiz_33_answer2">2</string>
+    <string name="python_quiz_33_answer3">3</string>
+    <string name="python_quiz_34">Suppose you wrote a new class called \"Car\" and there was a function inside
+    it with the name \"setTypeOfCar\" which took \"String type\" as its parameter. Now, assume that you created
+    a Car object named \"car\" and want to call this function to set the type of car to \"Ford\". Please select
+        the function call you would use?\n\n1. Car.type(\"Ford\");\n2. Car.setTypeOfCar(\"Ford\");\n3. car.setTypeOfCar
+    (\"Ford\");</string>
+    <string name="python_quiz_34_answer1">1</string>
+    <string name="python_quiz_34_answer2">2</string>
+    <string name="python_quiz_34_answer3">3</string>
+    <string name="python_quiz_35">Please complete the following:\n\nSubclasses _____ instance variables
+    and functions from their superclass</string>
+    <string name="python_quiz_35_answer1">Do not inherit</string>
+    <string name="python_quiz_35_answer2">Inherit</string>
+    <string name="python_quiz_35_answer3">Read</string>
+    <string name="python_classes_text">7.1 What are classes and Objects?</string>
+    <string name="python_classes_body">We learned back in section one that Classes can be seen as the blueprints for something,
+        for example a Person. A Person can have different physical traits and perform different skills and actions so you would
+        program this into the class. In this example, it would be called the \"Person class\" and the name of the class
+        would be \"Person\".\n\nClasses can consist of variables, methods and other elements such as constructors. The variables
+        would be declared at the beginning of the class and will be those that you intend to use throughout the class. You\'ll
+        then have the constructors after the variables and then the methods.\n\nConstructors are used to initialise the variables
+        you declared with initial values. The methods you\'ll declare afterwards could be thought of as actions that you\'d
+        want any objects to carry out.\n\nOnce you\'ve made these blueprints, you can create something called Objects from
+        them which you can use to do things with. You can have many Objects of the same class communicating with one
+        another or even between different objects made from different classes.\n\n\n</string>
+    <string name="python_declare_class_text">7.1.1 How do you create classes?</string>
+    <string name="python_declare_class_body">The basic structure of a class is as follows:</string>
+    <string name="python_declare_class_body1">From left to right, the example above shows a public class being
+        declared. The name of the class is \"Person\". The example also shows where you would place any variables,
+        constructors and methods.\n\n\n</string>
+    <string name="python_declare_variables_text">7.1.2 Adding variables to classes</string>
+    <string name="python_declare_variables_body">To add variables, you would add them as follows:</string>
+    <string name="python_declare_variables_body1">Any declaration of variables in classes (Called instance variables) should
+        be private and that can be done by using the \"private\" keyword before declaring the variable. Variables and
+        methods can be \"private\", \"public\" or \"protected\". We are using the \"private\" keyword because we
+        only want this class to be able to see it. Using no keyword, public or protected means that other classes/
+        packages/subclasses can see it but that isn\'t necessarily a good thing.\n\nAfterwards, declare the
+        variable as normal and they may be initialised at this point but it\'s recommended to let constructors
+        do so as in the next section.\n\nGenerally speaking, instance variables should be private and methods in
+        classes should be public.\n\n\n</string>
+    <string name="python_declare_constructor_text">7.1.3 Adding constructors to classes</string>
+    <string name="python_declare_constructor_body">To add a constructor, you would add one as follows:</string>
+    <string name="python_declare_constructor_body1">From left to right, you\'d add a public constructor and the
+        name of the constructor should match the name of the class. Inside the class, you can initialise
+        each of the instance variables that were declared earlier. In this example, both Strings have been
+        initialised as empty strings using \"\" and the variable \"age\" has been initialised with a value
+        of 0.\n\n\n</string>
+    <string name="python_declare_method_text">7.1.4 Adding methods to classes</string>
+    <string name="python_declare_method_body">To add a method, you would add them as follows:</string>
+    <string name="python_declare_method_body1">The structure of the method uses the same format as the ones you
+        learned about in Section 5 but you need to remove the \"static\" part in the method header. Methods
+        should be public rather than private so they can be used by everyone, including other programmers and objects.
+        \n\nIn the first method, a parameter is passed to it as \"ageOfPerson\". Inside the method for this example,
+        the instance variable for the class takes on and stores the value for ageOfPerson when this method is
+        called.\n\n\"void\" simply means that nothing is returned to the method caller.\n\n\n</string>
+    <string name="python_objects_text">7.2 Declaring Objects</string>
+    <string name="python_objects_body">Now that you know how to program classes, you can now learn how to
+    create Objects. Basically, objects are classes brought to life which you can use to perform
+    actions. They can be changed and modified as well with new values and you can create multiple
+    objects of the same class if you wanted to.\n\nWe\'ll now create a Person object using the Person
+    class that was shown in the previous section:\n\nPerson mike = new Person();\n\nThe above statement is
+        saying that, using the Person class, we want to create a new person named \"mike\". Now that \"mike\"
+    has been constructed as an object, we can change mike and his behaviour by accessing any methods that
+    mike has. For example, if we wanted to say that mike is 36 years old, we\'d do the
+        following:\n\nmike.addAge(36);\n\nWhat we are saying is that we want to access the \"addAge\" method in the mike object and
+    sending \"36\" as the parameter to it. The method would alter the objects \"age\" instance variable to 36.\n\n\n</string>
+    <string name="python_objects1_text">7.2.1 Declaring Objects (Continued)</string>
+    <string name="python_objects1_body">
+        You must ensure that what you are sending to a method matches the type of parameters that it
+        accepts.\n\nYou can have all kinds of methods within a class. Some methods will return the instance variable back to their
+    original values, some will keep a running total and some will return a value back to the method caller. Suppose
+    we had a method that started something like this:\n\npublic int getAge() {\n return age;\n}\n\nAnd used the following
+    method caller:\n\nint myAge = mike.getAge();\n\nThe statement is saying that you want to access the mike object,
+    access the \"getAge\" method and store the result in a newly declared variable called \"myAge\".\n\n\n</string>
+    <string name="python_subclasses_text">7.3 What are subclasses?</string>
+    <string name="python_subclasses_body">Let\'s assume that you\'ve already created a \"vehicle\" class. This Vehicle
+    class contains instance variables, constructors and methods that describe all types of Vehicles. Now, suppose that
+    we wanted to extend that class into a class that specially describes, for example, a car. This is where subclasses
+    come in.\n\nSubclasses extend a class into something more specific. Subclasses also inherit all the instance variables
+    and methods of the main class (Called the superclass when dealing with subclasses). However, something important to
+    remember is that, even though subclasses inherit variables and methods, they do NOT inherit existing values or anything
+    else.</string>
+    <string name="python_subclasses_body1">The \"extends\" keyword means that the subclass is inheriting from the
+        superclass. You don\'t declare the same instance or variables in the superclass again in the subclass since they were
+    already inherited and can be used. Only any new instance variables or methods not in the superclass are declared
+    in the subclass which you can use. To create an object using the subclass, you\'d use the same method as creating an
+    object for any other class except, this time, using the name of the subclass. \n\n\n</string>
+    <string name="python_complete_body">We hope that this course successfully taught you the fundamentals
+    of Python and also ignited a desire in you to learn more about this popular language. If you haven\'t
+    already done so, we encourage you to take the other courses available through this app to learn more
+    languages.\n\nIn the meantime, we thank you for choosing to learn to program with Code+.\n\n\n</string>
 </resources>

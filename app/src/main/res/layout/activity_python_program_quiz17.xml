@@ -32,7 +32,7 @@
             android:layout_height="350dp"
             android:layout_below="@id/python_quiz"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/boolean2_quiz" />
+            android:src="@drawable/python_boolean2_quiz" />
 
         <EditText
             android:id="@+id/quiz_input"

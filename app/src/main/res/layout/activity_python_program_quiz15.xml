@@ -33,7 +33,7 @@
             android:layout_below="@id/python_quiz"
             android:layout_centerHorizontal="true"
             android:layout_margin="8dp"
-            android:src="@drawable/operators_quiz" />
+            android:src="@drawable/python_operators_quiz" />
 
         <EditText
             android:id="@+id/quiz_input"

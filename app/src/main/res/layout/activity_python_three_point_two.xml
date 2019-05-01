@@ -22,7 +22,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="24dp"
-            android:text="@string/what_is_elseif_text"
+            android:text="@string/python_what_is_elif_text"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/what_is_elseif_body"
+            android:text="@string/python_what_is_elif_body"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -39,18 +39,18 @@
 
         <ImageView
             android:id="@+id/elseif_example"
-            android:layout_width="400dp"
-            android:layout_height="400dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_below="@id/elseif_body"
             android:layout_centerHorizontal="true"
             android:layout_margin="16dp"
-            android:src="@drawable/elseif_example" />
+            android:src="@drawable/python_elseif_example" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/what_is_elseif_body1"
+            android:text="@string/python_what_is_elif_body1"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"

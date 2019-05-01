@@ -26,29 +26,15 @@
             android:textSize="20sp"
             android:textStyle="bold"/>
 
-        <EditText
-            android:id="@+id/quiz_input"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:width="70dp"
-            android:maxLength="7"
-            android:layout_below="@id/python_quiz"
-            android:layout_marginLeft="16dp"
-            android:inputType="text"
-            android:singleLine="true"
-            android:textSize="20sp"
-            android:imeOptions="actionDone"/>
-
         <TextView
             android:id="@+id/python_initialise"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="11dp"
-            android:text="@string/text_initialise"
+            android:text="@string/python_text_initialise"
             android:textSize="20sp"
             android:layout_marginLeft="16dp"
-            android:layout_below="@id/python_quiz"
-            android:layout_toRightOf="@id/quiz_input"/>
+            android:layout_below="@id/python_quiz" />
 
         <TextView
             android:id="@+id/possible_answers"
@@ -59,7 +45,7 @@
             android:layout_marginRight="8dp"
             android:layout_marginBottom="24dp"
             android:text="@string/possible_answers"
-            android:layout_below="@id/quiz_input"
+            android:layout_below="@id/python_initialise"
             android:textSize="20sp" />
 
         <TextView

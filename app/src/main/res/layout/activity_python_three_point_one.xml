@@ -22,7 +22,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="24dp"
-            android:text="@string/what_is_decisions_text"
+            android:text="@string/python_what_is_decisions_text"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/what_is_decisions_body"
+            android:text="@string/python_what_is_decisions_body"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -44,14 +44,14 @@
             android:layout_below="@id/decisions_body"
             android:layout_centerHorizontal="true"
             android:layout_margin="16dp"
-            android:src="@drawable/if_example" />
+            android:src="@drawable/python_if_example" />
 
         <TextView
             android:id="@+id/decisions_second_body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/what_is_decisions_body1"
+            android:text="@string/python_what_is_decisions_body1"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -64,14 +64,14 @@
             android:layout_below="@id/decisions_second_body"
             android:layout_centerHorizontal="true"
             android:layout_margin="16dp"
-            android:src="@drawable/if_proper_example" />
+            android:src="@drawable/python_if_proper_example" />
 
         <TextView
             android:id="@+id/decisions_second_body2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/what_is_decisions_body2"
+            android:text="@string/python_what_is_decisions_body2"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"

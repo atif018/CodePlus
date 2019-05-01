@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class PythonProgramQuiz14 extends AppCompatActivity {
 
-    private String answer = "yes";
+    private String answer = "3";
     private Intent intent;
 
     @Override

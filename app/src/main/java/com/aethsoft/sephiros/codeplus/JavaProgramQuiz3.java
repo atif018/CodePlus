@@ -26,7 +26,7 @@ public class JavaProgramQuiz3 extends AppCompatActivity {
                 String input = attemptedAnswer.toLowerCase();
                 if (input.equals(answer)) {
                     Toast.makeText(getApplicationContext(), "That\'s correct!", Toast.LENGTH_LONG).show();
-                    javaProgramQuiz5();
+                    javaProgramQuiz6();
                 } else {
                     Toast.makeText(getApplicationContext(), "That is incorrect! Please try again!", Toast.LENGTH_LONG).show();
 
@@ -36,14 +36,14 @@ public class JavaProgramQuiz3 extends AppCompatActivity {
         });
     }
 
-    public void javaProgramQuiz5() {
+    public void javaProgramQuiz6() {
 
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("javaSaveOne", "JavaProgramQuiz5");
+        editor.putString("javaSaveOne", "JavaProgramQuiz6");
         editor.apply();
 
-        Intent intent = new Intent(this, JavaProgramQuiz5.class);
+        Intent intent = new Intent(this, JavaProgramQuiz6.class);
         startActivity(intent);
     }
 
