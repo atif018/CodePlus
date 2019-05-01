@@ -1066,96 +1066,56 @@
         variables and then you can start using it. The example above shows how to declare a list. Each value
         stored in it is called an \"element\" and its \"index\" is the number above
         the boxes in the above example. The first element always starts with 0 and so its index is 0.
-        You can find the length of an list and/or store it in a variable at any time using the \"len\" function,
-        eg:\nnumbers.length(). In the previous section, we saw how to declare lists. To declare a list with
-    the name \"typesOfVans\" that will store strings and will be of length 10, you\'d use the following
-        code:\n\nString[] typesOfVans = new String[10];\n\nWhen a new list is declared, it is empty but if you have values that
-        you want to add to the list at the same time as declaring, you would do the following:\n\nString[] typesOfCars
-        = {\"Ford\", \"Honda\", \"Hyundai\", \"Audi\", \"BMW\", \"Mercedes\"};\n\nGoing back to the original empty
-        list, you can add values to the list by typing the following:\n\ntypesOfVans[3] = \"Ford\";\n\nThe \"3\"
-    is the index of the list and you would be stating that you want to insert the value \"4\" into the list at
-    index 3.\n\nTo take a value stored in an list and store in a variable, you would do the following:\n\nString
-    name = typesOfCars[2];\n\nThis would store the value stored at index/position 2 in typesOfCars in the variable
-    \"name\".\n\n\n</string>
+        You can find the length of an list and/or store it in a variable at any time using the \"len\" function:
+        \n\nlengthOfVanList = len(typesOfVans)\n\nIf you have values that
+        you want to add to the list at the same time as declaring, you would do the following:\n\ntypesOfCars
+        = [\"Ford\", \"Honda\", \"Hyundai\", \"Audi\", \"BMW\", \"Mercedes\"]\n\nGoing back to the original empty
+        list, you can add values to the list by typing the following:\n\ntypesOfVans.append = \"Ford\";\n\n\"append\"
+        adds the value \"Ford\" to the end of the list.\n\nTo take a value stored in an list and store in a variable, you would do the following:\n\n
+    name = typesOfCars[2]\n\nThis would store the value stored at index/position 2 in typesOfCars in the variable
+    \"name\".\n\nTo store a value in a list at a certain position, use:\n\ntypesOfCars[3] = \"Suzuki\". For this statement,
+        you\'re saying that you want to store the value at position number 3 in the list \"typesOfCars\".\n\nAlways
+        ensure that the index/position you\'re trying to access exists using the len function otherwise you get an error.\n\n\n</string>
     <string name="python_quiz_28">There are three different snippets of code below. Please type out the one
-    which declares an list with the name of \"sum\", is of length 20 and will store values of type double?\n\n1.
-    double[] sum = [20];\n2. double[] sum = new double[20];\n3. Double[] sum = new Double[20];</string>
+    which declares an list with the name of \"sum\" and you want to initialise it with \"21\", \"31\" and \"5\"?\n\n1.
+    sum = [\"21\", \"31\", \"5\"]\n2. sum = [21]\n3. sum = [21, 31, 5]</string>
     <string name="python_quiz_28_answer1">1</string>
     <string name="python_quiz_28_answer2">2</string>
     <string name="python_quiz_28_answer3">3</string>
-    <string name="python_enhanced_text">6.2 The enhanced-for loop</string>
-    <string name="python_enhanced_body">Suppose that you had an list of Strings and wanted to go through the
-    list to perform some action using each element of the list. There is a loop for that called the
-    \"enhanced-for\" loop. This loop works for other data types as well including int and double.</string>
+    <string name="python_enhanced_text">6.2 Looping through lists and additional features</string>
+    <string name="python_enhanced_body">Suppose that you had an list and wanted to go through the
+    list to perform some action using each element of the list. You can use a modified version of the \"for\" loop
+        to do that.</string>
     <string name="python_enhanced_body1">In the example above, there is an list called names which has 3 elements
-        stored in it. The enhanced-for loop works in a similar way to the traditional \"for\" loop however
-        you cannot modify any elements in an list using the enhanced-for loop. What the loop is basically
-        saying is that \"for each element of this type (In this case, for each String) in this named list,
-        do the following\". So, for the \"names\" list, print each element one by one. The data type for the list
-        and the one in the brackets for the enhanced-for loop must match.\n\nIn this example, we\'ve named each
+        stored in it. The loop works in a similar way to the traditional \"for\" loop. What the loop is basically
+        saying is that \"for each element in this named list,
+        do the following\". So, for the \"names\" list, print each element one by one.\n\nIn this example, we\'ve named each
         element \"name\" but you can use anything you like and you would use this element name within the loop
-        to carry out any actions.\n\n\n</string>
-    <string name="python_quiz_29">What do enhanced-for loops allow you to do with elements in lists?</string>
-    <string name="python_quiz_29_answer1">Read only</string>
-    <string name="python_quiz_29_answer2">Read and modify</string>
-    <string name="python_quiz_29_answer3">modify</string>
+        to carry out any actions.\n\nTo add a value at a certain position, you\'d
+        use:\n\nvalues.insert(4, 57)\n\nWhich would add \"57\" at index 4 in a list named \"values\". If a value already exists at that position, it
+        would be pushed to position 5, with the value at position 5 being pushed to position 6 etc.\n\nTo find whether a value
+        exists in a list, use:\n\nvalues.index(57)\n\nWhich returns the index that the value within the brackets is located in. Finally, to remove values,
+        use:\n\nvalues.pop(3)\n\nWhich removes the value stored at position 3. When removing, all values stored after
+        that position automatically move up one position, eg. from position 5 to position 4. To remove a particular value in the entire list
+        rather than the value at a particular index, use:\n\nvalues.remove(57)\n\n\n</string>
+    <string name="python_quiz_29">How would you declare an empty list?</string>
+    <string name="python_quiz_29_answer1">numbers = []</string>
+    <string name="python_quiz_29_answer2">numbers = [empty]</string>
+    <string name="python_quiz_29_answer3">numbers = [0]</string>
     <string name="list_function_text">6.3 Using functions with lists</string>
     <string name="list_function_body">You can pass an list to a function when calling it in the following way.
-        Assume that the list is of type int and has the name \"Primes\". Also assume that the function
-        name is sumOfPrime. To send an list, use:\n\nsumOfPrime(Primes);\n\nWhen writing the function,
-    it should have the following as its parameters:\n\npublic static int sumofPrime(int[] Primes) {\n
-    &#8230;\n}\n\nThe function expects an list of type int to be sent to it. This list can then be used in the
+        Assume that the list has the name \"Primes\". Also assume that the function
+        name is sumOfPrime. To send an list, use:\n\nsumOfPrime(Primes)\n\nWhen writing the function,
+    it should have the following as its parameters:\n\ndef sumofPrime(Primes) {\n
+    &#8230;\n}\n\nThe function expects a list to be sent to it. This list can then be used in the
     body of the function. Now, let\'s say that you declare an list inside the function, populate it with values and
         want to send it back to the caller. You would simply use the return statement along with the name
         of the newly declared list.</string>
-    <string name="list_function_body1">The function return type must match the type of list being sent back to
-    the caller.\n\n\n</string>
-    <string name="python_quiz_30">What is the list return type for the following function?</string>
-    <string name="python_quiz_30_answer1">int[]</string>
-    <string name="python_quiz_30_answer2">double[]</string>
-    <string name="python_quiz_30_answer3">double</string>
-    <string name="python_two_dimensional_text">6.4 Two-dimensional lists</string>
-    <string name="python_two_dimensional_body">There is a way to declare two-dimensional lists, which has rows and
-    columns, over normal lists which are just a row of values. Consider a 2D list with the name \"bits\", is of
-        an int data type and has 5 rows and 2 columns. You would declare it as follows:\n\nint[][] bits =
-    new int[5][2];\n\nThis declares a 2D list of 5 rows and 2 columns. Just like with lists, you can declare an
-    list with values as well as follows:</string>
-    <string name="python_two_dimensional_body1">The above 2D list has 4 rows and 3 columns so declaring it without
-        inserting any values would\'ve been done by typing:\n\nint[][] bits = new int[4][3];\n\nTo access an element
-        in a 2D list, you would type:\n\nint numberOfBits = bits[2][3];\n\nBasically, you\'re saying that you
-        want to access the element in the 2D list named \"bits\" on row 2 and column 3 and you want to store that
-        value in the variable \"numberOfBits\".\n\n\n</string>
-    <string name="python_quiz_31">You\'ve declared the following list:\n\ndouble[][] supervisors = new
-    double[8][9];\n\nWhat would you type to access the element on the 4th row and the 7th column? Please choose one of the
-    following:\n\n1. supervisors[4][7];\n2. supervisors[3][6];\n3. supervisors[5][8];</string>
-    <string name="python_quiz_31_answer1">1</string>
-    <string name="python_quiz_31_answer2">2</string>
-    <string name="python_quiz_31_answer3">3</string>
-    <string name="python_listlist_text">6.5 Listlists</string>
-    <string name="python_listlist_body">When you declare an list of a certain length, the length will always remain the
-    same for that list and cannot be modified. But is there a type of list where the length can change? Yes, and
-    they\'re called ListLists.\n\nAn ListList is similar to an list but you can add/modify and delete values
-    whenever needed. When adding values, the length/list grows and, when deleting values, it gets smaller. As with lists,
-        the index also starts at 0. To declare an ListList, use the following code:</string>
-    <string name="python_listlist_body1">An ListList is empty when you first declare it. You may have also noticed
-        that the first letter of the \"double\" type is capitalised for ListLists. It\'s because something called \"wrappers\"
-        need to be used for ListLists. To summarise, for these data types, you need to capitalise the first letter of any
-        data type you want to use, eg. \"int\" would become \"Integer\", \"double\" becomes \"Double\", \"String\"
-        becomes \"String\" etc. To add values, use the following:\n\nvalues.add(14);\n\n\"14\" is then added at the bottom of
-        the list (In this case, with the empty list, the position will be 0). To add a value at a certain position, you\'d
-        use:\n\nvalues.add(4, 57);\n\nWhich would add \"57\" at index 4. If a value already exists at that position, it
-        would be pushed to position 5, with the value at position 5 being pushed to position 6 etc.\n\nTo get a value at a certain
-        position, use:\n\nvalues.get(4);\n\nWhich returns the value at position 4. To overwrite a value at a certain position,
-        use:\n\nvalues.set(2, 32);\n\nWhich, in this case, overwrites position 2 with the value \"32\".\n\nFinally, to remove values,
-        use:\n\nvalues.remove(3);\n\nWhich removes the value stored at position 3. When removing, all values stored after
-        that position automatically move up one position, eg. from position 5 to position 4.\n\nFinally, wth lists, you can
-        find the length of the list by using .length(). With ListLists, you can find the length by using .size().\n\n\n</string>
-    <string name="python_quiz_32">How would you declare an ListList of type String?\n\n1. ListList&lt;String&gt; cars =
-    new ListList&lt;String&gt;();\n2. ListList&lt;string&gt; cars = new ListList&lt;string&gt;();\n3. listlist&lt;String&gt;
-        cars = new listlist&lt;String&gt;();</string>
-    <string name="python_quiz_32_answer1">1</string>
-    <string name="python_quiz_32_answer2">2</string>
-    <string name="python_quiz_32_answer3">3</string>
+    <string name="python_quiz_30">What is the name of the list passed to a function in the following example?\n\ncolours
+    (colTypes)</string>
+    <string name="python_quiz_30_answer1">colours()</string>
+    <string name="python_quiz_30_answer2">colours</string>
+    <string name="python_quiz_30_answer3">colTypes</string>
     <string name="python_quiz_33">What components make up a typical class?\n\n1. Instance variables, Constructors
     and functions\n2. Instance variables and functions\n3. Constructors and functions</string>
     <string name="python_quiz_33_answer1">1</string>
@@ -1178,10 +1138,10 @@
     <string name="python_classes_body">We learned back in section one that Classes can be seen as the blueprints for something,
         for example a Person. A Person can have different physical traits and perform different skills and actions so you would
         program this into the class. In this example, it would be called the \"Person class\" and the name of the class
-        would be \"Person\".\n\nClasses can consist of variables, methods and other elements such as constructors. The variables
+        would be \"Person\".\n\nClasses can consist of variables, functions and other elements such as constructors. The variables
         would be declared at the beginning of the class and will be those that you intend to use throughout the class. You\'ll
-        then have the constructors after the variables and then the methods.\n\nConstructors are used to initialise the variables
-        you declared with initial values. The methods you\'ll declare afterwards could be thought of as actions that you\'d
+        then have the constructors after the variables and then the functions.\n\nConstructors are used to initialise the variables
+        you declared with initial values. The functions you\'ll declare afterwards could be thought of as actions that you\'d
         want any objects to carry out.\n\nOnce you\'ve made these blueprints, you can create something called Objects from
         them which you can use to do things with. You can have many Objects of the same class communicating with one
         another or even between different objects made from different classes.\n\n\n</string>
