@@ -22,7 +22,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="24dp"
-            android:text="@string/do_text"
+            android:text="@string/python_for_text"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
@@ -31,31 +31,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/do_body"
+            android:text="@string/python_for_body"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_below="@id/main_title"/>
 
         <ImageView
-            android:id="@+id/do_example"
+            android:id="@+id/for_example"
             android:layout_width="250dp"
             android:layout_height="250dp"
             android:layout_below="@id/main_body"
             android:layout_centerHorizontal="true"
             android:layout_margin="16dp"
-            android:src="@drawable/do_example" />
+            android:src="@drawable/for_example" />
 
         <TextView
             android:id="@+id/main_second_body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/do_body1"
+            android:text="@string/python_for_body1"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_below="@id/do_example"/>
+            android:layout_below="@id/for_example"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -64,7 +64,7 @@
             android:layout_alignParentBottom="true"
             android:text="@string/go_to_quiz"
             android:layout_margin="32dp"
-            android:onClick="pythonProgramQuiz19"/>
+            android:onClick="pythonProgramQuiz20"/>
 
     </RelativeLayout>
 </ScrollView>

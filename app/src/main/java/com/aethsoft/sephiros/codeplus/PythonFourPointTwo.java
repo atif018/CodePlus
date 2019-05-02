@@ -14,14 +14,14 @@ public class PythonFourPointTwo extends AppCompatActivity {
         setContentView(R.layout.activity_python_four_point_two);
     }
 
-    public void pythonProgramQuiz19(View view) {
+    public void pythonProgramQuiz20(View view) {
 
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("pythonSaveFour", "PythonProgramQuiz19");
+        editor.putString("pythonSaveFour", "PythonProgramQuiz20");
         editor.apply();
 
-        Intent intent = new Intent(this, PythonProgramQuiz19.class);
+        Intent intent = new Intent(this, PythonProgramQuiz20.class);
         startActivity(intent);
     }
 }
