@@ -44,7 +44,7 @@
             android:layout_below="@id/main_body"
             android:layout_centerHorizontal="true"
             android:layout_margin="16dp"
-            android:src="@drawable/for_example" />
+            android:src="@drawable/python_for_example" />
 
         <TextView
             android:id="@+id/main_second_body"

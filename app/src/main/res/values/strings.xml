@@ -1061,7 +1061,7 @@
     <string name="lists_text">6.1 What are Lists?</string>
     <string name="lists_body">We have already learned that values can be stored in variables. But, what if
     you wanted to store multiple values in one place or as a collection of values under one heading? We would
-    use lists! An example of an list is as follows:</string>
+    use lists! An example to declare a list is as follows:</string>
     <string name="lists_body1">Using lists is simple. You declare an empty list in a similar way to
         variables and then you can start using it. The example above shows how to declare a list. Each value
         stored in it is called an \"element\" and its \"index\" is the number above
