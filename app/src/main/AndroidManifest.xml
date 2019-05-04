@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aethsoft.sephiros.codeplus">
+
     <!--
      Declaring permissions that will be needed for the app. To find out how to declare them,
     https://developer.android.com/guide/topics/permissions/overview and
@@ -19,7 +20,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PythonTwoPointThreePointOne"></activity>
+        <activity android:name=".PythonTwoPointThreePointOne" />
         <activity android:name=".PythonTwoPointTwoPointOne" />
         <activity android:name=".TwoPointThreePointOne" />
         <activity android:name=".PythonTwoPointOnePointThree" />
@@ -265,6 +266,12 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
+        <activity android:name=".PythonSixPointOnePointOne" />
+        <activity android:name=".PythonSevenPointOnePointOne" />
+        <activity android:name=".PythonSevenPointOnePointTwo" />
+        <activity android:name=".PythonSevenPointOnePointThree" />
+        <activity android:name=".PythonSevenPointOnePointFour" />
+        <activity android:name=".PythonSevenPointTwoPointOne"></activity>
     </application>
 
 </manifest>

@@ -22,7 +22,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="24dp"
-            android:text="@string/arrays2_text"
+            android:text="@string/lists_text"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
@@ -31,19 +31,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/arrays2_body"
+            android:text="@string/lists_body"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_below="@id/main_title"/>
 
+        <ImageView
+            android:id="@+id/list_example"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/main_body"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/list_example" />
+
+        <TextView
+            android:id="@+id/last_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/lists_body1"
+            android:textSize="20sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_below="@id/list_example"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@id/last_view"
             android:text="@string/go_to_quiz"
-            android:layout_margin="32dp"
             android:onClick="pythonProgramQuiz28"/>
 
     </RelativeLayout>

@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class PythonProgramQuiz24 extends AppCompatActivity {
 
-    private String answer = "while";
+    private String answer = "nothing";
     private Intent intent;
 
     @Override

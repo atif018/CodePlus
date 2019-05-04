@@ -14,14 +14,14 @@ public class PythonSevenPointOne extends AppCompatActivity {
         setContentView(R.layout.activity_python_seven_point_one);
     }
 
-    public void pythonProgramQuiz33(View view) {
+    public void pythonSevenPointOnePointOne(View view) {
 
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("pythonSaveSeven", "PythonProgramQuiz33");
+        editor.putString("pythonSaveSeven", "PythonSevenPointOnePointOne");
         editor.apply();
 
-        Intent intent = new Intent(this, PythonProgramQuiz33.class);
+        Intent intent = new Intent(this, PythonSevenPointOnePointOne.class);
         startActivity(intent);
     }
 }

@@ -39,8 +39,8 @@
 
         <ImageView
             android:id="@+id/while_example"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_below="@id/main_body"
             android:layout_centerHorizontal="true"
             android:layout_margin="16dp"
@@ -61,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@id/main_second_body"
             android:text="@string/go_to_quiz"
             android:layout_margin="32dp"
             android:onClick="pythonProgramQuiz18"/>

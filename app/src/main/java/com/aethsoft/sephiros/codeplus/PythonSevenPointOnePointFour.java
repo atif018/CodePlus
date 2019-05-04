@@ -6,22 +6,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class PythonSevenPointTwo extends AppCompatActivity {
+public class PythonSevenPointOnePointFour extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_python_seven_point_two);
+        setContentView(R.layout.activity_python_seven_point_one_point_four);
     }
 
-    public void pythonSevenPointTwoPointOne(View view) {
+    public void pythonProgramQuiz33(View view) {
 
         SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("CodePlusSaves", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putString("pythonSaveSeven", "PythonSevenPointTwoPointOne");
+        editor.putString("pythonSaveSeven", "PythonProgramQuiz33");
         editor.apply();
 
-        Intent intent = new Intent(this, PythonSevenPointTwoPointOne.class);
+        Intent intent = new Intent(this, PythonProgramQuiz33.class);
         startActivity(intent);
     }
 }

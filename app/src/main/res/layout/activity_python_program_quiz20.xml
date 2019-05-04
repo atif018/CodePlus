@@ -28,12 +28,12 @@
 
         <ImageView
             android:id="@+id/image_quiz"
-            android:layout_width="350dp"
-            android:layout_height="350dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_below="@id/python_quiz"
             android:layout_centerHorizontal="true"
             android:layout_margin="8dp"
-            android:src="@drawable/for_quiz_example" />
+            android:src="@drawable/python_for_quiz" />
 
         <EditText
             android:id="@+id/quiz_input"

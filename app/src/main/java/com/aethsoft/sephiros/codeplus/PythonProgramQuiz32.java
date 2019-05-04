@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class PythonProgramQuiz32 extends AppCompatActivity {
 
-    private String answer = "read only";
+    private String answer = "3";
     private Intent intent;
 
     @Override

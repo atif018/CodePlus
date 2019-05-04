@@ -683,10 +683,10 @@
         using the third argument, the second argument checked and then we arrive at the second For loop again which, once again,
         prints all current j values. And the cycle repeats until the condition for the First For loop is false
         and the program exits the entire loop.\n\n\n</string>
-    <string name="python_quiz_21">What is spelled out and stored in the variable \"name\" in the following nested loop?</string>
-    <string name="python_quiz_21_answer1"></string>
-    <string name="python_quiz_21_answer2"></string>
-    <string name="python_quiz_21_answer3"></string>
+    <string name="python_quiz_21">What is stored in the variable \"name\" once the following nested loop is exited?</string>
+    <string name="python_quiz_21_answer1">Hello</string>
+    <string name="python_quiz_21_answer2">Mike</string>
+    <string name="python_quiz_21_answer3">Jay</string>
     <string name="java_quiz_22">What is the name of the loop you would use when you want to execute some
     code repeatedly just until the condition is satisfied?</string>
     <string name="java_quiz_22_answer1">While</string>
@@ -1077,7 +1077,7 @@
         you\'re saying that you want to store the value at position number 3 in the list \"typesOfCars\".\n\nAlways
         ensure that the index/position you\'re trying to access exists using the len function otherwise you get an error.\n\n\n</string>
     <string name="python_quiz_28">There are three different snippets of code below. Please type out the one
-    which declares an list with the name of \"sum\" and you want to initialise it with \"21\", \"31\" and \"5\"?\n\n1.
+    which declares a list with the name of \"sum\" and you want to initialise it with \"21\", \"31\" and \"5\"?\n\n1.
     sum = [\"21\", \"31\", \"5\"]\n2. sum = [21]\n3. sum = [21, 31, 5]</string>
     <string name="python_quiz_28_answer1">1</string>
     <string name="python_quiz_28_answer2">2</string>
@@ -1098,10 +1098,11 @@
         use:\n\nvalues.pop(3)\n\nWhich removes the value stored at position 3. When removing, all values stored after
         that position automatically move up one position, eg. from position 5 to position 4. To remove a particular value in the entire list
         rather than the value at a particular index, use:\n\nvalues.remove(57)\n\n\n</string>
-    <string name="python_quiz_29">How would you declare an empty list?</string>
-    <string name="python_quiz_29_answer1">numbers = []</string>
-    <string name="python_quiz_29_answer2">numbers = [empty]</string>
-    <string name="python_quiz_29_answer3">numbers = [0]</string>
+    <string name="python_quiz_29">How would you declare an empty list?\n\n1. numbers = []\n\n2. numbers = [empty]\n\n3.
+    numbers = [0]</string>
+    <string name="python_quiz_29_answer1">1</string>
+    <string name="python_quiz_29_answer2">2</string>
+    <string name="python_quiz_29_answer3">3</string>
     <string name="list_function_text">6.3 Using functions with lists</string>
     <string name="list_function_body">You can pass an list to a function when calling it in the following way.
         Assume that the list has the name \"Primes\". Also assume that the function
@@ -1123,8 +1124,8 @@
     <string name="python_quiz_33_answer3">3</string>
     <string name="python_quiz_34">Suppose you wrote a new class called \"Car\" and there was a method inside
     it with the name \"setTypeOfCar\". Now, assume that you created
-    a Car object named \"car\" and want to call this function to set the type of car to \"Ford\". Please select
-        the function call you would use?\n\n1. Car.type(\"Ford\")\n2. Car.setTypeOfCar(\"Ford\")\n3. car.setTypeOfCar
+    a Car object named \"car\" and want to call this method to set the type of car to \"Ford\". Please select
+        the method call you would use?\n\n1. Car.type(\"Ford\")\n2. Car.setTypeOfCar(\"Ford\")\n3. car.setTypeOfCar
     (\"Ford\")</string>
     <string name="python_quiz_34_answer1">1</string>
     <string name="python_quiz_34_answer2">2</string>
@@ -1147,13 +1148,13 @@
     <string name="python_declare_class_text">7.1.1 How do you create classes?</string>
     <string name="python_declare_class_body">The basic structure of a class is as follows:</string>
     <string name="python_declare_class_body1">From left to right, the example above shows a class being
-        declared. The name of the class is \"Person\". The example also shows where you would place any variables,
+        declared. The name of the class is \"Person\". The example also shows where you would place any
         constructors and methods.\n\n\n</string>
     <string name="python_declare_variables_text">7.1.2 Adding variables to classes</string>
-    <string name="python_declare_variables_body">To add variables, you would add them as follows:</string>
+    <string name="python_declare_variables_body">To add variables, you would add them as follows:\n\n_age\n_hairColour\n</string>
     <string name="python_declare_variables_body1">Any declaration of variables in classes (Called instance variables) should
         be private and that can be done by using an underscore before the variable although variables and
-        methods can be \"private\" or \"public\".\n\nAlways declare the variables that you will be using in
+        methods can be \"private\" or \"public\".\n\nAlways declare the variables that you will be using inside
         methods in the class in the constructor and initialise with default values as shown in the next
         section. The \"self\" keyword is used to denote that you\'re only using the current Objects instance
         variables and not referring to other Objects.\n\nGenerally speaking, instance variables should be private
@@ -1170,7 +1171,7 @@
     <string name="python_declare_method_body">To add a method, you would add them as follows:</string>
     <string name="python_declare_method_body1">The structure of the method generally uses the same format as functions that you
         learned about in Section 5. Read from left to right, you\'re stating that you\'re \"defining a new method with a
-        specific name\" and it takes \"these inputs between the brackets\". USing the \"self\" keyword means that you\'ll be
+        specific name\" and it takes \"these inputs between the brackets\". Using the \"self\" keyword means that you\'ll be
         using instance variables declared in the constructor. Any other variables not declared in the constructor can
         be included using a comma separating those parameters.\n\n\n</string>
     <string name="python_objects_text">7.2 Declaring Objects</string>

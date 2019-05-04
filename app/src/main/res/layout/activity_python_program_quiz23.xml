@@ -26,22 +26,13 @@
             android:textSize="20sp"
             android:textStyle="bold"/>
 
-        <ImageView
-            android:id="@+id/image_quiz"
-            android:layout_width="350dp"
-            android:layout_height="350dp"
-            android:layout_below="@id/python_quiz"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="8dp"
-            android:src="@drawable/method_use_quiz" />
-
         <EditText
             android:id="@+id/quiz_input"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:width="70dp"
             android:maxLength="7"
-            android:layout_below="@id/image_quiz"
+            android:layout_below="@id/python_quiz"
             android:layout_centerHorizontal="true"
             android:inputType="text"
             android:singleLine="true"

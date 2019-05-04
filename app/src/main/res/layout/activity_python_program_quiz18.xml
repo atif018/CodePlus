@@ -28,12 +28,12 @@
 
         <ImageView
             android:id="@+id/image_quiz"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_below="@id/python_quiz"
             android:layout_centerHorizontal="true"
             android:layout_margin="8dp"
-            android:src="@drawable/while_example" />
+            android:src="@drawable/python_while_quiz" />
 
         <EditText
             android:id="@+id/quiz_input"

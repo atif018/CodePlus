@@ -22,7 +22,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="24dp"
-            android:text="@string/return_text"
+            android:text="@string/python_return_text"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
@@ -31,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/return_body"
+            android:text="@string/python_return_body"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -44,14 +44,14 @@
             android:layout_below="@id/main_body"
             android:layout_centerHorizontal="true"
             android:layout_margin="16dp"
-            android:src="@drawable/method1_example" />
+            android:src="@drawable/function1_example" />
 
         <TextView
             android:id="@+id/main_second_body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/return_body1"
+            android:text="@string/python_return_body1"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -64,14 +64,14 @@
             android:layout_below="@id/main_second_body"
             android:layout_centerHorizontal="true"
             android:layout_margin="16dp"
-            android:src="@drawable/return_example" />
+            android:src="@drawable/python_return_example" />
 
         <TextView
             android:id="@+id/main_third_body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="@string/return_body2"
+            android:text="@string/python_return_body2"
             android:textSize="20sp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -81,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@id/main_third_body"
             android:text="@string/go_to_quiz"
             android:layout_margin="32dp"
             android:onClick="pythonProgramQuiz24"/>

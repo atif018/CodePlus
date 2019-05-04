@@ -36,6 +36,7 @@
             android:src="@drawable/intropythonprogblack"/>
 
         <TextView
+            android:id="@+id/last_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -48,7 +49,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@id/last_view"
             android:layout_centerHorizontal="true"
             android:text="@string/go_to_quiz"
             android:layout_margin="32dp"

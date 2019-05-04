@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class PythonProgramQuiz30 extends AppCompatActivity {
 
-    private String answer = "read only";
+    private String answer = "coltypes";
     private Intent intent;
 
     @Override
